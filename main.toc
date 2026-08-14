@@ -6,7 +6,7 @@
 \contentsline {subsubsection}{\numberline {2.1.2}London penetration depth and superconductivity types}{6}{subsubsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.3}BCS theory and quasiparticles}{8}{subsubsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.2}Quarter-wave coplanar waveguide resonators}{9}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}General CPW physics}{9}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1}General CPW physics}{10}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Quality factor and energy loss}{13}{subsubsection.2.2.2}%
 \contentsline {section}{\numberline {3}Resonator design and simulations}{17}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Layout design}{17}{subsection.3.1}%
@@ -14,4 +14,4 @@
 \contentsline {subsection}{\numberline {3.3}Simulation results}{19}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Fabrication of the resonators}{20}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Measurements planning and setup}{20}{subsection.3.5}%
-\contentsline {section}{References}{21}{section*.7}%
+\contentsline {section}{References}{21}{section*.8}%
