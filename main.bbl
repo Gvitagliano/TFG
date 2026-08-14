@@ -1,0 +1,956 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global/global}
+  \entry{Charpentier2025}{misc}{}{}
+    \name{author}{6}{}{%
+      {{hash=CT}{%
+         family={Charpentier},
+         familyi={C\bibinitperiod},
+         given={Thibault},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Khvalyuk},
+         familyi={K\bibinitperiod},
+         given={Anton},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=IL}{%
+         family={Ioffe},
+         familyi={I\bibinitperiod},
+         given={Lev},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Feigel'man},
+         familyi={F\bibinitperiod},
+         given={Mikhail},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RN}{%
+         family={Roch},
+         familyi={R\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Sac{\'e}p{\'e}},
+         familyi={S\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {arXiv}%
+    }
+    \keyw{FOS: Physical sciences,Mesoscale and Nanoscale Physics
+  (cond-mat.mes-hall),Quantum Physics (quant-ph),Superconductivity
+  (cond-mat.supr-con)}
+    \strng{namehash}{CT+1}
+    \strng{fullhash}{CTKAILFMRNSB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Improving the coherence of superconducting qubits is essential for
+  advancing quantum technologies. While superconductors are theoretically
+  perfect conductors, they consistently exhibit residual energy dissipation
+  when driven by microwave currents, limiting coherence times. Here, we report
+  an empirical scaling relation between microwave dissipation and the
+  superfluid density, a bulk property of superconductors related to charge
+  carrier density and disorder. Our analysis spans a wide range of
+  superconducting materials and device geometries, from highly disordered
+  amorphous films to ultra-clean systems with record-high quality factors,
+  including resonators, 3D cavities, and transmon qubits. This scaling reveals
+  an intrinsic bulk dissipation channel, independent of surface dielectric
+  losses, which we attribute to nonequilibrium quasiparticles trapped within
+  disorder-induced spatial variations of the superconducting gap, with a
+  density set by a universal material parameter. Our findings identify an
+  empirical coherence limit associated with intrinsic material properties and
+  provide a data-driven basis for materials selection in future superconducting
+  quantum circuits.%
+    }
+    \verb{doi}
+    \verb 10.48550/ARXIV.2507.08953
+    \endverb
+    \field{title}{Universal Bound on Microwave Dissipation in Superconducting
+  Circuits}
+    \field{year}{2025}
+    \field{urlday}{13}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Annett2003}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=AJF}{%
+         family={Annett},
+         familyi={A\bibinitperiod},
+         given={James\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford Univ. Press}%
+    }
+    \strng{namehash}{AJF1}
+    \strng{fullhash}{AJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{Repr}
+    \field{isbn}{978-0-19-850756-7 978-0-19-850755-0}
+    \field{number}{5}
+    \field{series}{Oxford Master Series in Physics {{Condensed}} Matter
+  Physics}
+    \field{title}{Superconductivity, Superfluids, and Condensates}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Oxford}%
+    }
+    \field{year}{2003}
+  \endentry
+
+  \entry{Lopez-Nunez2025}{article}{}{}
+    \name{author}{8}{}{%
+      {{hash=LD}{%
+         family={{L{\'o}pez-N{\'u}{\~n}ez}},
+         familyi={L\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={{Torras-Coloma}},
+         familyi={T\bibinitperiod},
+         given={Alba},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MQP}{%
+         family={Montserrat},
+         familyi={M\bibinitperiod},
+         given={Queralt\bibnamedelima Portell},
+         giveni={Q\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Bertoldo},
+         familyi={B\bibinitperiod},
+         given={Elia},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cozzolino},
+         familyi={C\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RG}{%
+         family={Rius},
+         familyi={R\bibinitperiod},
+         given={Gemma},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mart{\'i}nez},
+         familyi={M\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={{Forn-D{\'i}az}},
+         familyi={F\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Condensed Matter - Superconductivity,Quantum Physics}
+    \strng{namehash}{LD+1}
+    \strng{fullhash}{LDTAMQPBECLRGMMFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We present a study of the superconducting penetration depth \${$\lambda\$$}
+  in aluminum thin films of varying thickness. The range of thicknesses chosen
+  spans from the thin-film regime to the regime approaching bulk behavior. The
+  penetration depths observed range from \${$\lambda$}= 163.3\textbackslash
+  pm0.4\textasciitilde\textbackslash rm\textbraceleft nm\textbraceright\$ for
+  the thinnest \$20\textasciitilde\textbackslash rm\textbraceleft
+  nm\textbraceright\$ samples down to \${$\lambda$}= 53.6\textbackslash
+  pm0.4\textasciitilde\textbackslash rm\textbraceleft nm\textbraceright\$ for
+  the \$200\textasciitilde\textbackslash rm\textbraceleft
+  nm\textbraceright\$-thick ones. In order to accurately determine
+  \${$\lambda\$$}, we performed complementary measurements using the frequency
+  of superconducting \$LC\$ resonators as well as the resistance of
+  normal-state meanders. Both methods yield comparable results, providing a
+  well-characterized set of values of \${$\lambda\$$} in aluminum in the
+  relevant range for applications in fields such as quantum computing and
+  microwave radiation detector technologies.%
+    }
+    \verb{doi}
+    \verb 10.1088/1361-6668/adf360
+    \endverb
+    \verb{eprint}
+    \verb 2311.14119
+    \endverb
+    \field{issn}{0953-2048, 1361-6668}
+    \field{number}{9}
+    \field{pages}{095004}
+    \field{title}{Magnetic Penetration Depth of {{Aluminum}} Thin Films}
+    \field{volume}{38}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\ILUXL489\López-Núñez et al. - 2025 -
+    \verb  Magnetic penetration depth of Aluminum thin films.pdf
+    \endverb
+    \field{journaltitle}{Superconductor Science and Technology}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cond-mat.supr-con}
+    \field{month}{09}
+    \field{year}{2025}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Tinkham1996}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=TM}{%
+         family={Tinkham},
+         familyi={T\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=EV}{%
+         family={Emery},
+         familyi={E\bibinitperiod},
+         given={Victor},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TMEV1}
+    \strng{fullhash}{TMEV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1063/1.2807811
+    \endverb
+    \field{issn}{0031-9228, 1945-0699}
+    \field{number}{10}
+    \field{pages}{74\bibrangedash 74}
+    \field{title}{{\emph{Introduction to }}{{{\emph{Superconductivity}}}}}
+    \field{volume}{49}
+    \field{langid}{english}
+    \field{journaltitle}{Physics Today}
+    \field{month}{10}
+    \field{year}{1996}
+    \field{urlday}{09}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Glover1957}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=GRE}{%
+         family={Glover},
+         familyi={G\bibinitperiod},
+         given={R.\bibnamedelima E.},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tinkham},
+         familyi={T\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{GRETM1}
+    \strng{fullhash}{GRETM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Far infrared and millimeter microwave transmission experiments through thin
+  superconducting lead and tin films are reported. The frequency range covered
+  corresponds to photon energies from 0.3 to 4⁢0⁢{$k$}⁢{$Tc$}. The
+  measurements include the previously unexplored frequency region in which a
+  superconductor changes from an essentially lossless conductor to a normal
+  one. By suitable analysis the effective complex conductivity of the films is
+  obtained from the transmission data. For thin superconducting films it is
+  shown that
+  [{$\sigma$}1⁡({$\omega$})-{$i$}⁢{$\sigma$}2⁡({$\omega$})]{$\sigmaN$}
+  is, to a good approximation, a universal function of the reduced frequency
+  (ℏ⁢{$\omegak$}⁢{$Tc$}), being independent of film resistance,
+  thickness, degree of anneal, and material (for the two metals tried). At
+  {$T$} =0, {$\sigma$}1 appears to be very small (or zero) for photon energies
+  below roughly 3⁢{$k$}⁢{$Tc$}. Starting at 3⁢{$k$}⁢{$Tc$}, {$\sigma$}1
+  rises rapidly and reaches its limiting value {$\sigmaN$} at about
+  2⁢0⁢{$k$}⁢{$Tc$}. This behavior suggests a gap of width
+  {$\approx$}3⁢{$k$}⁢{$Tc$} in the electronic excitation spectrum of the
+  superconducting state. At {$T$} =0 and for photon energies considerably
+  smaller than 3⁢{$k$}⁢{$Tc$},
+  {$\sigma$}2{$\sigmaN\approxA$}⁢{$k$}⁢{$Tc$}ℏ⁢{$\omega$}, with {$A$}
+  =3.7 \textpm 0.7 for both Sn and Pb. The frequency dependence is in agreement
+  with the London theory. This theory, however, would not predict that the
+  results for Pb and Sn should be the same and, moreover, it would give values
+  of {$A\sim$}100 times too large. The Pippard nonlocal theory predicts the
+  type of universal dependence found, but with {$A$} =6.7. For photon energies
+  of the order of 3⁢{$k$}⁢{$Tc$}, a polarizability term
+  {$\sigma$}2{$\prime$}⁡({$\omega$}), required by the Kramers-Kronig
+  relations because of the cutoff of {$\sigma$}1⁡({$\omega$}) near
+  3⁢{$k$}⁢{$Tc$}, becomes important and tends to cancel the 1{$\omega$}
+  term in {$\sigma$}2. As a result, {$\sigma$}2 is reduced to a small value for
+  photon energies above 5⁢{$k$}⁢{$Tc$}. Some information about the
+  temperature dependence of the complex conductivity has also been obtained.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRev.108.243
+    \endverb
+    \field{number}{2}
+    \field{pages}{243\bibrangedash 256}
+    \field{title}{Conductivity of {{Superconducting Films}} for {{Photon
+  Energies}} between 0.3 and
+  \$40k\textbraceleft{{T}}\textbraceright\_\textbraceleft c\textbraceright\$}
+    \field{volume}{108}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\FPH47H6D\PhysRev.108.html
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{month}{10}
+    \field{year}{1957}
+    \field{urlday}{09}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{RaineeN2001}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=RNS}{%
+         family={Rainee\bibnamedelima N},
+         familyi={R\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={Simons},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley}%
+    }
+    \strng{namehash}{RNS1}
+    \strng{fullhash}{RNS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/0471224758
+    \endverb
+    \field{edition}{1}
+    \field{isbn}{978-0-471-16121-9 978-0-471-22475-4}
+    \field{title}{Coplanar {{Waveguide Circuits}}, {{Components}}, and
+  {{Systems}}}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\EY3KHRKY\Rainee N - 2001 - Coplanar Wav
+    \verb eguide Circuits, Components, and Systems.pdf
+    \endverb
+    \field{month}{03}
+    \field{year}{2001}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Gevorgian1995}{article}{}{}
+    \name{author}{3}{}{%
+      {{hash=GS}{%
+         family={Gevorgian},
+         familyi={G\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Linner},
+         familyi={L\bibinitperiod},
+         given={L.J.P.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Kollberg},
+         familyi={K\bibinitperiod},
+         given={E.L.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \keyw{Capacitance,Conformal mapping,Coplanar waveguides,Dielectric
+  substrates,Frequency,Impedance,Microwave devices,Optical
+  waveguides,Permittivity,Strips}
+    \strng{namehash}{GSLLKE1}
+    \strng{fullhash}{GSLLKE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Conformal mapping technique is used to obtain CAD oriented closed form
+  analytical expressions for characteristic impedance per unit length
+  capacitance and relative effective dielectric permittivity of top and bottom
+  shielded multilayered coplanar waveguides. Analytical expressions are deduced
+  for a wide verity of CPW structures.{$<>$}%
+    }
+    \verb{doi}
+    \verb 10.1109/22.375223
+    \endverb
+    \field{issn}{1557-9670}
+    \field{number}{4}
+    \field{pages}{772\bibrangedash 779}
+    \field{title}{{{CAD}} Models for Shielded Multilayered {{CPW}}}
+    \field{volume}{43}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\DEE2X4Z8\375223.html
+    \endverb
+    \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
+    \field{month}{04}
+    \field{year}{1995}
+    \field{urlday}{05}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Wadell1991}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=WBC}{%
+         family={Wadell},
+         familyi={W\bibinitperiod},
+         given={Brian\bibnamedelima C.},
+         giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Artech House}%
+    }
+    \keyw{Microwave transmission lines.,Strip transmission lines.}
+    \strng{namehash}{WBC1}
+    \strng{fullhash}{WBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-89006-436-8}
+    \field{title}{Transmission Line Design Handbook}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Boston}%
+    }
+    \field{annotation}{%
+    Open Library ID: OL1535374M%
+    }
+    \field{year}{1991}
+  \endentry
+
+  \entry{Gao2008}{thesis}{}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Jiansong},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Applied Physics,background limited detection,conformal mapping}
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Over the past decade, low temperature detectors have brought astronomers
+  revolutionary new observational capabilities and led to many great
+  discoveries. Although a single low temperature detector has very impressive
+  sensitivity, a large detector array would be much more powerful and are
+  highly demanded for the study of more difficult and fundamental problems in
+  astronomy. However, current detector technologies, such as transition edge
+  sensors and superconducting tunnel junction detectors, are difficult to
+  integrate into a large array. The microwave kinetic inductance detector
+  (MKID)is a promising new detector technology invented at Caltech and JPL
+  which provides both high sensitivity and an easy solution to the detector
+  integration. It senses the change in the surface impedance of a
+  superconductor as incoming photons break Cooper pairs, by using high-Q
+  superconducting microwave resonators capacitively coupled to a common
+  feedline. This architecture allows thousands of detectors to be easily
+  integrated through passive frequency domain multiplexing. In this thesis, we
+  explore the rich and interesting physics behind these superconducting
+  microwave resonators. The first part of the thesis discusses the surface
+  impedance of a superconductor, the kinetic inductance of a superconducting
+  coplanar waveguide, and the circuit response of a resonator. These topics are
+  related with the responsivity of MKIDs. The second part presents the study of
+  the excess frequency noise that is universally observed in these resonators.
+  The properties of the excess noise, including power, temperature, material,
+  and geometry dependence, have been quantified. The noise source has been
+  identified to be the two-level systems in the dielectric material on the
+  surface of the resonator. A semi-empirical noise model has been developed to
+  explain the power and geometry dependence of the noise, which is useful to
+  predict the noise for a specified resonator geometry. The detailed physical
+  noise mechanism, however, is still not clear. With the theoretical results of
+  the responsivity and the semi-empirical noise model established in this
+  thesis, a prediction of the detector sensitivity (noise equivalent power) and
+  an optimization of the detector design are now possible.%
+    }
+    \verb{doi}
+    \verb 10.7907/RAT0-VM75
+    \endverb
+    \field{title}{The {{Physics}} of {{Superconducting Microwave Resonators}}}
+    \field{langid}{english}
+    \list{institution}{1}{%
+      {California Institute of Technology}%
+    }
+    \field{type}{phdthesis}
+    \field{month}{06}
+    \field{year}{2008}
+    \field{urlday}{06}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Pozar2012}{book}{}{}
+    \name{author}{1}{}{%
+      {{hash=PDM}{%
+         family={Pozar},
+         familyi={P\bibinitperiod},
+         given={David\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley \& Sons, Inc}%
+    }
+    \strng{namehash}{PDM1}
+    \strng{fullhash}{PDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The 4th edition of this classic text provides a thorough coverage of RF and
+  microwave engineering concepts, starting from fundamental principles of
+  electrical engineering, with applications to microwave circuits and devices
+  of practical importance. Coverage includes microwave network analysis,
+  impedance matching, directional couplers and hybrids, microwave filters,
+  ferrite devices, noise, nonlinear effects, and the design of microwave
+  oscillators, amplifiers, and mixers. Material on microwave and RF systems
+  includes wireless communications, radar, radiometry, and radiation hazards. A
+  large%
+    }
+    \field{edition}{Fourth edition}
+    \field{isbn}{978-0-470-63155-3 978-1-118-21363-6}
+    \field{title}{Microwave Engineering}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Hoboken, NJ}%
+    }
+    \field{year}{2012}
+  \endentry
+
+  \entry{Biznarova2024}{article}{}{}
+    \name{author}{12}{}{%
+      {{hash=BJ}{%
+         family={Bizn{\'a}rov{\'a}},
+         familyi={B\bibinitperiod},
+         given={Janka},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=OA}{%
+         family={Osman},
+         familyi={O\bibinitperiod},
+         given={Amr},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={Rehnman},
+         familyi={R\bibinitperiod},
+         given={Emil},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Chayanun},
+         familyi={C\bibinitperiod},
+         given={Lert},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Kri{\v z}an},
+         familyi={K\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Malmberg},
+         familyi={M\bibinitperiod},
+         given={Per},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rommel},
+         familyi={R\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Warren},
+         familyi={W\bibinitperiod},
+         given={Christopher},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Delsing},
+         familyi={D\bibinitperiod},
+         given={Per},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=YA}{%
+         family={Yurgens},
+         familyi={Y\bibinitperiod},
+         given={August},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bylander},
+         familyi={B\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FRA}{%
+         family={Fadavi\bibnamedelima Roudsari},
+         familyi={F\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Anita},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJOARECLKCMPRMWCDPYABJFRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Abstract We demonstrate aluminum-on-silicon planar transmon qubits with
+  time-averaged T 1 energy relaxation times of up to 270\,{$\mu$}s,
+  corresponding to Q = 5\,million, and a highest observed value of
+  501\,{$\mu$}s. Through materials analysis techniques and numerical
+  simulations we investigate the dominant source of energy loss, and devise and
+  demonstrate a strategy toward its mitigation. Growing aluminum films thicker
+  than 300 nm reduces the presence of oxide, a known host of defects, near the
+  substrate-metal interface, as confirmed by time-of-flight secondary ion mass
+  spectrometry. A loss analysis of coplanar waveguide resonators shows that
+  this results in a reduction of dielectric loss due to two-level system
+  defects. The correlation between the enhanced performance of our devices and
+  the film thickness is due to the aluminum growth in columnar structures of
+  parallel grain boundaries: transmission electron microscopy shows larger
+  grains in the thicker film, and consequently fewer grain boundaries
+  containing oxide near the substrate-metal interface.%
+    }
+    \verb{doi}
+    \verb 10.1038/s41534-024-00868-z
+    \endverb
+    \field{issn}{2056-6387}
+    \field{number}{1}
+    \field{pages}{78}
+    \field{title}{Mitigation of Interfacial Dielectric Loss in
+  Aluminum-on-Silicon Superconducting Qubits}
+    \field{volume}{10}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\KFXM5IZH\Biznárová et al. - 2024 - Mi
+    \verb tigation of interfacial dielectric loss in aluminum-on-silicon superc
+    \verb onducting qubits.pdf
+    \endverb
+    \field{journaltitle}{npj Quantum Information}
+    \field{month}{08}
+    \field{year}{2024}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Ghione1987}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=GG}{%
+         family={Ghione},
+         familyi={G\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=NC}{%
+         family={Naldi},
+         familyi={N\bibinitperiod},
+         given={C.U.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Application specific integrated circuits,Conductors,Conformal
+  mapping,Coplanar waveguides,Coupling circuits,Gallium
+  arsenide,Impedance,Microwave integrated circuits,MMICs,Planar waveguides}
+    \strng{namehash}{GGNC1}
+    \strng{fullhash}{GGNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{abstract}{%
+    Parasitic effects occurring in actual realizations of coplanar waveguides
+  (CPW) for microwave integrated circuits on GaAs substrates, such as the
+  influence of an upper shield, conductor backing, finite-extent ground planes,
+  and line-to-line coupling, are discussed and evaluated. CAD-oriented
+  analytical expressions are obtained for the electrical quasi-TEM parameters
+  of the relevant waveguiding structures by means of exact or approximate
+  conformal mapping techniques. Differences in electrical behavior with respect
+  to ideal CPW's are highlighted, and practical design criteria are obtained
+  for keeping cover height, ground-plane width, and line-to-line spacing
+  effects to a minimum.%
+    }
+    \verb{doi}
+    \verb 10.1109/TMTT.1987.1133637
+    \endverb
+    \field{issn}{1557-9670}
+    \field{number}{3}
+    \field{pages}{260\bibrangedash 267}
+    \field{shorttitle}{Coplanar {{Waveguides}} for {{MMIC Applications}}}
+    \field{title}{Coplanar {{Waveguides}} for {{MMIC Applications}}: {{Effect}}
+  of {{Upper Shielding}}, {{Conductor Backing}}, {{Finite-Extent Ground
+  Planes}}, and {{Line-to-Line Coupling}}}
+    \field{volume}{35}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\HCKJZEZK\Ghione and Naldi - 1987 - Copl
+    \verb anar Waveguides for MMIC Applications Effect of Upper Shielding, Cond
+    \verb uctor Backing, Finite-Exte.pdf
+    \endverb
+    \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
+    \field{month}{03}
+    \field{year}{1987}
+    \field{urlday}{04}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Griesmayer}{article}{}{}
+    \name{author}{10}{}{%
+      {{hash=GE}{%
+         family={Griesmayer},
+         familyi={G\bibinitperiod},
+         given={Erich},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PH}{%
+         family={Pernegger},
+         familyi={P\bibinitperiod},
+         given={Heinz},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Dobos},
+         familyi={D\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wenander},
+         familyi={W\bibinitperiod},
+         given={Fredrik},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Bergoz},
+         familyi={B\bibinitperiod},
+         given={Julien},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BH}{%
+         family={Bayle},
+         familyi={B\bibinitperiod},
+         given={Herv{\'e}},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=IB}{%
+         family={Instrumentation},
+         familyi={I\bibinitperiod},
+         given={Bergoz},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={{Frais-Kolbl}},
+         familyi={F\bibinitperiod},
+         given={Helmut},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Aumeyr},
+         familyi={A\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Holloway},
+         familyi={H\bibinitperiod},
+         given={Royal},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GE+1}
+    \strng{fullhash}{GEPHDDWFBJBHIBFHATHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    A novel beam instrumentation device for the HIE-REX (High In-tensity and
+  Energy REX) upgrade has been developed and tested at the On-Line Isotope Mass
+  Separator ISOLDE, located at the European Laboratory for Particle Physics
+  (CERN). This device is based on CVD diamond detector technology and is used
+  for measuring the beam intensity, particle counting and measuring the energy
+  spectrum of the beam. An energy resolution of 0.6\% was measured at a carbon
+  ion energy of 22.8 MeV. This corresponds to an energy spread of \textpm{} 140
+  keV.%
+    }
+    \field{title}{High-{{Resolution Energy}} and {{Intensity Measurements}}
+  with {{CVD Diamond}} at {{REX-ISOLDE}}}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\33F7442F\Griesmayer et al. - High-Resol
+    \verb ution Energy and Intensity Measurements with CVD Diamond at REX-ISOLD
+    \verb E.pdf
+    \endverb
+  \endentry
+
+  \entry{Li2024}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=LT}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Tianze},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Xiaopeng},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HJCM}{%
+         family={Hwang},
+         familyi={H\bibinitperiod},
+         given={James C.\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yanagimoto},
+         familyi={Y\bibinitperiod},
+         given={Shana},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yanagimoto},
+         familyi={Y\bibinitperiod},
+         given={Yoshiyuki},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LT+1}
+    \strng{fullhash}{LTLLWXHJCMYSYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Hexagonal semiconductors such as 4H SiC have important high-frequency,
+  high-power, and high-temperature applications. The applications require
+  accurate knowledge of both ordinary and extraordinary relative
+  permittivities, {$\varepsilon$} and {$\varepsilon\vert\vert$}, perpendicular
+  and parallel, respectively, to the c axis of these semiconductors. However,
+  due to challenges for suitable test setups and precision high-frequency
+  measurements, little reliable data exists for these semiconductors especially
+  at millimeter-wave frequencies. Recently, we reported
+  {$\varepsilon\vert\vert$} of 4H SiC from 110 to 170 GHz. This paper expands
+  on the previous report to include both {$\varepsilon$} and
+  {$\varepsilon\vert\vert$} of the same material from 55 to 330 GHz, as well as
+  their temperature and humidity dependence enabled by improving the
+  measurement precision to two decimal points. For example, at room
+  temperature, real {$\varepsilon$} and {$\varepsilon\vert\vert$} are constant
+  at 9.77 \textpm{} 0.01 and 10.20 \textpm{} 0.05, respectively. By contrast,
+  the ordinary loss tangent increases linearly with the frequency f in the form
+  of (4.9 \textpm{} 0.1) \texttimes{} 10-16 f. The loss tangent, less than 1
+  \texttimes{} 10-4 over most millimeter-wave frequencies, is significantly
+  lower than that of sapphire, our previous low-loss standard. Finally, both
+  {$\varepsilon$} and {$\varepsilon\vert\vert$} have weak temperature
+  coefficients on the order of 10-4 /{$^\circ$}C. The knowledge reported here
+  is especially critical to millimeter-wave applications of 4H SiC, not only
+  for solid-state devices and circuits, but also as windows for high-power
+  vacuum electronics.%
+    }
+    \verb{doi}
+    \verb 10.1109/JMW.2024.3453325
+    \endverb
+    \field{issn}{2692-8388}
+    \field{number}{4}
+    \field{pages}{666\bibrangedash 674}
+    \field{title}{Ordinary and {{Extraordinary Permittivities}} of {{4H SiC}}
+  at {{Different Millimeter-Wave Frequencies}}, {{Temperatures}}, and
+  {{Humidities}}}
+    \field{volume}{4}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\QHCWKUXC\Li et al. - 2024 - Ordinary an
+    \verb d Extraordinary Permittivities of 4H SiC at Different Millimeter-Wave
+    \verb  Frequencies, Temper.pdf
+    \endverb
+    \field{journaltitle}{IEEE Journal of Microwaves}
+    \field{month}{10}
+    \field{year}{2024}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{Patrick1970}{article}{}{}
+    \name{author}{2}{}{%
+      {{hash=PL}{%
+         family={Patrick},
+         familyi={P\bibinitperiod},
+         given={Lyle},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CWJ}{%
+         family={Choyke},
+         familyi={C\bibinitperiod},
+         given={W.\bibnamedelima J.},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PLCWJ1}
+    \strng{fullhash}{PLCWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevB.2.2255
+    \endverb
+    \field{issn}{0556-2805}
+    \field{number}{6}
+    \field{pages}{2255\bibrangedash 2256}
+    \field{title}{Static {{Dielectric Constant}} of {{SiC}}}
+    \field{volume}{2}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\9I8X2GJX\Patrick and Choyke - 1970 - St
+    \verb atic Dielectric Constant of SiC.pdf
+    \endverb
+    \field{journaltitle}{Physical Review B}
+    \field{month}{09}
+    \field{year}{1970}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2026}
+  \endentry
+\enddatalist
+\endinput
