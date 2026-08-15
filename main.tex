@@ -114,7 +114,7 @@ This section will follow the analysis shown by \cite{Annett2003}.
 When talking about superconductivity, the first thought that comes to mind is conduction with a resistance exactly equal to zero; or rather, conduction with an infinite value of conductivity. And, even though this is, in reality, the most desirable key characteristic of superconducting materials due to the lack of resistive energy losses, the truth is that a completely pure metal with no impurities would also show this characteristic, as its temperature approached absolute zero, without being catalogued as a superconductor. The key differences between the two are as follows.
 
 \begin{figure}[h]
- \centering
+    \centering
     \includegraphics[width=0.6\textwidth]{figures/SuperConducting_Transition.png}
     \caption{Sudden drop in resistivity to zero at the critical temperature. Reproduced from \cite{Annett2003}}
     \label{fig:SupercondPhaseTrans}
@@ -141,19 +141,19 @@ Of interest to this thesis is the classification of superconductors into two typ
     \centering
     \includegraphics[width=0.6\textwidth]{figures/TypeI_TypeII.png}
     \caption{Reproduced from \cite{Annett2003}}
-    \label{SupcondTypes}
+    \label{fig:SupcondTypes}
 \end{figure}
 
-In a Type-I superconductor, the same way there exists a critical temperature $T_c$ or a critical electrical current $I_c$ for which superconductivity is suddenly broken, there exists a critical magnetic field $H_c$ for which resistivity ceases to be exactly zero and the Meissner effect ceases to occur. This means that the material's magnetization becomes zero as it is represented in \ref{SupcondTypes}, and therefore the lines of the external field $H$ suddenly penetrate the material normally.
+In a Type-I superconductor, the same way there exists a critical temperature $T_c$ or a critical electrical current $I_c$ for which superconductivity is suddenly broken, there exists a critical magnetic field $H_c$ for which resistivity ceases to be exactly zero and the Meissner effect ceases to occur. This means that the material's magnetization becomes zero as it is represented in \ref{fig:SupcondTypes}, and therefore the lines of the external field $H$ suddenly penetrate the material normally.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/Vortices.png}
     \caption{Reproduced from \cite{Annett2003}}
-    \label{Vortices}
+    \label{fig:Vortices}
 \end{figure}
 
-On the other hand, on a Type-II superconductor this transition towards normal conductivity is much smoother. In this case, rather than taking one critical magnetic field $H_c$, two critical field values are studied, $H_{c1}$ that represents the value of $H$ for which $M$ stops strictly behaving as $M = - H$; and $H_{c2}$ that represents the value of $H$ for which $M$ exactly zero. As a consequence of this behavior, magnetic flux is able to partially penetrate the material in the interval between $H_{c1} \text{ and } H_{c2}$, in the form of discrete flux vortices as it is represented in .
+On the other hand, on a Type-II superconductor this transition towards normal conductivity is much smoother. In this case, rather than taking one critical magnetic field $H_c$, two critical field values are studied, $H_{c1}$ that represents the value of $H$ for which $M$ stops strictly behaving as $M = - H$; and $H_{c2}$ that represents the value of $H$ for which $M$ exactly zero. As a consequence of this behavior, magnetic flux is able to partially penetrate the material in the interval between $H_{c1} \text{ and } H_{c2}$, in the form of discrete flux vortices as it is represented in \ref{fig:Vortices}.
 
 Around these vortices the magnetic field decays radially over the characteristic length known as the London penetration depth $\lambda_L$. In the context of this thesis, it is notable how this quantity might behave in thin-film superconductors.
 
@@ -225,7 +225,7 @@ Similarly, when the size of the elements studied is comparable to the wavelength
 
 In the case of the distributed element, the resonators most represented in the literature are resonant cavities, $\lambda/2$ CPW resonators and $\lambda/4$ CPW resonators. For the sake of this study, only the case of quarter-wave coplanar waveguide resonators will be explored.
 
-For distributed-element structures with simple field symmetry, such as coaxial lines or parallel-plate capacitors, the per-unit-length capacitance, and hence, $\epsilon_{eff}$ and $Z_0$, can be obtained directly from Gauss's law in closed form. Coplanar waveguides, however, lack this symmetry. This is because the electric field is distributed inhomogeneously between the substrate and the air above the slots, and no simple closed surface captures the geometry. Conformal mapping techniques, are therefore used to obtain closed-form expressions for C' by mapping the CPW cross-section onto an equivalent geometry where the capacitance is tractable.
+For distributed-element structures with simple field symmetry, such as coaxial lines or parallel-plate capacitors, the per-unit-length capacitance, and hence $\epsilon_{eff}$ and $Z_0$, can be obtained directly from Gauss's law in closed form. Coplanar waveguides, however, lack this symmetry. This is because the electric field is distributed inhomogeneously between the substrate and the air above the slots, and no simple closed surface captures the geometry. Conformal mapping techniques, are therefore used to obtain closed-form expressions for $C'$ by mapping the CPW cross-section onto an equivalent geometry where the capacitance is tractable.
 
 \begin{figure}
     \centering
@@ -233,10 +233,10 @@ For distributed-element structures with simple field symmetry, such as coaxial l
     \includegraphics[width=0.4\textwidth]{figures/Conformal_b.png}
     \includegraphics[width=0.4\textwidth]{figures/Conformal_c.png}
     \caption{Reproduced from \cite{RaineeN2001}}
-    \label{ConfMapping}
+    \label{fig:ConfMapping}
 \end{figure}
 
-In this particular case, conformal mapping proves useful as the equations to be described are the Laplace equations, which are notoriously invariant to conformal transformations. According to the results shown by \cite{Gevorgian1995} and \cite{RaineeN2001}, by using the Christoffel-Schwartz transformation in order to compute the total capacitance as the sum of the capacitances computed in the partial regions shown in \ref{ConfMapping} such as:
+In this particular case, conformal mapping proves useful as the equations to be described are the Laplace equations, which are notoriously invariant to conformal transformations. According to the results shown by \cite{Gevorgian1995} and \cite{RaineeN2001}, by using the Christoffel-Schwartz transformation in order to compute the total capacitance as the sum of the capacitances computed in the partial regions shown in \ref{fig:ConfMapping} such as:
 
 \begin{equation}
     \label{capacitance}
@@ -283,7 +283,7 @@ As a result of this, the phase velocity of light through the circuit will as
     v_{ph} = \frac{c}{\sqrt{\epsilon_{eff}}}.
 \end{equation}
 
-Finally, if one considers a transmission line with an open end and a shorted end; which is equivalent to having boundary conditions of $Z(0) = 0 \text{ and } Z(l) \rightarrow \infty$; one arrives to the following condition \cite{Gao2008}
+Finally, if one considers a transmission line with an open end and a shorted end; which is equivalent to having boundary conditions of $Z(0) = 0 \text{ and } Z(l) \to \infty$; one arrives to the following condition \cite{Gao2008}
 
 \begin{equation}
     \label{ResCond}
@@ -411,7 +411,7 @@ From this expression one can see how there are three possible limits:
 
 \begin{itemize}
     \item \textbf{Undercoupled ($g \ll 1$):} the value of $S_{21}$ approaches 1; meaning that none of the signal is transferred to the resonator.
-    \item \textbf{Critically coupled ($g \approx 1$):} $g \approx 1 \rightarrow S_{21} \approx 1/2$; meaning that half of the signal is transmitted and half of the signal is retained by the resonator.
+    \item \textbf{Critically coupled ($g \approx 1$):} $g \approx 1\implies S_{21} \approx 1/2$; meaning that half of the signal is transmitted and half of the signal is retained by the resonator.
     \item \textbf{Overcoupled ($g \gg 1$):} the value of $S_{21}$ approaches 0; meaning that the entirety of the signal is transferred to the resonator and none is transmitted.
 \end{itemize}
 
@@ -419,7 +419,7 @@ In order to further understand the $S_{21}$ magnitude and phase spectrum, one mu
 
 From this it is evident that the value of $Q_L$ has a significant effect on the width of the $S_{21}$ magnitude dip. This means that as $Q_L$ becomes bigger the dip becomes narrower, and in contrast, as it becomes smaller, the dip becomes broader. Combined with the discussed coupling regimes, it is of interest to this thesis to study how the $S_{21}$ magnitude response will respond with changes in $Q_c$.
 
-As we have seen, increases in $g$ lead to a deeper dip in $S_{21}$ which makes the signal easier to measure. Additionally, increases in $Q_L$ lead to a narrower signal, which makes the analysis of the signal easier and more exact. This is especially important as $g$ is inversely related to $Q_c$; the opposite of $Q_L$ which increases with $Q_c$ as seen in \ref{Q_L}. Hence, different coupling regimes are more desirable for different uses. In the case of sensing, the dip depth is more relevant than its width, and therefore an overcoupled resonator is desirable. On the other hand, for characterization or device control the dip width and data analysis more relevant than the sensitivity fo the resonator; as a result critically coupled resonators are the most desirable, since undercoupled resonators usually can not be measured with standard equipment, and critical coupling maximizes the depth of the dip in the $S_{21}$ magnitude response while leaving its shape easy to analyze.
+As we have seen, increases in $g$ lead to a deeper dip in $S_{21}$ which makes the signal easier to measure. Additionally, increases in $Q_L$ lead to a narrower signal, which makes the analysis of the signal easier and more exact. This is especially important as $g$ is inversely related to $Q_c$; the opposite of $Q_L$ which increases with $Q_c$ as seen in \ref{Q_L}. Hence, different coupling regimes are more desirable for different uses. In the case of sensing, the dip depth is more relevant than its width, and therefore an overcoupled resonator is desirable. On the other hand, for characterization or device control the dip width and data analysis more relevant than the sensitivity for the resonator; as a result critically coupled resonators are the most desirable, since undercoupled resonators usually can not be measured with standard equipment, and critical coupling maximizes the depth of the dip in the $S_{21}$ magnitude response while leaving its shape easy to analyze.
 
 \section{Resonator design and simulations}
 
@@ -449,14 +449,107 @@ Through this process, the final parameters for the resonators were achieved. The
 
 \subsection{Simulation results} \label{SimuResultsSection}
 
-After the simulations were carried out, the resulting values of $\epsilon_{eff}$, and $Z_0$ were studied and compared to the ones calculated through the expressions derived from \cite{RaineeN2001}. Moreover, the S21 signal was analyzed with the method presented by \cite{Lopez-Nunez2025} in order to extract the $f_r$ as well as the $Q_c$. These results can be observed in \ref{SimResults}.
+After the simulations were carried out, the overall behavior of the resonator described in \ref{GeneralCPW} was studied. This comprehensive study included the general electromagnetic behavior of the layout, such as voltage and current density along the CPW, and the resulting values of $\epsilon_{eff}$, and $Z_0$, which were consequently compared to those calculated from \cite{Wadell1991} used for the initial estimations mentioned in \ref{LayoutDesign}. Furthermore, it included an in-depth analysis of the $S_{21}$ spectrum following Lopez-Nuñez et al.'s method \cite{Lopez-Nunez2025} from which an estimation of $f_r$ and $Q_c$ was gotten. The numerical results of the simulations can be seen in \cref{tab:SimResults4H,tab:SimResults6H,tab:SimResultsdiamond}.
 
-It is interesting to point out how the simulated values of $\epsilon_{eff}$ and $Z_0$ systematically land higher than the ones calculated through the expressions derived from \cite{RaineeN2001}. This can be explained by the fact that \textcolor{red}{in those expressions}, there are several approximations that take place. Firstly, the ground surface is approximated to be infinite; and, secondly, the metal is approximated to have a null thickness. 
+\begin{table}[ht]
+    \centering
+    \caption{Table with results from simulations and $S_{21}$ analysis for resonators with 4H-SiC substrate}
+    \label{tab:SimResults4H}
+    \begin{tabular}{@{}ccccccc@{}}
+    \toprule\toprule
+    Resonator & $f_{r, theory}$ & $f_{r, simulation}$ & $\epsilon_{theory}$ & $\epsilon_{simulation}$ & $Q_{c, theory}$ & $Q_{c, simulation}$ \\
+    \midrule
+    1         &                 &                     &                     &                         &                 &                     \\
+    2         &                 &                     &                     &                         &                 &                     \\
+    3         &                 &                     &                     &                         &                 &                     \\
+    4         &                 &                     &                     &                         &                 &                     \\
+    \bottomrule\bottomrule
+    \end{tabular}
+\end{table}
 
-These differences between the expected results and the ones retrieved from the simulations were studied. In the case of the metal thickness approximation, in \cite{RaineeN2001}, it is shown how as the metal thickness goes up, the predicted value of $\epsilon_{eff}$ becomes higher than the one expected from the initial conformal mapping expressions, and the value of $Z_0$ becomes lower than the one expected. On the other hand, for the ground surface size approximation, it was found that, according to \cite{Ghione1987}, as the ground surface around the conductor line is accounted for as finite, the value of $Z_0$ goes up the smaller the ground surface size; this approximation didn't seem to have a noticeable effect on the value of $\epsilon_{eff}$. This last approximation was tested through a test run using a layout with a bigger ground size, closer to the real size of the chips. The results adjusted to the value of $Z_0$ decreasing with the larger ground. In the same way, test simulations were run that proved the value of $\epsilon_{eff}$ to increase as the thickness becomes bigger.
+\begin{table}[ht]
+    \centering
+    \caption{Table with results from simulations and $S_{21}$ analysis for resonators with 6H-SiC substrate}
+    \label{tab:SimResults6H}
+    \begin{tabular}{@{}ccccccc@{}}
+    \toprule\toprule
+    Resonator & $f_{r, theory}$ & $f_{r, simulation}$ & $\epsilon_{theory}$ & $\epsilon_{simulation}$ & $Q_{c, theory}$ & $Q_{c, simulation}$ \\
+    \midrule
+    1         &                 &                     &                     &                         &                 &                     \\
+    2         &                 &                     &                     &                         &                 &                     \\
+    3         &                 &                     &                     &                         &                 &                     \\
+    4         &                 &                     &                     &                         &                 &                     \\
+    \bottomrule\bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption{Table with results from simulations and $S_{21}$ analysis for resonators with diamond substrate}
+    \label{tab:SimResultsdiamond}
+    \begin{tabular}{@{}ccccccc@{}}
+    \toprule\toprule
+    Resonator & $f_{r, theory}$ & $f_{r, simulation}$ & $\epsilon_{theory}$ & $\epsilon_{simulation}$ & $Q_{c, theory}$ & $Q_{c, simulation}$ \\
+    \midrule
+    1         &                 &                     &                     &                         &                 &                     \\
+    2         &                 &                     &                     &                         &                 &                     \\
+    3         &                 &                     &                     &                         &                 &                     \\
+    4         &                 &                     &                     &                         &                 &                     \\
+    \bottomrule\bottomrule
+    \end{tabular}
+\end{table}
+
+It is interesting to point out how the simulated values of $\epsilon_{eff}$ and $Z_0$ systematically land higher than the ones calculated through the expressions derived from \cite{RaineeN2001}. This can be explained by the fact that in Wadell's equations\cite{Wadell1991}, there are several approximations that take place. Firstly, the ground surface around the resonator is approximated to be infinite; and, secondly, the metal is approximated to have a null thickness. 
+
+These differences between the expected results and the ones retrieved from the simulations were studied. In the case of the metal thickness approximation, in \cite{RaineeN2001}, it is shown how, if the thickness of the metal is considered, as the metal thickness goes up, the predicted value of $\epsilon_{eff}$ becomes higher than the one expected from the initial conformal mapping expressions, and the value of $Z_0$ becomes lower than the one expected. On the other hand, for the ground surface size approximation, it was found that, according to \cite{Ghione1987}, as the ground surface around the conductor line is accounted for as finite, the value of $Z_0$ goes up the smaller the ground surface size; this approximation did not seem to have a noticeable effect on the value of $\epsilon_{eff}$. This last approximation was tested through a test run using a layout with a bigger ground size, closer to the real size of the chips. The results adjusted to the value of $Z_0$ decreasing with the larger ground. In the same way, test simulations were run that proved the value of $\epsilon_{eff}$ to increase as the thickness becomes bigger.
 
 Being that the value of $Z_0$ was higher than the one predicted from the initial expressions it is thought that the effects of the 300nm thickness were negligible in comparison to the effects of the increase in ground size. This can be mainly explained by the fact that the size of the ground in the layouts used for the simulations was around a fifth of the real size in the x axis and a third of the real size in the y axis, and a thickness of 300nm results in a very small relation between the cross-section surface and the total length of the resonator.
 
+\begin{figure}[ht]
+    \centering
+    % \begin{subfigure}{0.32\textwidth}
+    %     \includegraphics[width=\linewidth]{figures/diamond_in_res.png}
+    %     \caption{Diamond, in resonance}
+    %     \label{fig:diamond_in}
+    % \end{subfigure}
+    % \begin{subfigure}{0.32\textwidth}
+    %     \includegraphics[width=\linewidth]{figures/4HSiC_in_res.png}
+    %     \caption{4H-SiC, in resonance}
+    %     \label{fig:4HSiC_in}
+    % \end{subfigure}
+    % \begin{subfigure}{0.32\textwidth}
+    %     \includegraphics[width=\linewidth]{figures/6HSiC_in_res.png}
+    %     \caption{6H-SiC, in resonance}
+    %     \label{fig:6HSiC_in}
+    % \end{subfigure}
+
+    % \begin{subfigure}{0.32\textwidth}
+    %     \includegraphics[width=\linewidth]{figures/diamond_out_res.png}
+    %     \caption{Diamond, out of resonance}
+    %     \label{fig:diamond_out}
+    % \end{subfigure}
+    % \begin{subfigure}{0.32\textwidth}
+    %     \includegraphics[width=\linewidth]{figures/4HSiC_out_res.png}
+    %     \caption{4H-SiC, out of resonance}
+    %     \label{fig:4HSiC_out}
+    % \end{subfigure}
+    % \begin{subfigure}{0.32\textwidth}
+    %     \includegraphics[width=\linewidth]{figures/6HSiC_out_res.png}
+    %     \caption{6H-SiC, out of resonance}
+    %     \label{fig:6HSiC_out}
+    % \end{subfigure}
+
+    \caption{Simulated surface current distribution in resonance (top row) and out of resonance (bottom row) for a representative resonator on each substrate. The distribution is dominated by the CPW geometry and is essentially substrate-independent. As discussed in \ref{GeneralCPW}, out of resonance, there is no energy transmission from the feedline to the resonator, and therefore no current density inside it. Also, in resonance, there is a maximum current density at the shorted end nearest to the feedline and a current density minimum at the open end, where there is a voltage maximum.}
+    \label{fig:current_dist_all}
+\end{figure}
+
+Furthermore, the current density of the circuit can be seen in \cref{fig:diamond_in,fig:diamond_out,fig:6HSiC_in,fig:6HSiC_out,fig:4HSiC_in,fig:4HSiC_out}. These results become useful for confirmation of several points.
+
+Furthermore, the current density of the circuit can be seen in \cref{fig:diamond_in,fig:diamond_out,fig:6HSiC_in,fig:6HSiC_out,fig:4HSiC_in,fig:4HSiC_out}. First, these results confirm that the resonator is only hosting the fundamental mode, as higher-order modes would be undesirable.
+
+Second, they confirm the boundary conditions discussed in \cref{GeneralCPW}. At the shorted end, the impedance approaches zero, forcing the voltage to zero ($Z(0) \approx 0 \implies V(0) = 0$); which, by continuity of power flow, implies that the current there must instead be maximal. At the open end, the impedance diverges, forcing the current to zero ($Z(l) \to \infty \implies I(l) = 0$), while the voltage, and correspondingly the electric field, reaches its maximum. This is precisely the current maximum at the short and current minimum at the open end visible in each panel of \cref{fig:current_dist_all}.
+
+Finally, this agreement extends to the three substrates, which was expected due to the analytical behavior only being explained through the geometry of the system and the only effects caused by the $\epsilon_r$ being on the $f_r$ and subsequently on the total length of the resonator rather than the shape of the standing wave.
 
 
 \subsection{Fabrication of the resonators}
