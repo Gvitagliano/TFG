@@ -10,8 +10,10 @@
 \contentsline {subsubsection}{\numberline {2.2.2}Quality factor and energy loss}{13}{subsubsection.2.2.2}%
 \contentsline {section}{\numberline {3}Resonator design and simulations}{17}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Layout design}{17}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Simulation iterations}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Simulation iterations}{19}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Simulation results}{19}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Fabrication of the resonators}{21}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Measurements planning and setup}{21}{subsection.3.5}%
-\contentsline {section}{References}{22}{section*.12}%
+\contentsline {subsection}{\numberline {3.4}Fabrication of the resonators}{22}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Fabrication runs}{22}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Fabrication results}{23}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Measurements planning and setup}{23}{subsection.3.5}%
+\contentsline {section}{References}{24}{section*.13}%

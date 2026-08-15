@@ -19,6 +19,7 @@
 \usepackage{amsthm}
 \usepackage{mathtools}
 \usepackage{siunitx}             % for units, e.g. \SI{9.8}{\meter\per\second\squared}
+\usepackage{upgreek}
 
 \usepackage{chngcntr}
 \counterwithin{equation}{section}
@@ -403,8 +404,8 @@ This expression can be expanded such as
 This expression reveals several important features of the resonator response. Firstly, it is notable that when the frequency is set to the resonant frequency the expression is reduced to
 
 \begin{equation}
-    \label{Gao_resonance}
     |S_{21}(f_r)| = 1 - \frac{g}{1 + g}.
+    \label{Gao_resonance}
 \end{equation}
 
 From this expression one can see how there are three possible limits:
@@ -433,7 +434,14 @@ The chip designs were thought for the respective sizes of each of the substrates
 
 Once all of these factors were properly taken into account, it was decided that a set of four $\lambda/4$ CPW resonators inductively coupled to the feedline, in the range between 6 GHz and 8 GHz, separated by at least 200 MHz would be best to both optimize the measurement region and avoid crosstalk between resonators.
 
-Physically speaking, the main parameters taken into account were the center conductor width and the gap to the ground of the waveguide such as what is shown in \textcolor{red}{Figure} which, as discussed \textcolor{red}{in the Theory chapter}, are the main contributing factors to the resonator's $Z_0$; as well as the total length of the resonator and the distance between the resonators and the feedline, which would in turn be the main contributing factors to the resonance frequency and the $Q_e$ accordingly.
+\begin{figure}[h]
+    \centering
+    \label{fig:CPWcross}
+    \includegraphics[width=0.6\textwidth]{figures/cpwg_drawing.pdf}
+    \caption{Reproduced from \cite{ChemandyCalc}}
+\end{figure}
+
+Physically speaking, the main parameters taken into account were the center conductor width and the gap to the ground of the waveguide such as what is shown in \ref{fig:} which, as discussed \textcolor{red}{in the Theory chapter}, are the main contributing factors to the resonator's $Z_0$; as well as the total length of the resonator and the distance between the resonators and the feedline, which would in turn be the main contributing factors to the resonance frequency and the $Q_e$ accordingly.
 
 A first estimation of the parameters was done using the expressions shown \textcolor{red}{in the Theory chapter} for the $\epsilon_{eff}$ which is directly related to the $f_r$ and the $Z_0$. At the same time, an initial set of reference parameters was taken from a study carried out by \cite{Biznarova2024}, which proved to be the layout with the highest $Q_i$ in the aforementioned review by \cite{Ghione1987}, in the particular case of 2D aluminum circuits. This initial set of parameters was of 20$\mu m$ and 10$\mu m$ for the center conductor width ($w$) and the gap to ground ($g$) respectively, and an aluminum thickness of 300nm. Due to the reference setup being of aluminum over silicon, the values for $w$ and $g$ were adapted for each of the substrates to be studied.
 
@@ -505,7 +513,7 @@ These differences between the expected results and the ones retrieved from the s
 
 Being that the value of $Z_0$ was higher than the one predicted from the initial expressions it is thought that the effects of the 300nm thickness were negligible in comparison to the effects of the increase in ground size. This can be mainly explained by the fact that the size of the ground in the layouts used for the simulations was around a fifth of the real size in the x axis and a third of the real size in the y axis, and a thickness of 300nm results in a very small relation between the cross-section surface and the total length of the resonator.
 
-\begin{figure}[ht]
+\begin{figure}[h]
     \centering
     % \begin{subfigure}{0.32\textwidth}
     %     \includegraphics[width=\linewidth]{figures/diamond_in_res.png}
@@ -551,8 +559,67 @@ Second, they confirm the boundary conditions discussed in \cref{GeneralCPW}. At 
 
 Finally, this agreement extends to the three substrates, which was expected due to the analytical behavior only being explained through the geometry of the system and the only effects caused by the $\epsilon_r$ being on the $f_r$ and subsequently on the total length of the resonator rather than the shape of the standing wave.
 
-
 \subsection{Fabrication of the resonators}
+
+\subsubsection{Fabrication runs}
+
+Once the final parameters were agreed to fit the general interests of this thesis they were sent out to the Max Planck Institute for Physics (MPP), which supplied the substrates to be studied. These substrates had the following specifications:
+
+\begin{itemize}
+    \item \textbf{Diamond substrate:} 
+    
+    Quantity: 2
+
+    Dimensions: 4.5 mm $\times$ 4.5 mm $\times$ 0.5 mm
+
+    Fabrication: Chemical vapor deposition (CVD)
+
+    \item \textbf{4H-SiC substrate:}
+    
+    Quantity: 2
+
+    Dimensions: 10 mm $times$ 10 mm $times$ 0.35 mm
+
+    Fabrication: Chemical vapor deposition (CVD)
+
+    \item \textbf{6H-SiC substrate:}
+    
+    Quantity: 2
+
+    Dimensions: 10 mm $times$ 10 mm $times$ 0.35 mm
+
+    Fabrication: Chemical vapor deposition (CVD)
+
+\end{itemize}
+
+The fabrication process carried out at MPP was divided in two runs. Firstly, an attempt using wet etching over a positive resist was made. This attempt turned out to be inconsistent, and the results were therefore discarded. Secondly, a lift-off run was tried. This second run resulted in a successful fabrication attempt for the SiC substrates, where the shape of the resonators was properly resolved, and the resist could be properly developed out of the sample's surface. For the diamond substrates both runs resulted in faulty circuits.
+
+The process of the first run was carried out with the following steps:
+
+\begin{enumerate}
+    \item The substrates were cleaned using an HF bath, which is crucial to ensure a clean interface with the Al that will not tamper with the $Q_i$ results.
+    \item An even 300 nm thick Al film was deposited on the samples using electron-beam evaporation under high vacuum conditions (UHV e-beam evaporation).
+    \item Spin-coating using micro resist technology's positive resist ma-P 1215 was done on each substrate.
+    \item The resist was exposed through a mask like the one shown in \ref{fig:PositiveResist}. This way the area where the Al coating was desired was protected by the resist.
+    \item The resist was developed using micro resist technology's ma-D 532/S.
+    \item Wet etching was carried out using phosphoric-acetic-nitric acid mixture (PAN etching).
+    \item The resist was stripped
+\end{enumerate}
+
+Furthermore, the process of the second run went as follows:
+
+\begin{enumerate}
+    \item The substrates were cleaned using an HF bath.
+    \item Spin-coating using micro resist technology's negative resist ma-N 1440 was done on each substrate.
+    \item The resist was exposed through a mask like the one shown in \ref{fig:NegativeResist}. This way, the area of the substrate where the aluminum film was desired was left exposed, and the metal would not stick to the areas where the resist remained.
+    \item The resist was developed using micro resist technology's ma-D 333/S.
+    \item An even 300 nm Al film was deposited using the same UHV e-beam evaporation technique used in the first run.
+    \item The remaining resist was lifted off along with the Al deposited on top of it.
+\end{enumerate}
+
+\subsubsection{Fabrication results}
+
+Once the second fabrication run was finished, the SiC chips which were checked with a microscope and looked to be ready for measurements were sent to IFAE's laboratory through mail. 
 
 \subsection{Measurements planning and setup}
 
