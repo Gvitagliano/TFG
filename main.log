@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  16 AUG 2026 05:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.7.30)  16 AUG 2026 22:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -910,18 +910,17 @@ Package pdftex.def Info: figures/TypeI_TypeII.png  used on input line 143.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./figures/SuperConducting_Transition.png> <./figures/Meissner_Oschenffeld.png>]
-<figures/Vortices.png, id=160, 416.757pt x 233.07076pt>
+<figures/Vortices.png, id=152, 416.757pt x 233.07076pt>
 File: figures/Vortices.png Graphic file (type png)
 <use figures/Vortices.png>
 Package pdftex.def Info: figures/Vortices.png  used on input line 152.
 (pdftex.def)             Requested size: 273.14923pt x 152.76025pt.
- [7 <./figures/TypeI_TypeII.png> <./figures/Vortices.png>]
+[6 <./figures/SuperConducting_Transition.png> <./figures/Meissner_Oschenffeld.png>] [7 <./figures/TypeI_TypeII.png> <./figures/Vortices.png>]
 Overfull \hbox (4.59087pt too wide) in paragraph at lines 174--175
 []\T1/cmr/m/n/12 This frame-work treats the in-ter-ac-tions be-tween elec-trons in-side the su-per-con-duc-tor through
  []
 
-<figures/EnergyBandGap.png, id=187, 473.97075pt x 443.256pt>
+<figures/EnergyBandGap.png, id=191, 473.97075pt x 443.256pt>
 File: figures/EnergyBandGap.png Graphic file (type png)
 <use figures/EnergyBandGap.png>
 Package pdftex.def Info: figures/EnergyBandGap.png  used on input line 185.
@@ -943,94 +942,94 @@ File: figures/Conformal_c.png Graphic file (type png)
 Package pdftex.def Info: figures/Conformal_c.png  used on input line 235.
 (pdftex.def)             Requested size: 182.09486pt x 174.1292pt.
  [11 <./figures/Conformal_a.png> <./figures/Conformal_b.png> <./figures/Conformal_c.png>] [12] [13] [14] [15] [16] [17]
-<figures/cpwg_drawing.pdf, id=305, 210.7875pt x 80.55093pt>
+<figures/cpwg_drawing.pdf, id=308, 210.7875pt x 80.55093pt>
 File: figures/cpwg_drawing.pdf Graphic file (type pdf)
 <use figures/cpwg_drawing.pdf>
-Package pdftex.def Info: figures/cpwg_drawing.pdf  used on input line 439.
+Package pdftex.def Info: figures/cpwg_drawing.pdf  used on input line 451.
 (pdftex.def)             Requested size: 273.14923pt x 104.38434pt.
 
 
-LaTeX Warning: Citation 'ChemandyCalc' on page 18 undefined on input line 440.
+LaTeX Warning: Citation 'ChemandyCalc' on page 18 undefined on input line 452.
 
 
-LaTeX Warning: Citation 'ChemandyCalc' on page 18 undefined on input line 440.
+LaTeX Warning: Citation 'ChemandyCalc' on page 18 undefined on input line 452.
 
 [18 <./figures/cpwg_drawing.pdf>]
 
-LaTeX Warning: Reference `tab:FinalParameters' on page 1 undefined on input line 456.
+LaTeX Warning: Reference `tab:FinalParameters' on page 1 undefined on input line 468.
 
 [19] [20]
 
-LaTeX Warning: Reference `fig:4HSiC_out' on page 1 undefined on input line 554.
+LaTeX Warning: Reference `fig:4HSiC_out' on page 1 undefined on input line 566.
 
 
-LaTeX Warning: Reference `fig:4HSiC_in' on page 1 undefined on input line 554.
+LaTeX Warning: Reference `fig:4HSiC_in' on page 1 undefined on input line 566.
 
 
-LaTeX Warning: Reference `fig:6HSiC_out' on page 1 undefined on input line 554.
+LaTeX Warning: Reference `fig:6HSiC_out' on page 1 undefined on input line 566.
 
 
-LaTeX Warning: Reference `fig:6HSiC_in' on page 1 undefined on input line 554.
+LaTeX Warning: Reference `fig:6HSiC_in' on page 1 undefined on input line 566.
 
 
-LaTeX Warning: Reference `fig:diamond_out' on page 1 undefined on input line 554.
+LaTeX Warning: Reference `fig:diamond_out' on page 1 undefined on input line 566.
 
 
-LaTeX Warning: Reference `fig:diamond_in' on page 1 undefined on input line 554.
+LaTeX Warning: Reference `fig:diamond_in' on page 1 undefined on input line 566.
 
 
-LaTeX Warning: Reference `fig:4HSiC_out' on page 1 undefined on input line 556.
+LaTeX Warning: Reference `fig:4HSiC_out' on page 1 undefined on input line 568.
 
 
-LaTeX Warning: Reference `fig:4HSiC_in' on page 1 undefined on input line 556.
+LaTeX Warning: Reference `fig:4HSiC_in' on page 1 undefined on input line 568.
 
 
-LaTeX Warning: Reference `fig:6HSiC_out' on page 1 undefined on input line 556.
+LaTeX Warning: Reference `fig:6HSiC_out' on page 1 undefined on input line 568.
 
 
-LaTeX Warning: Reference `fig:6HSiC_in' on page 1 undefined on input line 556.
+LaTeX Warning: Reference `fig:6HSiC_in' on page 1 undefined on input line 568.
 
 
-LaTeX Warning: Reference `fig:diamond_out' on page 1 undefined on input line 556.
+LaTeX Warning: Reference `fig:diamond_out' on page 1 undefined on input line 568.
 
 
-LaTeX Warning: Reference `fig:diamond_in' on page 1 undefined on input line 556.
+LaTeX Warning: Reference `fig:diamond_in' on page 1 undefined on input line 568.
 
 [21] [22]
 
-LaTeX Warning: Reference `fig:PositiveResist' on page 1 undefined on input line 605.
+LaTeX Warning: Reference `fig:PositiveResist' on page 1 undefined on input line 617.
 
 
-LaTeX Warning: Reference `fig:NegativeResist' on page 1 undefined on input line 616.
+LaTeX Warning: Reference `fig:NegativeResist' on page 1 undefined on input line 628.
 
 [23]
 
-LaTeX Warning: Reference `fig:Microscope' on page 1 undefined on input line 630.
+LaTeX Warning: Reference `fig:Microscope' on page 1 undefined on input line 642.
 
-<figures/Fridge_cryo.png, id=394, 695.59875pt x 751.30687pt>
+<figures/Fridge_cryo.png, id=397, 695.59875pt x 751.30687pt>
 File: figures/Fridge_cryo.png Graphic file (type png)
 <use figures/Fridge_cryo.png>
-Package pdftex.def Info: figures/Fridge_cryo.png  used on input line 640.
+Package pdftex.def Info: figures/Fridge_cryo.png  used on input line 652.
 (pdftex.def)             Requested size: 182.09486pt x 196.67645pt.
-<figures/Fridge_circuit.png, id=395, 670.00313pt x 930.47626pt>
+<figures/Fridge_circuit.png, id=398, 670.00313pt x 930.47626pt>
 File: figures/Fridge_circuit.png Graphic file (type png)
 <use figures/Fridge_circuit.png>
-Package pdftex.def Info: figures/Fridge_circuit.png  used on input line 641.
+Package pdftex.def Info: figures/Fridge_circuit.png  used on input line 653.
 (pdftex.def)             Requested size: 182.09486pt x 252.8789pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24] [25 <./figures/Fridge_cryo.png> <./figures/Fridge_circuit.png>] [26]
-Overfull \hbox (1.62323pt too wide) in paragraph at lines 675--675
+[24] [25 <./figures/Fridge_cryo.png> <./figures/Fridge_circuit.png>] [26] [27]
+Overfull \hbox (1.62323pt too wide) in paragraph at lines 699--699
 []\T1/cmr/m/n/12 Michael Tin-kham and Vic-tor Emery. ``\T1/cmr/m/it/12 In-tro-duc-tion to Su-per-con-duc-tiv-ity\T1/cmr/m/n/12 ''. In: \T1/cmr/m/it/12 Physics
  []
 
 
-Overfull \hbox (7.41277pt too wide) in paragraph at lines 675--675
+Overfull \hbox (7.41277pt too wide) in paragraph at lines 699--699
 \T1/cmr/m/n/12 p. 78. \T1/cmr/m/sc/12 issn\T1/cmr/m/n/12 : 2056-6387. \T1/cmr/m/sc/12 doi\T1/cmr/m/n/12 : [][]$\T1/cmtt/m/n/12 1 0  . 1 0 3 8  / s 4 1 5 3 4  -[] 0 2 4  -[] 0 0 8 6 8  -[] z $[][]\T1/cmr/m/n/12 . (Vis-ited on 07/29/2026). 
  []
 
-[27] [28] (main.aux)
+[28] [29] (main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -1051,17 +1050,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29920 strings out of 467510
- 589025 string characters out of 5408794
- 1187389 words of memory out of 5000000
- 58712 multiletter control sequences out of 15000+600000
+ 29927 strings out of 467510
+ 589106 string characters out of 5408794
+ 1188603 words of memory out of 5000000
+ 58716 multiletter control sequences out of 15000+600000
  654509 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,9n,80p,1955b,2073s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\gabri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (28 pages, 730553 bytes).
+Output written on main.pdf (29 pages, 736749 bytes).
 PDF statistics:
- 1054 PDF objects out of 1200 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
+ 1062 PDF objects out of 1200 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
  208 words of extra memory for PDF output out of 10000 (max. 10000000)
 

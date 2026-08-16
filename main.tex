@@ -94,7 +94,7 @@
 
 The objective of the following piece of research was to follow on the issue discussed by \cite{Charpentier2025}, about the importance of the threshold reached for $Q_i$ for 2-dimensional superconducting circuits designed for quantum computing; especially due to losses coming from TLS in substrate-metal interfaces. The approach that was decided on was the design of a resonator circuit targeting the maximization of $Q_i$ while keeping a representative system for the desired use, which is Al thin film superconducting circuits; and simultaneously avoiding factors outside what strictly concerns the substrate-metal interfaces.
 
-Because of the lack of research concerning the cryogenic-microwave properties of diamond, 4H-SiC and 6H-SiC an estimation of the resulting $Q_i$ proved to be difficult. As a result, the circuit was designed in such a way that several different values of $Q_e$ are explored so that it's more probable that a signal in the critically coupled regime could be achieved. This way, the resulting circuit for each substrate consists of a set of 4 $\lambda/4$ CPW resonators inductively coupled to a CPW feedline which is in turn connected to two launchers, one on each end.
+Because of the lack of research concerning the cryogenic-microwave properties of diamond, 4H-SiC and 6H-SiC, an estimation of the resulting $Q_i$ proved to be difficult. As a result, the circuit was designed in such a way that several different values of $Q_e$ are explored so that it's more probable that a signal in the critically coupled regime could be achieved. This way, the resulting circuit for each substrate consists of a set of 4 $\lambda/4$ CPW resonators inductively coupled to a CPW feedline which is in turn connected to two launchers, one on each end.
 
 These designs were simulated using the method of moments software Sonnet, which was useful for the calculation of the $\epsilon_r$ and $Z_0$, as well as the $f_r$ and making an estimation of the $Q_e$ from each simulated $S_{21}$ response.
 
@@ -102,7 +102,7 @@ These designs were simulated using the method of moments software Sonnet, which 
 
 \section{Theory background}
 
-In this chapter key theoretical concepts needed to understand the general workflow as well as to understand the results provided later on will be introduced. A section dedicated to general concepts of superconductivity will serve to understand the materials being used. Following this, a section describing the behavior of quarter-wave coplanar waveguide resonators will introduce and give a detailed explanation of the concepts and expressions used to make predictions for the overall design and analysis of the systems to be studied.
+In this chapter, key theoretical concepts needed to understand the general workflow, are introduced in order to understand the results provided later on. A section dedicated to general concepts of superconductivity will serve to understand the materials being used. Following this, a section describing the behavior of quarter-wave coplanar waveguide resonators will introduce and give a detailed explanation of the concepts and expressions used to make predictions for the overall design and analysis of the systems to be studied.
 
 \subsection{Superconductivity} \label{Superconductivity}
 
@@ -130,9 +130,9 @@ Firstly, a true superconductor experimentally shows a sudden drop in resistivity
     \label{fig:MeissnerOchsenfeld}
 \end{figure}
 
-Additionally, in the case of a superconductor, once the critical temperature is achieved, the magnetic field inside the material also becomes exactly zero; this phenomenon is called the Meissner-Ochsenfeld effect. The Meissner-Ochsenfeld effect consists in a phenomenon where the superconducting material arrives at the same state of equilibrium with $B = 0$ inside it independently of its previous state, as shown in \cref{fig:MeissnerOchsenfeld}. This means that whether there was an existing external magnetic field traversing the material or not, does not matter to its final state. It is worth noting that if the material did have an external magnetic field $H$ going through its volume, in order to expel it, it will become magnetized the opposite way such as $M = -H$; this is why superconductors can also be considered perfect diamagnets ($\chi = -1$).
+Additionally, in the case of a superconductor, once the critical temperature is achieved, the magnetic field inside the material also becomes exactly zero; this phenomenon called the Meissner-Ochsenfeld effect consists in the superconducting material arriving at the same state of equilibrium with $B = 0$ inside it, independently of its previous state, as shown in \cref{fig:MeissnerOchsenfeld}. This means that whether there was an existing external magnetic field traversing the material or not, does not matter to its final state. It is worth noting that if the material did have an external magnetic field $H$ going through its volume, in order to expel it, it would become magnetized the opposite way, such as $M = -H$; this is why superconductors can also be considered perfect diamagnets ($\chi = -1$).
 
-Considering that the measurement of resistivity employs the use of material that would add resistivity difficult to exclude from the results, the Meissner effect is the preferred experimental way of proving that a certain material does, in fact, present superconductivity; since the measurement of magnetization proves to be less invasive to the material.
+Considering that the equipment used for resistivity measurements adds resistivity that proves to be difficult to exclude from the results, the Meissner effect is the preferred experimental way of proving that a certain material does, in fact, present superconductivity; since the measurement of magnetization proves to be less invasive to the material.
 
 \subsubsection{London penetration depth and superconductivity types}
 
@@ -165,7 +165,7 @@ According to \cite{Lopez-Nunez2025}, when a thin-film's thickness is smaller tha
     \lambda = a \lambda_L \sqrt{\frac{\xi_0}{l}}.
 \end{equation}
 
-Where $a$ depends on the surface scattering type ($a \approx 1.33 \text{ for diffusive scattering, and } a \approx 1.15 \text{ for specular reflection}$ \cite{Tinkham1996}). This way, the effective penetration depth $\lambda$ becomes bigger as the thickness of the thin-film is reduced. This way, \cite{Lopez-Nunez2025} discusses how the thickness of the thin-film can be related to a transition in the superconductivity type of aluminum. In particular, they discuss how as the thickness of the film becomes larger, in an interval of [54nm, 207nm], the apparition of flux vortices decreases up to a point where the material appears to become a Type-II superconductor. This phenomenon gets also attributed to other aspects of the geometry of the film; in this case, the geometry of the resonators, including the ratio between the thickness of the film and the width of the conductor of the CPW resonators used for measurements. 
+Where $a$ depends on the surface scattering type ($a \approx 1.33 \text{ for diffusive scattering, and } a \approx 1.15 \text{ for specular reflection}$ \cite{Tinkham1996}). This way, the effective penetration depth $\lambda$ becomes bigger as the thickness of the thin-film is reduced. This way, \cite{Lopez-Nunez2025} discusses how the thickness of the thin-film can be related to a transition in the superconductivity type of aluminum. In particular, they discuss how, as the thickness of the film becomes larger, in an interval of [54nm, 207nm], the apparition of flux vortices decreases up to a point where the material appears to become a Type-II superconductor. This phenomenon is also linked to other aspects of the geometry of the film; in this case, the geometry of the resonators, including the ratio between the thickness of the film and the width of the conductor of the CPW resonators used for measurements. 
 
 \subsubsection{BCS theory and quasiparticles}
 
@@ -361,6 +361,18 @@ Where $p_i$ represents the participation ratio of the respective interface; and 
 \end{equation}
 
 Where $\langle n \rangle$ represents the number of photons inside the resonator and $n_c$ represents the critical photon number needed to saturate the TLS.
+
+Furthermore, the value of $\delta^0_{TLS}$ is also sensitive to temperature as follows \cite{Gao2008}
+
+\begin{equation}
+    \label{delta(T)}
+    \delta_{TLS} = \delta^0_{TLS} \tanh\left(\frac{\hbar \omega}{2 k_B T}\right)
+\end{equation}
+
+\begin{equation}
+    \label{Qi(T)}
+    \frac{1}{Q_i(T)} = F \delta^0_{TLS} \tanh\left(\frac{\hbar \omega}{2 k_B T}\right)
+\end{equation}
 
 All of these contributors to the loss of energy in the system are part of what is called the internal quality factor. These are losses that are intrinsic to the circuit materials, environment and geometric configuration. 
 
@@ -570,7 +582,7 @@ Once the final parameters were agreed to fit the general interests of this thesi
     
     Quantity: 2
 
-    Dimensions: 4.5 mm $\times$ 4.5 mm $\times$ 0.5 mm
+    Dimensions: 4.5 mm $\times$ 4.5 mm $\times$ 0.50 mm
 
     Fabrication: Chemical vapor deposition (CVD)
 
@@ -578,7 +590,7 @@ Once the final parameters were agreed to fit the general interests of this thesi
     
     Quantity: 2
 
-    Dimensions: 10 mm $\times$ 10 mm $\times$ 0.35 mm
+    Dimensions: 10.00 mm $\times$ 10.00 mm $\times$ 0.35 mm
 
     Fabrication: Chemical vapor deposition (CVD)
 
@@ -586,7 +598,7 @@ Once the final parameters were agreed to fit the general interests of this thesi
     
     Quantity: 2
 
-    Dimensions: 10 mm $\times$ 10 mm $\times$ 0.35 mm
+    Dimensions: 10.00 mm $\times$ 10.00 mm $\times$ 0.35 mm
 
     Fabrication: Chemical vapor deposition (CVD)
 
@@ -643,7 +655,7 @@ Once the chips were obtained and available for measurement, it was of great impo
     \label{fig:Fridge}
 \end{figure}
 
-This experiment was planned to be carried out in a Leiden Cryogenics fridge using a setup like the one shown in \ref{fig:Fridge}. It is of interest that the stage where the chip is set to be measured will be at $\sim 20$K. Furthermore, the use of a Pb magnetic shield was thought to avoid losses due to external magnetic fields or external radiation.
+This experiment was planned to be carried out in a Leiden Cryogenics fridge using a setup like the one shown in \ref{fig:Fridge}. It is of interest that the stage where the chip is set to be measured will be at $\sim 20$ mK. Furthermore, the use of a Pb magnetic shield was thought to avoid losses due to external magnetic fields or external radiation.
 
 Furthermore, in order to have proper control over the input signal and be able to measure the output properly a setup such as the one shown in \cref{fig:Fridge} was employed. In these schematics several attenuators can be observed between the input signal generator and the device; this is motivated by the fact that the power interval desired to work in is in the single photon regime. Also, low band pass filters can be seen right before and after the connection to the device; these filters serve as a way to prevent noise affecting the measurements.
 
@@ -655,12 +667,12 @@ In order to study the same behaviors discussed in \cref{SimuResultsSection}, the
     \item A coarse frequency sweep around the respective $f_r$ of each resonator in order to find where the real dip was located.
     \item Once the dip was located, a finer sweep, closing in on the $f_r$ and with a higher intermediate frequency (IF) in order to better resolve the spectrum.
     \item Once a properly resolved $S_{21}$ spectrum is achieved, exporting the $\Re S_{21}$ and $\Im S_{21}$ spectrum.
-    \item Using Lopez-Nuñez's method \cite{Lopez-Nunez2025}, extracting the desired data related to $Q_i$ as it is the interest of this thesis; as well as data related to $\epsilon_{eff}, Z_0$ and $Q_c$ in order to compare the results from the fabricated chips with those gotten from the Sonnet simulations.
+    \item Using the $S_{21}$ method described in \cite{Lopez-Nunez2025}, extracting the desired data related to $Q_i$ as it is the interest of this thesis; as well as data related to $\epsilon_{eff}, Z_0$ and $Q_c$ in order to compare the results from the fabricated chips with those gotten from the Sonnet simulations.
 \end{enumerate}
 
-Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step, with increasingly less attenuation. This would then allow us to perform a sweep in power. This is of interest in order to later on be able to tell whether the energy losses where due to dielectric TLS.
+Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step, with increasingly less attenuation. This would then allow us to perform a sweep in power. Moreover, this is of interest in order to later on be able to tell whether the energy losses where due to dielectric TLS.
 
-This way, the resulting spectrum obtained from the measurements should look similar to those described in \cref{Qfactor,SimuResultsSection}. This means properly fitting the complex $S_{21}$ spectrum to the expression presented by Lopez-Nuñez, et al. \cite{Lopez-Nunez2025}.
+This way, the resulting spectrum obtained from the measurements should look similar to those described in \cref{Qfactor,SimuResultsSection}; which means properly fitting the complex $S_{21}$ spectrum to the expression presented by \cite{Lopez-Nunez2025}.
 
 The real $f_r$ are expected to fall slightly under the predicted values. Also, the experimental values of $Q_c$ are expected to vary significantly, especially at higher values, due to its high sensitivity to any variation in coupling distance.
 
@@ -668,7 +680,19 @@ Due to fabrication and cryostat scheduling constraints, the measurements explain
 
 \section{Conclusions and outlook}
 
+In this thesis, an in-depth analysis of $\lambda/4$ CPW resonator theory was carried out; encompassing general superconductivity phenomenology, focusing on critical parameters and magnetic flux vortices; and general CPW resonator behavior, with a focus on estimations of $\epsilon_{eff}$ and $Z_0$, as well as a general description of loss channels in the type of circuit studied in this work.
 
+The predictions made possible from the theoretical study were used for the design of a series of chips tailored for the substrates under study. Additionally, experimental design considerations such as the lack of knowledge of the value of $Q_i$ was also taken into account in order to achieve critical coupling. Finally, each chip in the ended up consisting in four CPW resonators each with varying $f_r$ and $Q_c$ values.
+
+These resonators were simulated using the method of moments software Sonnet Software. The results of these simulations served as verification of the overall electromagnetic behavior of the circuit, including the current density distribution which proved the resonant state and mode; as well as better estimations for the values of $\epsilon{eff}$, $Z_0$ and $Q_c$. The results gotten from these simulations was used to adjust the final parameters of the resonators, which were used for the layouts sent to MPP in Munich, Germany for fabrication.
+
+Once these chips were fabricated, they were assessed for measurement; searching for discontinuities in transmission lines that could cause shorts or open ends which would compromise the measurements. All in all, one 6H-SiC was found to be clearly ready for measurements.
+
+To fulfill the thesis' objectives, the considerations on the setup covered the usage of a cryogenic fridge, capable of arriving at temperatures of $\sim 20$ mK; and a circuit setup including infrared and LBP filters, as well as TWPA style amplifiers, in order to enable working in the low-photon number regime, as well as increasing the SNR. 
+
+Additionally, the considerations on the procedure covered the execution of a temperature sweep as well as a power sweep of $Q_i$. In this case, the temperature sweep ($Q_i(T)$) serves for the extraction of $\delta^0_{TLS}$; and the power sweep ($Q_i(P)$) served as verification of the saturation of TLS.
+
+Due to fabrication and cryostat scheduling constraints, cryogenic measurements of the measurement-ready 6H-SiC chip could not be carried out in the scope of this thesis. Consequently, the immediate continuation of this work involves executing the outlined frequency, temperature and power sweeps on the 6H-SiC sample to extract its internal quality factor, as well as making a first measurement of 6H-SiC's $\delta^0_TLS$. Future iterations will focus on the optimization of the fabrication process, as well as the expansion of the design towards full-wafer fabrication masks. 
 
 \newpage
 
