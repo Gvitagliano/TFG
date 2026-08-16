@@ -637,23 +637,38 @@ Once the chips were obtained and available for measurement, it was of great impo
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/Fridge_cryo.png}
-    \caption{Reproduced from \cite{LopezNunez2024}. Cryogenics schematics of Bluefors fridge, analogous to Leiden fridge setup.}
-    \label{fig:FridgeCryo}
+    \includegraphics[width=0.4\textwidth]{figures/Fridge_cryo.png}
+    \includegraphics[width=0.4\textwidth]{figures/Fridge_circuit.png}
+    \caption{Reproduced from \cite{LopezNunez2024}. Cryogenics schematics of Bluefors fridge, analogous to Leiden fridge setup. Circuitry schematics of Bluefors fridge, analogous to Leiden fridge setup.}
+    \label{fig:Fridge}
 \end{figure}
 
-This experiment was thought to be carried out in a Leiden Cryogenics fridge using a setup like the one shown in \ref{fig:FridgeCryo}. It is of interest that the stage where the chip is set to be measured will be at $\sim 20$K. Furthermore, the use of a Pb magnetic shield was thought to avoid losses due to external magnetic fields or external radiation.
+This experiment was planned to be carried out in a Leiden Cryogenics fridge using a setup like the one shown in \ref{fig:Fridge}. It is of interest that the stage where the chip is set to be measured will be at $\sim 20$K. Furthermore, the use of a Pb magnetic shield was thought to avoid losses due to external magnetic fields or external radiation.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.6\textwidth]{figures/Fridge_circuit.png}
-    \caption{Reproduced from \cite{LopezNunez2024}. Circuitry schematics of Bluefors fridge, analogous to Leiden fridge setup.}
-    \label{fig:FridgeCircuit}
-\end{figure}
+Furthermore, in order to have proper control over the input signal and be able to measure the output properly a setup such as the one shown in \cref{fig:Fridge} was employed. In these schematics several attenuators can be observed between the input signal generator and the device; this is motivated by the fact that the power interval desired to work in is in the single photon regime. Also, low band pass filters can be seen right before and after the connection to the device; these filters serve as a way to prevent noise affecting the measurements.
 
-Furthermore, in order to have proper control over the input signal and be able to measure the output properly a setup such as the one shown in \ref{fig:FridgeCircuit} was employed. In these schematics several attenuators can be observed between the input signal generator and the device; this is motivated by the fact that the power interval desired to work in is in the single photon regime. Also, low band pass filters can be seen right before and after the connection to the device; these filters serve as a way to prevent noise affecting the measurements.
+Additionally, two \textcolor{red}{amplifiers} can be seen in the second stage of the fridge and right before the output acquisition. These amplifiers are crucial to the measurement of the device's response, as the power output has been diminished almost to zero by the attenuators on the input side of the circuit.
 
-Additionally, two 
+In order to study the same behaviors discussed in \cref{SimuResultsSection}, the measurement was planned to be as follows:
+
+\begin{enumerate}
+    \item A coarse frequency sweep around the respective $f_r$ of each resonator in order to find where the real dip was located.
+    \item Once the dip was located, a finer sweep, closing in on the $f_r$ and with a higher intermediate frequency (IF) in order to better resolve the spectrum.
+    \item Once a properly resolved $S_{21}$ spectrum is achieved, exporting the $\Re S_{21}$ and $\Im S_{21}$ spectrum.
+    \item Using Lopez-Nuñez's method \cite{Lopez-Nunez2025}, extracting the desired data related to $Q_i$ as it is the interest of this thesis; as well as data related to $\epsilon_{eff}, Z_0$ and $Q_c$ in order to compare the results from the fabricated chips with those gotten from the Sonnet simulations.
+\end{enumerate}
+
+Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step, with increasingly less attenuation. This would then allow us to perform a sweep in power. This is of interest in order to later on be able to tell whether the energy losses where due to dielectric TLS.
+
+This way, the resulting spectrum obtained from the measurements should look similar to those described in \cref{Qfactor,SimuResultsSection}. This means properly fitting the complex $S_{21}$ spectrum to the expression presented by Lopez-Nuñez, et al. \cite{Lopez-Nunez2025}.
+
+The real $f_r$ are expected to fall slightly under the predicted values. Also, the experimental values of $Q_c$ are expected to vary significantly, especially at higher values, due to its high sensitivity to any variation in coupling distance.
+
+Due to fabrication and cryostat scheduling constraints, the measurements explained were not carried out within the scope of this thesis. Further work to measure the chips discussed in this text is necessary; as well as future fabrication runs to make up for the unviable chips, including the diamond substrates and the 4H-SiC substrates. Discussions surrounding the development of a mask for each kind of substrate with intentions of fabricating larger wafers were taking place at the time of this work's end.
+
+\section{Conclusions and outlook}
+
+
 
 \newpage
 
