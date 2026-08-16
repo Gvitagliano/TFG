@@ -15,5 +15,5 @@
 \contentsline {subsection}{\numberline {3.4}Fabrication of the resonators}{22}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Fabrication runs}{22}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Fabrication results}{23}{subsubsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.5}Measurements planning and setup}{23}{subsection.3.5}%
-\contentsline {section}{References}{24}{section*.13}%
+\contentsline {subsection}{\numberline {3.5}Measurements planning and setup}{24}{subsection.3.5}%
+\contentsline {section}{References}{25}{section*.15}%

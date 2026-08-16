@@ -22,47 +22,49 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: main-blx.bib
 Database file #2: TFG.bib
+Warning--I didn't find a database entry for "ChemandyCalc"
 Biblatex version: 3.21
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 17 entries,
             6402 wiz_defined-function locations,
-            1371 strings with 26351 characters,
-and the built_in function-call counts, 178432 in all, are:
-= -- 13989
-> -- 5078
-< -- 642
-+ -- 8027
-- -- 3517
-* -- 11639
-:= -- 22666
+            1376 strings with 30693 characters,
+and the built_in function-call counts, 183568 in all, are:
+= -- 14475
+> -- 5185
+< -- 678
++ -- 8148
+- -- 3538
+* -- 12041
+:= -- 23229
 add.period$ -- 0
 call.type$ -- 17
-change.case$ -- 256
-chr.to.int$ -- 390
+change.case$ -- 286
+chr.to.int$ -- 396
 cite$ -- 32
-duplicate$ -- 18155
-empty$ -- 14173
-format.name$ -- 1191
-if$ -- 32664
+duplicate$ -- 18532
+empty$ -- 14568
+format.name$ -- 1236
+if$ -- 33755
 int.to.chr$ -- 0
-int.to.str$ -- 41
+int.to.str$ -- 43
 missing$ -- 0
-newline$ -- 794
-num.names$ -- 740
-pop$ -- 6049
+newline$ -- 814
+num.names$ -- 805
+pop$ -- 6053
 preamble$ -- 1
-purify$ -- 393
+purify$ -- 426
 quote$ -- 0
-skip$ -- 3291
+skip$ -- 3450
 stack$ -- 0
-substring$ -- 26839
-swap$ -- 3330
-text.length$ -- 499
+substring$ -- 27829
+swap$ -- 3428
+text.length$ -- 510
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 565
+type$ -- 564
 warning$ -- 0
-while$ -- 2675
+while$ -- 2730
 width$ -- 0
-write$ -- 778
+write$ -- 798
+(There was 1 warning)

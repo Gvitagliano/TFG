@@ -121,7 +121,7 @@ When talking about superconductivity, the first thought that comes to mind is co
     \label{fig:SupercondPhaseTrans}
 \end{figure}
 
-Firstly, a true superconductor experimentally shows a sudden drop in resistivity to exactly zero as shown in \ref{fig:SupercondPhaseTrans}, at a given temperature called the critical temperature of a superconductor ($T_c$). This sudden drop, is an indicator of a clear phase transition between what is called a normal conductor and a superconductor.
+Firstly, a true superconductor experimentally shows a sudden drop in resistivity to exactly zero as shown in \cref{fig:SupercondPhaseTrans}, at a given temperature called the critical temperature of a superconductor ($T_c$). This sudden drop, is an indicator of a clear phase transition between what is called a normal conductor and a superconductor.
 
 \begin{figure}[h]
     \centering
@@ -130,7 +130,7 @@ Firstly, a true superconductor experimentally shows a sudden drop in resistivity
     \label{fig:MeissnerOchsenfeld}
 \end{figure}
 
-Additionally, in the case of a superconductor, once the critical temperature is achieved, the magnetic field inside the material also becomes exactly zero; this phenomenon is called the Meissner-Ochsenfeld effect. The Meissner-Ochsenfeld effect consists in a phenomenon where the superconducting material arrives at the same state of equilibrium with $B = 0$ inside it independently of its previous state, as shown in \ref{fig:MeissnerOchsenfeld}. This means that whether there was an existing external magnetic field traversing the material or not, does not matter to its final state. It is worth noting that if the material did have an external magnetic field $H$ going through its volume, in order to expel it, it will become magnetized the opposite way such as $M = -H$; this is why superconductors can also be considered perfect diamagnets ($\chi = -1$).
+Additionally, in the case of a superconductor, once the critical temperature is achieved, the magnetic field inside the material also becomes exactly zero; this phenomenon is called the Meissner-Ochsenfeld effect. The Meissner-Ochsenfeld effect consists in a phenomenon where the superconducting material arrives at the same state of equilibrium with $B = 0$ inside it independently of its previous state, as shown in \cref{fig:MeissnerOchsenfeld}. This means that whether there was an existing external magnetic field traversing the material or not, does not matter to its final state. It is worth noting that if the material did have an external magnetic field $H$ going through its volume, in order to expel it, it will become magnetized the opposite way such as $M = -H$; this is why superconductors can also be considered perfect diamagnets ($\chi = -1$).
 
 Considering that the measurement of resistivity employs the use of material that would add resistivity difficult to exclude from the results, the Meissner effect is the preferred experimental way of proving that a certain material does, in fact, present superconductivity; since the measurement of magnetization proves to be less invasive to the material.
 
@@ -145,7 +145,7 @@ Of interest to this thesis is the classification of superconductors into two typ
     \label{fig:SupcondTypes}
 \end{figure}
 
-In a Type-I superconductor, the same way there exists a critical temperature $T_c$ or a critical electrical current $I_c$ for which superconductivity is suddenly broken, there exists a critical magnetic field $H_c$ for which resistivity ceases to be exactly zero and the Meissner effect ceases to occur. This means that the material's magnetization becomes zero as it is represented in \ref{fig:SupcondTypes}, and therefore the lines of the external field $H$ suddenly penetrate the material normally.
+In a Type-I superconductor, the same way there exists a critical temperature $T_c$ or a critical electrical current $I_c$ for which superconductivity is suddenly broken, there exists a critical magnetic field $H_c$ for which resistivity ceases to be exactly zero and the Meissner effect ceases to occur. This means that the material's magnetization becomes zero as it is represented in \cref{fig:SupcondTypes}, and therefore the lines of the external field $H$ suddenly penetrate the material normally.
 
 \begin{figure}[h]
     \centering
@@ -154,7 +154,7 @@ In a Type-I superconductor, the same way there exists a critical temperature $T_
     \label{fig:Vortices}
 \end{figure}
 
-On the other hand, on a Type-II superconductor this transition towards normal conductivity is much smoother. In this case, rather than taking one critical magnetic field $H_c$, two critical field values are studied, $H_{c1}$ that represents the value of $H$ for which $M$ stops strictly behaving as $M = - H$; and $H_{c2}$ that represents the value of $H$ for which $M$ exactly zero. As a consequence of this behavior, magnetic flux is able to partially penetrate the material in the interval between $H_{c1} \text{ and } H_{c2}$, in the form of discrete flux vortices as it is represented in \ref{fig:Vortices}.
+On the other hand, on a Type-II superconductor this transition towards normal conductivity is much smoother. In this case, rather than taking one critical magnetic field $H_c$, two critical field values are studied, $H_{c1}$ that represents the value of $H$ for which $M$ stops strictly behaving as $M = - H$; and $H_{c2}$ that represents the value of $H$ for which $M$ exactly zero. As a consequence of this behavior, magnetic flux is able to partially penetrate the material in the interval between $H_{c1} \text{ and } H_{c2}$, in the form of discrete flux vortices as it is represented in \cref{fig:Vortices}.
 
 Around these vortices the magnetic field decays radially over the characteristic length known as the London penetration depth $\lambda_L$. In the context of this thesis, it is notable how this quantity might behave in thin-film superconductors.
 
@@ -184,7 +184,7 @@ which is overcome, within a narrow energy window near the Fermi surface, by the 
     \centering
     \includegraphics[width=0.6\textwidth]{figures/EnergyBandGap.png}
     \caption{Reproduced from \cite{Annett2003}}
-    \label{EnergyBandGap}
+    \label{fig:EnergyBandGap}
 \end{figure}
 
 This attractive interaction shows itself as a formation of an energy gap in the excitation spectrum, 
@@ -194,7 +194,7 @@ This attractive interaction shows itself as a formation of an energy gap in the 
     2\Delta(0) = 3.52 k_B T_c,
 \end{equation}
 
- which, as can be seen in \ref{EnergyBandGap}, remains centered at the Fermi level. This result is especially notable, as it explains the robustness of the Cooper pair against dissipation.
+ which, as can be seen in \cref{fig:EnergyBandGap}, remains centered at the Fermi level. This result is especially notable, as it explains the robustness of the Cooper pair against dissipation.
 
 Additionally, when one takes into account collisions with imperfections within the superconductor's volume or phonons, the results show a complex conductivity for the superconducting state \cite{Glover1957}
 
@@ -203,7 +203,7 @@ Additionally, when one takes into account collisions with imperfections within t
     \sigma = \sigma_1 + i \sigma_2.
 \end{equation}
 
-Where the real part represents the energy losses due to collisions with phonons with energy of the order of the energy gap \ref{EnergyGap}, as well as with imperfections in the material. These collisions can lead to Cooper pairs breaking, which produces two unpaired Bogoliubov quasiparticles. These quasiparticles behave closer to normal conductivity and therefore dissipate energy in an analogous manner to Ohmic losses.
+Where the real part represents the energy losses due to collisions with phonons with energy of the order of the energy gap \cref{EnergyGap}, as well as with imperfections in the material. These collisions can lead to Cooper pairs breaking, which produces two unpaired Bogoliubov quasiparticles. These quasiparticles behave closer to normal conductivity and therefore dissipate energy in an analogous manner to Ohmic losses.
 
 \subsection{Quarter-wave coplanar waveguide resonators} \label{QWCPWR}
 
@@ -237,7 +237,7 @@ For distributed-element structures with simple field symmetry, such as coaxial l
     \label{fig:ConfMapping}
 \end{figure}
 
-In this particular case, conformal mapping proves useful as the equations to be described are the Laplace equations, which are notoriously invariant to conformal transformations. According to the results shown by \cite{Gevorgian1995} and \cite{RaineeN2001}, by using the Christoffel-Schwartz transformation in order to compute the total capacitance as the sum of the capacitances computed in the partial regions shown in \ref{fig:ConfMapping} such as:
+In this particular case, conformal mapping proves useful as the equations to be described are the Laplace equations, which are notoriously invariant to conformal transformations. According to the results shown by \cite{Gevorgian1995} and \cite{RaineeN2001}, by using the Christoffel-Schwartz transformation in order to compute the total capacitance as the sum of the capacitances computed in the partial regions shown in \cref{fig:ConfMapping} such as:
 
 \begin{equation}
     \label{capacitance}
@@ -305,7 +305,7 @@ It is also worth noting the importance of properly taking into account the imped
     |\Gamma| \approx \frac{|Z_L - Z_0|}{2 \sqrt{Z_0 Z_L}} |\cos\theta|.
 \end{equation}
 
-Where $Z_0$ is the characteristic impedance of the transmission line, as seen in \ref{impedance}, and $Z_L$ is the loading impedance, which is defined as the impedance value terminating the transmission line; which in our case matches the impedance of the coaxial cable feeding the signal. Analyzing the expression, one can notice that the closer the characteristic impedance is to the load impedance, the lower the reflection coefficient will be, which is desirable when working with transmission readouts.
+Where $Z_0$ is the characteristic impedance of the transmission line, as seen in \cref{impedance}, and $Z_L$ is the loading impedance, which is defined as the impedance value terminating the transmission line; which in our case matches the impedance of the coaxial cable feeding the signal. Analyzing the expression, one can notice that the closer the characteristic impedance is to the load impedance, the lower the reflection coefficient will be, which is desirable when working with transmission readouts.
 
 One way to study the resonance frequency and overall physics of a coplanar waveguide resonator circuit are scattering parameters, often represented through the scattering matrix such as \cite{Pozar2012}
 
@@ -416,11 +416,11 @@ From this expression one can see how there are three possible limits:
     \item \textbf{Overcoupled ($g \gg 1$):} the value of $S_{21}$ approaches 0; meaning that the entirety of the signal is transferred to the resonator and none is transmitted.
 \end{itemize}
 
-In order to further understand the $S_{21}$ magnitude and phase spectrum, one must study the full expression \ref{Gao_expanded}. At first glance, it is notable that, at resonance, the imaginary term disappears, while the real term reaches its maximum value, which can be observed in \ref{Gao_resonance}. It proves especially useful to study the $S_{21}$ spectrum as a complex number of the form $S_{21} = |S_{21}|e^{i\phi}$; where the modulus is the quantity represented in the magnitude spectrum of the $S_{21}$ response, and $\phi$ is a phase that arises from a frequency dependent phase response introduced by the resonator into the transmitted signal.
+In order to further understand the $S_{21}$ magnitude and phase spectrum, one must study the full expression \cref{Gao_expanded}. At first glance, it is notable that, at resonance, the imaginary term disappears, while the real term reaches its maximum value, which can be observed in \cref{Gao_resonance}. It proves especially useful to study the $S_{21}$ spectrum as a complex number of the form $S_{21} = |S_{21}|e^{i\phi}$; where the modulus is the quantity represented in the magnitude spectrum of the $S_{21}$ response, and $\phi$ is a phase that arises from a frequency dependent phase response introduced by the resonator into the transmitted signal.
 
 From this it is evident that the value of $Q_L$ has a significant effect on the width of the $S_{21}$ magnitude dip. This means that as $Q_L$ becomes bigger the dip becomes narrower, and in contrast, as it becomes smaller, the dip becomes broader. Combined with the discussed coupling regimes, it is of interest to this thesis to study how the $S_{21}$ magnitude response will respond with changes in $Q_c$.
 
-As we have seen, increases in $g$ lead to a deeper dip in $S_{21}$ which makes the signal easier to measure. Additionally, increases in $Q_L$ lead to a narrower signal, which makes the analysis of the signal easier and more exact. This is especially important as $g$ is inversely related to $Q_c$; the opposite of $Q_L$ which increases with $Q_c$ as seen in \ref{Q_L}. Hence, different coupling regimes are more desirable for different uses. In the case of sensing, the dip depth is more relevant than its width, and therefore an overcoupled resonator is desirable. On the other hand, for characterization or device control the dip width and data analysis more relevant than the sensitivity for the resonator; as a result critically coupled resonators are the most desirable, since undercoupled resonators usually can not be measured with standard equipment, and critical coupling maximizes the depth of the dip in the $S_{21}$ magnitude response while leaving its shape easy to analyze.
+As we have seen, increases in $g$ lead to a deeper dip in $S_{21}$ which makes the signal easier to measure. Additionally, increases in $Q_L$ lead to a narrower signal, which makes the analysis of the signal easier and more exact. This is especially important as $g$ is inversely related to $Q_c$; the opposite of $Q_L$ which increases with $Q_c$ as seen in \cref{Q_L}. Hence, different coupling regimes are more desirable for different uses. In the case of sensing, the dip depth is more relevant than its width, and therefore an overcoupled resonator is desirable. On the other hand, for characterization or device control the dip width and data analysis more relevant than the sensitivity for the resonator; as a result critically coupled resonators are the most desirable, since undercoupled resonators usually can not be measured with standard equipment, and critical coupling maximizes the depth of the dip in the $S_{21}$ magnitude response while leaving its shape easy to analyze.
 
 \section{Resonator design and simulations}
 
@@ -436,16 +436,16 @@ Once all of these factors were properly taken into account, it was decided that 
 
 \begin{figure}[h]
     \centering
-    \label{fig:CPWcross}
     \includegraphics[width=0.6\textwidth]{figures/cpwg_drawing.pdf}
     \caption{Reproduced from \cite{ChemandyCalc}}
+    \label{fig:CPWcross}
 \end{figure}
 
-Physically speaking, the main parameters taken into account were the center conductor width and the gap to the ground of the waveguide such as what is shown in \ref{fig:} which, as discussed \textcolor{red}{in the Theory chapter}, are the main contributing factors to the resonator's $Z_0$; as well as the total length of the resonator and the distance between the resonators and the feedline, which would in turn be the main contributing factors to the resonance frequency and the $Q_e$ accordingly.
+Physically speaking, the main parameters taken into account were the center conductor width and the gap to the ground of the waveguide such as what is shown in \cref{fig:CPWcross} which, as discussed in \cref{GeneralCPW}, are the main contributing factors to the resonator's $Z_0$; as well as the total length of the resonator and the distance between the resonators and the feedline, which would in turn be the main contributing factors to the resonance frequency and the $Q_e$ accordingly.
 
-A first estimation of the parameters was done using the expressions shown \textcolor{red}{in the Theory chapter} for the $\epsilon_{eff}$ which is directly related to the $f_r$ and the $Z_0$. At the same time, an initial set of reference parameters was taken from a study carried out by \cite{Biznarova2024}, which proved to be the layout with the highest $Q_i$ in the aforementioned review by \cite{Ghione1987}, in the particular case of 2D aluminum circuits. This initial set of parameters was of 20$\mu m$ and 10$\mu m$ for the center conductor width ($w$) and the gap to ground ($g$) respectively, and an aluminum thickness of 300nm. Due to the reference setup being of aluminum over silicon, the values for $w$ and $g$ were adapted for each of the substrates to be studied.
+A first estimation of the parameters was done using the expressions \cref{impedance,permittivity} for the $\epsilon_{eff}$ which is directly related to the $f_r$ and the $Z_0$. At the same time, an initial set of reference parameters was taken from a study carried out by \cite{Biznarova2024}, which proved to be the layout with the highest $Q_i$ in the aforementioned review by \cite{Ghione1987}, in the particular case of 2D aluminum circuits. This initial set of parameters was of 20$\mu m$ and 10$\mu m$ for the center conductor width ($w$) and the gap to ground ($g$) respectively, and an aluminum thickness of 300nm. Due to the reference setup being of aluminum over silicon, the values for $w$ and $g$ were adapted for each of the substrates to be studied.
 
-As it is shown \textcolor{red}{in the Theory chapter}, both the $\epsilon_{eff}$ and the $Z_0$ come mainly given by the geometry of the CPW and the $\epsilon_r$ of the substrate. Therefore, the parameters mentioned in the previous paragraph were adapted for the values of $\epsilon_r$ for diamond, 4H-SiC and 6H-SiC were retrieved from references \cite{Griesmayer, Li2024, Patrick1970} respectively, which was 5.7 for diamond; and in the case of the two kinds of SiC, due to being anisotropic materials, 9.77 for the ordinary axis and 10.2 for the extraordinary axis for 4H-SiC and for 6H-SiC 9.66 for the ordinary axis and 10.3 for the extraordinary axis; in the cases of SiC, the xy-plane of the substrate was taken as parallel to the ordinary axis for the purpose of calculations. The adjusted values of both $w$ and $g$ were finally 20$\mu m$ and 10$\mu m$ respectively for both SiC orientations, and 20$\mu m$ and 4$\mu m$ respectively for diamond.
+As it is shown \textcolor{red}{in the Theory chapter}, both the $\epsilon_{eff}$ and the $Z_0$ come mainly given by the geometry of the CPW and the $\epsilon_r$ of the substrate. Therefore, the parameters mentioned in the previous paragraph were adapted for the values of $\epsilon_r$ for diamond, 4H-SiC and 6H-SiC that were retrieved from references \cite{Griesmayer, Li2024, Patrick1970} respectively, which was 5.7 for diamond; and in the case of the two kinds of SiC, due to being anisotropic materials, 9.77 for the ordinary axis and 10.2 for the extraordinary axis for 4H-SiC; and for 6H-SiC 9.66 for the ordinary axis and 10.3 for the extraordinary axis; in the cases of SiC, the xy-plane of the substrate was taken as parallel to the ordinary axis for the purpose of calculations. The adjusted values of both $w$ and $g$ were finally 20$\mu m$ and 10$\mu m$ respectively for both SiC orientations, and 20$\mu m$ and 4$\mu m$ respectively for diamond.
 
 \subsection{Simulation iterations} \label{SimIterations}
 
@@ -453,11 +453,11 @@ After estimating these initial parameters, a series of numerical simulations wer
 
 This process was done in an iterative manner; where, for each resonator of each substrate, firstly a coarse frequency sweep of 300 points was done in order to adjust the length of the resonator taking into account the $\epsilon_{eff}$ calculated by Sonnet and get closer to the desired $f_r$. Then, with the updated layout, a new coarse simulation was done in a 200MHz interval around an educated estimation of the $f_r$ in order to get a first indication of the power dip in the signal. Then, finer simulations of 600 and 800 points were done in progressively smaller intervals around the $f_r$ until the dip stopped growing vertically, which meant that the signal had been finely resolved closely around the $f_r$. Finally, the resolved signal was analyzed using the method developed by \cite{Lopez-Nunez2025}, which was useful to have a proper estimation of $Q_e$.
 
-Through this process, the final parameters for the resonators were achieved. They can be found in \ref{FinalParameters}
+Through this process, the final parameters for the resonators were achieved. They can be found in \cref{tab:FinalParameters}
 
 \subsection{Simulation results} \label{SimuResultsSection}
 
-After the simulations were carried out, the overall behavior of the resonator described in \ref{GeneralCPW} was studied. This comprehensive study included the general electromagnetic behavior of the layout, such as voltage and current density along the CPW, and the resulting values of $\epsilon_{eff}$, and $Z_0$, which were consequently compared to those calculated from \cite{Wadell1991} used for the initial estimations mentioned in \ref{LayoutDesign}. Furthermore, it included an in-depth analysis of the $S_{21}$ spectrum following Lopez-Nuñez et al.'s method \cite{Lopez-Nunez2025} from which an estimation of $f_r$ and $Q_c$ was gotten. The numerical results of the simulations can be seen in \cref{tab:SimResults4H,tab:SimResults6H,tab:SimResultsdiamond}.
+After the simulations were carried out, the overall behavior of the resonator described in \cref{GeneralCPW} was studied. This comprehensive study included the general electromagnetic behavior of the layout, such as voltage and current density along the CPW, and the resulting values of $\epsilon_{eff}$, and $Z_0$, which were consequently compared to those calculated from \cite{Wadell1991} used for the initial estimations mentioned in \cref{LayoutDesign}. Furthermore, it included an in-depth analysis of the $S_{21}$ spectrum following Lopez-Nuñez et al.'s method \cite{Lopez-Nunez2025} from which an estimation of $f_r$ and $Q_c$ was gotten. The numerical results of the simulations can be seen in \cref{tab:SimResults4H,tab:SimResults6H,tab:SimResultsdiamond}.
 
 \begin{table}[ht]
     \centering
@@ -547,7 +547,7 @@ Being that the value of $Z_0$ was higher than the one predicted from the initial
     %     \label{fig:6HSiC_out}
     % \end{subfigure}
 
-    \caption{Simulated surface current distribution in resonance (top row) and out of resonance (bottom row) for a representative resonator on each substrate. The distribution is dominated by the CPW geometry and is essentially substrate-independent. As discussed in \ref{GeneralCPW}, out of resonance, there is no energy transmission from the feedline to the resonator, and therefore no current density inside it. Also, in resonance, there is a maximum current density at the shorted end nearest to the feedline and a current density minimum at the open end, where there is a voltage maximum.}
+    \caption{Simulated surface current distribution in resonance (top row) and out of resonance (bottom row) for a representative resonator on each substrate. The distribution is dominated by the CPW geometry and is essentially substrate-independent. As discussed in \cref{GeneralCPW}, out of resonance, there is no energy transmission from the feedline to the resonator, and therefore no current density inside it. Also, in resonance, there is a maximum current density at the shorted end nearest to the feedline and a current density minimum at the open end, where there is a voltage maximum.}
     \label{fig:current_dist_all}
 \end{figure}
 
@@ -578,7 +578,7 @@ Once the final parameters were agreed to fit the general interests of this thesi
     
     Quantity: 2
 
-    Dimensions: 10 mm $times$ 10 mm $times$ 0.35 mm
+    Dimensions: 10 mm $\times$ 10 mm $\times$ 0.35 mm
 
     Fabrication: Chemical vapor deposition (CVD)
 
@@ -586,13 +586,15 @@ Once the final parameters were agreed to fit the general interests of this thesi
     
     Quantity: 2
 
-    Dimensions: 10 mm $times$ 10 mm $times$ 0.35 mm
+    Dimensions: 10 mm $\times$ 10 mm $\times$ 0.35 mm
 
     Fabrication: Chemical vapor deposition (CVD)
 
 \end{itemize}
 
-The fabrication process carried out at MPP was divided in two runs. Firstly, an attempt using wet etching over a positive resist was made. This attempt turned out to be inconsistent, and the results were therefore discarded. Secondly, a lift-off run was tried. This second run resulted in a successful fabrication attempt for the SiC substrates, where the shape of the resonators was properly resolved, and the resist could be properly developed out of the sample's surface. For the diamond substrates both runs resulted in faulty circuits.
+The fabrication process carried out at MPP was divided in two runs. Firstly, an attempt using wet etching over a positive resist was made. This attempt turned out to be inconsistent due to the viscosity of the etchant being too high for the 10 $\upmu$m and 4 $\upmu$m crevices and therefore unreliable. The results were therefore discarded. 
+
+Secondly, a lift-off run was tried. This second run resulted in a successful fabrication attempt for the SiC substrates, where the shape of the resonators was properly resolved, and the resist could be properly developed out of the sample's surface. For the diamond substrates both runs resulted in faulty circuits.
 
 The process of the first run was carried out with the following steps:
 
@@ -600,7 +602,7 @@ The process of the first run was carried out with the following steps:
     \item The substrates were cleaned using an HF bath, which is crucial to ensure a clean interface with the Al that will not tamper with the $Q_i$ results.
     \item An even 300 nm thick Al film was deposited on the samples using electron-beam evaporation under high vacuum conditions (UHV e-beam evaporation).
     \item Spin-coating using micro resist technology's positive resist ma-P 1215 was done on each substrate.
-    \item The resist was exposed through a mask like the one shown in \ref{fig:PositiveResist}. This way the area where the Al coating was desired was protected by the resist.
+    \item The resist was exposed using a Heidelberg Instruments' $\upmu$MLA laser writer following the layout shown in \cref{fig:PositiveResist}. This way the area where the Al coating was desired was protected by the resist.
     \item The resist was developed using micro resist technology's ma-D 532/S.
     \item Wet etching was carried out using phosphoric-acetic-nitric acid mixture (PAN etching).
     \item The resist was stripped
@@ -611,7 +613,7 @@ Furthermore, the process of the second run went as follows:
 \begin{enumerate}
     \item The substrates were cleaned using an HF bath.
     \item Spin-coating using micro resist technology's negative resist ma-N 1440 was done on each substrate.
-    \item The resist was exposed through a mask like the one shown in \ref{fig:NegativeResist}. This way, the area of the substrate where the aluminum film was desired was left exposed, and the metal would not stick to the areas where the resist remained.
+    \item The resist was exposed using the aforementioned $\upmu$MLA laser writer following the layout shown in \cref{fig:NegativeResist}. This way, the area of the substrate where the aluminum film was desired was left exposed, and the metal would not stick to the areas where the resist remained.
     \item The resist was developed using micro resist technology's ma-D 333/S.
     \item An even 300 nm Al film was deposited using the same UHV e-beam evaporation technique used in the first run.
     \item The remaining resist was lifted off along with the Al deposited on top of it.
@@ -619,9 +621,39 @@ Furthermore, the process of the second run went as follows:
 
 \subsubsection{Fabrication results}
 
-Once the second fabrication run was finished, the SiC chips which were checked with a microscope and looked to be ready for measurements were sent to IFAE's laboratory through mail. 
+Once the second fabrication run was finished, the four SiC chips which were checked with a microscope at MPP, and looked to be ready for measurements, were sent to IFAE's QCT workshop by mail. The chips were sent in standard \textcolor{red}{gel box}, wrapped in bubble wrap. Once they arrived they were revised using a microscope with \textcolor{red}{magnification} in order to have an idea of the chip's viability for measurement. In particular, the chips were checked for any short-circuit or discontinuities caused by a broken CPW line or by faulty fabrication; as well as debris or pieces of resist remaining due to an incomplete strip.
+
+\textcolor{blue}{Afterward, a more in-depth visual study was carried out on a microscope with \textcolor{red}{magnification}. This was done in order to check for more precise information on the fabrication quality. This way aspects such as resolution, Al quality and presence of debris or remaining resist could be conclusively assessed.}
+
+While looking at the chips with the first microscope, several defects were noticed. Especially, the feedline of the two 4H-SiC chips as well as one of the 6H-SiC chips, looked to be either completely broken at least at one point, or severely compromised by remaining resist. The remaining 6H-SiC chip was considered to be in proper conditions for measurement.
+
+\textcolor{blue}{Moreover, the images taken of the chips can be seen in \cref{fig:Microscope}. In these images the overall resolution of the lift-off process can be assessed. Also, several images of the defects seen in the first assessment can be observed clearly.}
+
+All in all, as it was expected from a first prototype, only one of the four chips that were received were expected to be functional.
 
 \subsection{Measurements planning and setup}
+
+Once the chips were obtained and available for measurement, it was of great importance to adjust the measurement setup to the experiment at hand. For this, the key aspects of the experiment had to be taken into account. These included the fact that the experiment was thought for superconducting Al, which meant its critical temperature ($T_c$) had to be taken into account; and the kind of measurements to be carried out, which were frequency and power sweeps seeking an in-depth study of the $S_{21}$ spectrum of the resonators in order to then extract the internal quality factor.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/Fridge_cryo.png}
+    \caption{Reproduced from \cite{LopezNunez2024}. Cryogenics schematics of Bluefors fridge, analogous to Leiden fridge setup.}
+    \label{fig:FridgeCryo}
+\end{figure}
+
+This experiment was thought to be carried out in a Leiden Cryogenics fridge using a setup like the one shown in \ref{fig:FridgeCryo}. It is of interest that the stage where the chip is set to be measured will be at $\sim 20$K. Furthermore, the use of a Pb magnetic shield was thought to avoid losses due to external magnetic fields or external radiation.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/Fridge_circuit.png}
+    \caption{Reproduced from \cite{LopezNunez2024}. Circuitry schematics of Bluefors fridge, analogous to Leiden fridge setup.}
+    \label{fig:FridgeCircuit}
+\end{figure}
+
+Furthermore, in order to have proper control over the input signal and be able to measure the output properly a setup such as the one shown in \ref{fig:FridgeCircuit} was employed. In these schematics several attenuators can be observed between the input signal generator and the device; this is motivated by the fact that the power interval desired to work in is in the single photon regime. Also, low band pass filters can be seen right before and after the connection to the device; these filters serve as a way to prevent noise affecting the measurements.
+
+Additionally, two 
 
 \newpage
 

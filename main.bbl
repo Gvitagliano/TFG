@@ -555,19 +555,6 @@
     \field{year}{2012}
   \endentry
 
-  \entry{ChemandyCalc}{misc}{}{}
-    \field{labeltitlesource}{title}
-  \field{howpublished}{https://chemandy.com/calculators/coplanar-waveguide-with-ground-calculator.htm}
-    \field{title}{Coplanar {{Waveguide With Ground Calculator}}}
-    \verb{file}
-    \verb C:\Users\gabri\Zotero\storage\558KGMMM\coplanar-waveguide-with-ground
-    \verb -calculator.html
-    \endverb
-    \field{urlday}{15}
-    \field{urlmonth}{08}
-    \field{urlyear}{2026}
-  \endentry
-
   \entry{Biznarova2024}{article}{}{}
     \name{author}{12}{}{%
       {{hash=BJ}{%
@@ -963,6 +950,98 @@
     \field{year}{1970}
     \field{urlday}{29}
     \field{urlmonth}{07}
+    \field{urlyear}{2026}
+  \endentry
+
+  \entry{LopezNunez2024}{thesis}{}{}
+    \name{author}{1}{}{%
+      {{hash=LND}{%
+         family={L{\'o}pez\bibnamedelima N{\'u}{\~n}ez},
+         familyi={L\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LND1}
+    \strng{fullhash}{LND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    [eng] Quantum annealing is a heuristic analog quantum algorithm that
+  promises potential quantum speedup over classical algorithms for a huge
+  variety of optimization problems. Current existing annealers, despite their
+  technical complexity and large qubit number, in the several thousands,
+  display very short coherence times, making the annealing process incoherent.
+  The main goal of this thesis is to initiate an alternative path towards
+  building coherent quantum annealers based on superconducting flux qubits. In
+  this thesis, many techniques and methods have been established, and the
+  results obtained represent the first coherent control of superconducting
+  qubits in the QCT group, and, in general, in Southern Europe. An uncoupled
+  flux qubit device is designed to benchmark qubit coherence that will be used
+  as the building block for future iterations of coherent quantum annealers.
+  The Hamiltonian design of the flux qubits is focused on reducing the
+  persistent current to reduce flux noise susceptibility. The processor is
+  designed so that common coherence benchmarking experiments, such as T1 and T2
+  measurements, are performed. The physical design has been iterated to
+  understand the role the qubit loop configurations and the qubit frequency
+  have on the coherence times. The flux qubits are measured inside a dilution
+  refrigerator, where special focus is put on magnetic shielding. Spectroscopy
+  measurements provide initial information on the qubit parameters and quality.
+  Coherent control of flux qubits is achieved in the form of coherent Rabi
+  oscillations, which constitutes one of the most important results of this
+  thesis. Rabi oscillations are repeated for many flux operation points to
+  understand the noise mechanisms. Decay times of 40us are shown, which are
+  among the best results for flux qubits. However, the qubit coherence is low,
+  leading to coherence times shorter than 20ns, probably because of flux noise.
+  Moreover, due to device imperfections, the qubits could not be characterized
+  at their optimal coherence conditions, which otherwise corresponds to the
+  initial configuration for quantum annealing. In summary, the coherence
+  results of the flux qubits measured represent an important benchmark in the
+  development of a coherent quantum annealer and provide very valuable
+  information on how to improve the flux qubits for future iterations of
+  quantum annealing processors. As an initial ramp-up phase of this thesis
+  work, experiments with transmons qubits, which are a very well established
+  technology, were performed to develop the time-domain measurement techniques
+  in the newly established QCT lab, and to set a superconducting quantum
+  computing setup ready to perform quantum algorithms. Indeed, a Universal
+  Approximant algorithm was executed on a single transmon qubit to
+  experimentally prove the approximation capabilities of a single-qubit quantum
+  algorithm. In parallel to the development of qubit experiments, intrinsic
+  properties of thin-film aluminum has been studied, being the most common
+  material for building superconducting qubit circuits. The magnetic
+  penetration depth of thin film superconducting aluminum has been studied as a
+  function of the film thickness. This calibration, not previously performed in
+  the literature, is especially relevant for the design of flux-sensitive
+  devices, such as flux qubits. The penetration depth is closely related to the
+  so-called kinetic inductance, which is a significant portion of the total
+  inductance in superconductors. This study allows for a better design
+  determination of the inductance in superconducting circuits. Moreover, it
+  points to the possibility of a change in superconductivity type in aluminum
+  in the typical range of thicknesses used in superconducting circuit
+  experiments. Finally, and in relation to improving the qubit readout
+  fidelity, through a brief stay in NTT (Japan) a quantum-limited amplifier has
+  been redesigned to improve its usability. The quantum-limited amplifier is
+  theoretically identical as one already developed by Arpit Ranadive from the
+  Grenoble team led by Dr. Nicolas Roch, a collaborator of the QCT group, which
+  consists on an array of Superconducting Nonlinear Asymmetric Inductive
+  eLement (SNAIL). The SNAIL circuit is identical to that of the flux qubit,
+  but operated in a different regime. The work developed here will be continued
+  with the fabrication of the actual devices.%
+    }
+    \verb{eprint}
+    \verb 2445/211120
+    \endverb
+    \field{title}{Coherent {{Flux Qubits}} for {{Quantum Annealing}}}
+    \field{langid}{english}
+    \list{institution}{1}{%
+      {Universitat de Barcelona}%
+    }
+    \field{type}{phdthesis}
+    \field{eprinttype}{hdl}
+    \field{month}{04}
+    \field{year}{2024}
+    \field{urlday}{16}
+    \field{urlmonth}{08}
     \field{urlyear}{2026}
   \endentry
 \enddatalist
