@@ -63,7 +63,7 @@
 \usepackage{xurl}
 
 \title{SUPERCONDUCTING ALUMINUM CPW $\lambda/4$ RESONATORS ON DIAMOND, 4H-SiC AND 6H-SiC SUBSTRATES FOR DIELECTRIC LOSS CHARACTERIZATION}
-\author{Gabriel Vitagliano}
+\author{Gabriel Vicente Vitagliano Castan}
 \date{August 2026}
 
 \begin{document}
@@ -457,7 +457,14 @@ As it is shown \cref{permittivity,impedance}, both the $\epsilon_{eff}$ and the 
 
 \subsection{Simulation iterations} \label{SimIterations}
 
-After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software Sonnet Software. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 $\times$ 2907.5 mm was used. This layout was divided using a rectangular mesh with a cell size of $2\times2 \mu m$; taking into account that the smallest distance in the SiC designs was 10$\mu m$; and in the case of the diamond design 4$\mu m$. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/4H/4H_sim_2.png}
+    \caption{Layout used for simulations}
+    \label{fig:SimLayout}
+\end{figure}
+
+After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software Sonnet Software. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 mm $\times$ 2907.5 mm was used, as seen in \ref{fig:SimLayout}. This layout was divided using a rectangular mesh with a cell size of $2\times2 \mu m$; taking into account that the smallest distance in the SiC designs was 10$\mu m$; and in the case of the diamond design 4$\mu m$. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$.
 
 This process was done in an iterative manner; where, for each resonator of each substrate, firstly a coarse frequency sweep of 300 points was done in order to adjust the length of the resonator taking into account the $\epsilon_{eff}$ calculated by Sonnet and get closer to the desired $f_r$. Then, with the updated layout, a new coarse simulation was done in a 200MHz interval around an educated estimation of the $f_r$ in order to get a first indication of the power dip in the signal. Then, finer simulations of 600 and 800 points were done in progressively smaller intervals around the $f_r$ until the dip stopped growing vertically, which meant that the signal had been finely resolved closely around the $f_r$. Finally, the resolved signal was analyzed using the method developed by \cite{Lopez-Nunez2025}, which was useful to have a proper estimation of $Q_e$.
 
@@ -523,40 +530,18 @@ Being that the value of $Z_0$ was higher than the one predicted from the initial
 
 \begin{figure}[h]
     \centering
-    % \begin{subfigure}{0.32\textwidth}
-    %     \includegraphics[width=\linewidth]{figures/diamond_in_res.png}
-    %     \caption{Diamond, in resonance}
-    %     \label{fig:diamond_in}
-    % \end{subfigure}
-    % \begin{subfigure}{0.32\textwidth}
-    %     \includegraphics[width=\linewidth]{figures/4HSiC_in_res.png}
-    %     \caption{4H-SiC, in resonance}
-    %     \label{fig:4HSiC_in}
-    % \end{subfigure}
-    % \begin{subfigure}{0.32\textwidth}
-    %     \includegraphics[width=\linewidth]{figures/6HSiC_in_res.png}
-    %     \caption{6H-SiC, in resonance}
-    %     \label{fig:6HSiC_in}
-    % \end{subfigure}
-
-    % \begin{subfigure}{0.32\textwidth}
-    %     \includegraphics[width=\linewidth]{figures/diamond_out_res.png}
-    %     \caption{Diamond, out of resonance}
-    %     \label{fig:diamond_out}
-    % \end{subfigure}
-    % \begin{subfigure}{0.32\textwidth}
-    %     \includegraphics[width=\linewidth]{figures/4HSiC_out_res.png}
-    %     \caption{4H-SiC, out of resonance}
-    %     \label{fig:4HSiC_out}
-    % \end{subfigure}
-    % \begin{subfigure}{0.32\textwidth}
-    %     \includegraphics[width=\linewidth]{figures/6HSiC_out_res.png}
-    %     \caption{6H-SiC, out of resonance}
-    %     \label{fig:6HSiC_out}
-    % \end{subfigure}
-
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=1\linewidth]{figures/4H/4H_resonance.png}
+        \caption{4H-SiC, in resonance}
+        % \label{fig:4HSiC_in}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=1\linewidth]{figures/4H/4H_nonres.png}
+        \caption{4H-SiC, out of resonance}
+        % \label{fig:4HSiC_out}
+    \end{subfigure}
     \caption{Simulated surface current distribution in resonance (top row) and out of resonance (bottom row) for a representative resonator on each substrate. The distribution is dominated by the CPW geometry and is essentially substrate-independent. As discussed in \cref{GeneralCPW}, out of resonance, there is no energy transmission from the feedline to the resonator, and therefore no current density inside it. Also, in resonance, there is a maximum current density at the shorted end nearest to the feedline and a current density minimum at the open end, where there is a voltage maximum.}
-    \label{fig:current_dist_all}
+    \label{fig:current}
 \end{figure}
 
 Furthermore, the current density of the circuit can be seen in \cref{fig:diamond_in,fig:diamond_out,fig:6HSiC_in,fig:6HSiC_out,fig:4HSiC_in,fig:4HSiC_out}. These results become useful for confirmation of several points.
@@ -606,6 +591,13 @@ Secondly, a lift-off run was tried. This second run resulted in a successful fab
 
 The process of the first run was carried out with the following steps:
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/4H/4H_mask.png}
+    \caption{Positive layout used for the wet etching process.}
+    \label{fig:PositiveResist}
+\end{figure}
+
 \begin{enumerate}
     \item The substrates were cleaned using an HF bath, which is generally crucial to ensure a clean fabrication surface.
     \item An even 300 nm thick Al film was deposited on the samples using electron-beam evaporation under high vacuum conditions (UHV e-beam evaporation).
@@ -617,6 +609,13 @@ The process of the first run was carried out with the following steps:
 \end{enumerate}
 
 Furthermore, the process of the second run went as follows:
+
+\begin{figure}
+    \centering
+    \includegraphics{figures/4H/4H_mask_neg.png}
+    \caption{Negative layout used for the lift-off process.}
+    \label{fig:NegativeResist}
+\end{figure}
 
 \begin{enumerate}
     \item The substrates were cleaned using an HF bath.
@@ -633,9 +632,7 @@ Once the second fabrication run was finished, the four SiC chips were checked wi
 
 \textcolor{blue}{Afterward, a more in-depth visual study was carried out on a microscope with \textcolor{red}{magnification}. This was done in order to check for more precise information on the fabrication quality. This way aspects such as resolution, Al quality and presence of debris or remaining resist could be conclusively assessed.}
 
-\textcolor{red}{While inspecting the chips under the microscope, defects were identified in three of the four devices, rendering them unsuitable for measurement. Of the four chips, only one 6H-SiC chip was found to be in proper condition, and was therefore selected for the measurement campaign.}
-
-Visual inspection under the microscope revealed defects in three of the four chips. Only one 6H-SiC chip was found to be in proper condition and was selected for measurement.
+Visual inspection under the microscope revealed defects in three of the four chips. Only one 6H-SiC chip was found to be in optimal conditions and was selected for measurement.
 
 \textcolor{blue}{Moreover, the images taken of the chips can be seen in \cref{fig:Microscope}. In these images the overall resolution of the lift-off process can be assessed. Also, several images of the defects seen in the first assessment can be observed clearly.}
 
@@ -689,6 +686,40 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
 \newpage
 
 \printbibliography[heading=bibintoc]
+
+\newpage
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.9\linewidth]{figures/Diamond/diamond_resonance.png}
+        \caption{Diamond, in resonance}
+        \label{fig:diamond_in}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.9\linewidth]{figures/Diamond/diamond_nonres.png}
+        \caption{Diamond, out of resonance}
+        \label{fig:diamond_out}
+    \end{subfigure}
+
+    \caption{Diamond current density distribution.}
+    \label{fig:DiamondCurrent}
+\end{figure}
+
+\begin{figure}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.9\linewidth]{figures/6H/6H_resonance.png}
+        \caption{6H-SiC, in resonance}
+        \label{fig:6HSiC_in}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.9\linewidth]{figures/6H/6H_nonres.png}
+        \caption{6H-SiC, out of resonance}
+        \label{fig:6HSiC_out}
+    \end{subfigure}
+    \caption{6H-SiC current density distribution.}
+    \label{fig:current_dist_all}
+\end{figure}
 
 \end{document}
 
