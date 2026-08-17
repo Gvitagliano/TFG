@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1786945698.50534 "main.aux" "main.bbl" "main" 1786945699.37177 0
-  "./TFG.bib" 1786945635 34814 f9d062dd4081ebb66c78d72b9f650d34 ""
-  "./main-blx.bib" 1786943931 343 bf1f0c75b5bafd473925320ac9611e26 ""
+["bibtex main"] 1786949605.66514 "main.aux" "main.bbl" "main" 1786949611.26352 0
+  "./TFG.bib" 1786949068 34946 ac318974cafda65e0662ec9279a358ea ""
+  "./main-blx.bib" 1786949609 343 bf1f0c75b5bafd473925320ac9611e26 ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1752408733 65510 9a2a51799b543ff279b8ea2dd91ec499 ""
-  "main.aux" 1786943931 19753 97c276d853cad82c967d92aa8422de71 "pdflatex"
+  "main.aux" 1786949609 20162 a952683e3af7377a2467a4136d43d767 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1786943928.9419 "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" "main.pdf" "main" 1786945699.3721 0
+["pdflatex"] 1786949606.31241 "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" "main.pdf" "main" 1786949611.26535 0
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1786812421 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1786330785 28976 0ad1119bdc765ff671155a7aac8cdd70 ""
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1785415085 31952 92e5121acf694b2cd20745259ff6171b ""
@@ -193,7 +193,7 @@
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/was/upgreek.sty" 1665850770 5794 9054e31be15d93f1e6bd28cca2b6643f ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" 1786945696 66695 ad265cca68b9d19bf810231d12f6f2c7 ""
+  "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" 1786949599 64713 859ec951fe39140c6542812765d24d60 ""
   "figures/Conformal_a.png" 1786329535 31661 a654915f4e8236e07ebb769eaf4f8a47 ""
   "figures/Conformal_b.png" 1786329547 31608 ac874f849fd7a1ed5d032aa2a8fb65cc ""
   "figures/Conformal_c.png" 1786329556 52725 16dc03775bdb4ededa185487ccf7940c ""
@@ -203,12 +203,12 @@
   "figures/TypeI_TypeII.png" 1786327481 26872 c82560c7fad8d8ca684c0d7ca5ac0578 ""
   "figures/Vortices.png" 1786327519 18431 11a677eb6becd066627f447f3633bb0d ""
   "figures/cpwg_drawing.pdf" 1786832629 19984 7161bc741477fa68be109e04d8942997 ""
-  "main.aux" 1786943931 19753 97c276d853cad82c967d92aa8422de71 "pdflatex"
-  "main.bbl" 1786945699 40853 7d334adaab2797906d77f73c1b24246a "bibtex main"
-  "main.out" 1786943931 3445 d5eda5e1f48fd2aa768562d4c87a36a2 "pdflatex"
-  "main.run.xml" 1786943931 2515 308d5c5e103e46777463e0426d3b2022 "pdflatex"
-  "main.tex" 1786945696 66695 ad265cca68b9d19bf810231d12f6f2c7 ""
-  "main.toc" 1786943931 1752 1ccc96d928aa927f47db5252f148842f "pdflatex"
+  "main.aux" 1786949609 20162 a952683e3af7377a2467a4136d43d767 "pdflatex"
+  "main.bbl" 1786949606 45284 43a4281f5f1976a42f44de45be5aa518 "bibtex main"
+  "main.out" 1786949609 3445 d5eda5e1f48fd2aa768562d4c87a36a2 "pdflatex"
+  "main.run.xml" 1786949609 2515 308d5c5e103e46777463e0426d3b2022 "pdflatex"
+  "main.tex" 1786949599 64713 859ec951fe39140c6542812765d24d60 ""
+  "main.toc" 1786949609 1751 cacb27e8ff2dec4027f89507b7b75507 "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"

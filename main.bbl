@@ -96,6 +96,130 @@
     \field{urlyear}{2026}
   \endentry
 
+  \entry{Canonica2020a}{article}{}{}
+    \name{author}{12}{}{%
+      {{hash=CL}{%
+         family={Canonica},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=AAH}{%
+         family={Abdelhameed},
+         familyi={A\bibinitperiod},
+         given={A.\bibnamedelima H.},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bauer},
+         familyi={B\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bento},
+         familyi={B\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Bertoldo},
+         familyi={B\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=FIN}{%
+         family={Ferreiro\bibnamedelima Iachellini},
+         familyi={F\bibinitperiod\bibinitdelim I\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=FD}{%
+         family={Fuchs},
+         familyi={F\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hauff},
+         familyi={H\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mancuso},
+         familyi={M\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Petricca},
+         familyi={P\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={Pr{\"o}bst},
+         familyi={P\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rothe},
+         familyi={R\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CL+1}
+    \strng{fullhash}{CLAAHBPBABEFINFDHDMMPFPFRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Abstract Despite the multiple and convincing evidence of the existence of
+  dark matter (DM) in our Universe, its detection is one of the most pressing
+  questions in particle physics. As of today, there is no unambiguous hint
+  which could clarify the particle nature of DM. For these reasons, a huge
+  experimental effort is ongoing, trying to realize experiments which can probe
+  the particle properties of DM. In particular, direct search experiments are
+  trying to cover the largest possible mass range, from a few MeVs up to TeVs.
+  Particularly suited for the sub-GeV mass region are detectors containing
+  light nuclei, which are sensitive to the scattering of light DM candidates.
+  Among them, we investigate a carbon-based absorber to explore DM masses down
+  to the MeV region. Thanks to their cryogenic properties (high Debye
+  temperature and long-lived phonon modes), carbon-based materials operated as
+  low temperature calorimeters could reach an energy threshold in the eV range
+  and would allow for the exploration of new parameters of the DM--nucleus
+  cross section. Despite several proposals, the possibility of operating a
+  carbon-based cryogenic detector is yet to be demonstrated. In this
+  contribution, the preliminary results obtained with a diamond absorber
+  operated with a TES temperature sensor will be reported. The potential of
+  such a detector in the current landscape of DM searches will also be
+  illustrated.%
+    }
+    \verb{doi}
+    \verb 10.1007/s10909-020-02350-4
+    \endverb
+    \field{issn}{0022-2291, 1573-7357}
+    \field{number}{3-4}
+    \field{pages}{606\bibrangedash 613}
+    \field{title}{Operation of a {{Diamond Cryogenic Detector}} for {{Low-Mass
+  Dark Matter Searches}}}
+    \field{volume}{199}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\AC9RRWKT\Canonica et al. - 2020 - Opera
+    \verb tion of a Diamond Cryogenic Detector for Low-Mass Dark Matter Searche
+    \verb s.pdf
+    \endverb
+    \field{journaltitle}{Journal of Low Temperature Physics}
+    \field{month}{05}
+    \field{year}{2020}
+    \field{urlday}{17}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
   \entry{Annett2003}{book}{}{}
     \name{author}{1}{}{%
       {{hash=AJF}{%
