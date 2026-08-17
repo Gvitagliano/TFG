@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1786978484.95035 "main.aux" "main.bbl" "main" 1786979634.8824 0
+["bibtex main"] 1786979848.05374 "main.aux" "main.bbl" "main" 1786979857.25142 0
   "./TFG.bib" 1786949068 34946 ac318974cafda65e0662ec9279a358ea ""
-  "./main-blx.bib" 1786979633 343 bf1f0c75b5bafd473925320ac9611e26 ""
+  "./main-blx.bib" 1786979855 343 bf1f0c75b5bafd473925320ac9611e26 ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1752408733 65510 9a2a51799b543ff279b8ea2dd91ec499 ""
-  "main.aux" 1786979633 27001 1cebe99686b025a41904c953ba87ea7c "pdflatex"
+  "main.aux" 1786979855 27001 fca6eee297e3b7132c4bf63268af8a53 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1786979627.55817 "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" "main.pdf" "main" 1786979634.88382 0
+["pdflatex"] 1786979848.60456 "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" "main.pdf" "main" 1786979857.25346 0
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1786812421 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1786317096 25420 e0985262d4363763290891cb355f725b ""
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1786330785 28976 0ad1119bdc765ff671155a7aac8cdd70 ""
@@ -33,6 +33,7 @@
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1440.tfm" 993061960 3196 0b37fa3083e15c57cfa8c4ff52f2807a ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1728.tfm" 993061962 3204 d35cb76836b6cb4ed404dd64a550530d ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/eccc1200.tfm" 993061984 2796 601f0e3324021d7edb90718e24047a6a ""
+  "C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0500.tfm" 993062114 3160 7643a152c0e9200a0a8161b2bb3a452d ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0600.tfm" 993062116 3160 116e21835795bb29209ae8bb4682382f ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0700.tfm" 993062116 3168 c739b83da3134ef1007979877c1089cf ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0800.tfm" 993062118 3152 11ecf5aad6aacf00ff18f394ab23a8b5 ""
@@ -195,7 +196,7 @@
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/was/upgreek.sty" 1665850770 5794 9054e31be15d93f1e6bd28cca2b6643f ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" 1786979626 68738 b4700bd5a576ca4fa31ccd3170c5ef09 ""
+  "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" 1786979838 68742 2883805af014ab27d2081bd60fdce955 ""
   "figures/4H/4H_63_80_ArgF.png" 1786962397 31210 54a003946b1a9551379c16f131c20903 ""
   "figures/4H/4H_63_80_ImRe.png" 1786962397 34901 a6c469c30a4f8bf04b3163ed4a7161c1 ""
   "figures/4H/4H_63_80_MagF.png" 1786962397 26057 38bb1aabc1b479fe3b2951a4259d8113 ""
@@ -229,12 +230,12 @@
   "figures/TypeI_TypeII.png" 1786327481 26872 c82560c7fad8d8ca684c0d7ca5ac0578 ""
   "figures/Vortices.png" 1786327519 18431 11a677eb6becd066627f447f3633bb0d ""
   "figures/cpwg_drawing.pdf" 1786832629 19984 7161bc741477fa68be109e04d8942997 ""
-  "main.aux" 1786979633 27001 1cebe99686b025a41904c953ba87ea7c "pdflatex"
-  "main.bbl" 1786978485 45284 43a4281f5f1976a42f44de45be5aa518 "bibtex main"
-  "main.out" 1786979633 4068 2b4d8ac48c763d26136dc075ba1d0411 "pdflatex"
-  "main.run.xml" 1786979633 2515 308d5c5e103e46777463e0426d3b2022 "pdflatex"
-  "main.tex" 1786979626 68738 b4700bd5a576ca4fa31ccd3170c5ef09 ""
-  "main.toc" 1786979633 2068 f61b9011c71bc1655d2445e906e4584a "pdflatex"
+  "main.aux" 1786979855 27001 fca6eee297e3b7132c4bf63268af8a53 "pdflatex"
+  "main.bbl" 1786979848 45284 43a4281f5f1976a42f44de45be5aa518 "bibtex main"
+  "main.out" 1786979855 4068 2b4d8ac48c763d26136dc075ba1d0411 "pdflatex"
+  "main.run.xml" 1786979855 2515 308d5c5e103e46777463e0426d3b2022 "pdflatex"
+  "main.tex" 1786979838 68742 2883805af014ab27d2081bd60fdce955 ""
+  "main.toc" 1786979855 2068 f61b9011c71bc1655d2445e906e4584a "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"
