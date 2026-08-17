@@ -533,22 +533,22 @@ Being that the value of $Z_0$ was higher than the one predicted from the initial
     \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=1\linewidth]{figures/4H/4H_resonance.png}
         \caption{4H-SiC, in resonance}
-        % \label{fig:4HSiC_in}
+        \label{fig:4HSiC_in}
     \end{subfigure}
     \begin{subfigure}{0.4\textwidth}
         \includegraphics[width=1\linewidth]{figures/4H/4H_nonres.png}
         \caption{4H-SiC, out of resonance}
-        % \label{fig:4HSiC_out}
+        \label{fig:4HSiC_out}
     \end{subfigure}
     \caption{Simulated surface current distribution in resonance (top row) and out of resonance (bottom row) for a representative resonator on each substrate. The distribution is dominated by the CPW geometry and is essentially substrate-independent. As discussed in \cref{GeneralCPW}, out of resonance, there is no energy transmission from the feedline to the resonator, and therefore no current density inside it. Also, in resonance, there is a maximum current density at the shorted end nearest to the feedline and a current density minimum at the open end, where there is a voltage maximum.}
     \label{fig:current}
 \end{figure}
 
-Furthermore, the current density of the circuit can be seen in \cref{fig:diamond_in,fig:diamond_out,fig:6HSiC_in,fig:6HSiC_out,fig:4HSiC_in,fig:4HSiC_out}. These results become useful for confirmation of several points.
+Furthermore, the current density of the circuit can be seen in \cref{fig:4HSiC_in,fig:4HSiC_out,fig:diamond_in,fig:diamond_out,fig:6HSiC_in,fig:6HSiC_out}. These results become useful for confirmation of several points.
 
-Furthermore, the current density of the circuit can be seen in \cref{fig:diamond_in,fig:diamond_out,fig:6HSiC_in,fig:6HSiC_out,fig:4HSiC_in,fig:4HSiC_out}. First, these results confirm that the resonator is only hosting the fundamental mode, as higher-order modes would be undesirable.
+Furthermore, the current density of the circuit can be seen in \cref{fig:4HSiC_in,fig:4HSiC_out,fig:diamond_in,fig:diamond_out,fig:6HSiC_in,fig:6HSiC_out}. First, these results confirm that the resonator is only hosting the fundamental mode, as higher-order modes would be undesirable.
 
-Second, they confirm the boundary conditions discussed in \cref{GeneralCPW}. At the shorted end, the impedance approaches zero, forcing the voltage to zero ($Z(0) \approx 0 \implies V(0) = 0$); which, by continuity of power flow, implies that the current there must instead be maximal. At the open end, the impedance diverges, forcing the current to zero ($Z(l) \to \infty \implies I(l) = 0$), while the voltage, and correspondingly the electric field, reaches its maximum. This is precisely the current maximum at the short and current minimum at the open end visible in each panel of \cref{fig:current_dist_all}.
+Second, they confirm the boundary conditions discussed in \cref{GeneralCPW}. At the shorted end, the impedance approaches zero, forcing the voltage to zero ($Z(0) \approx 0 \implies V(0) = 0$); which, by continuity of power flow, implies that the current there must instead be maximal. At the open end, the impedance diverges, forcing the current to zero ($Z(l) \to \infty \implies I(l) = 0$), while the voltage, and correspondingly the electric field, reaches its maximum. This is precisely the current maximum at the short and current minimum at the open end, visible in the 4H-SiC case shown in \cref{fig:current}.
 
 Finally, this agreement extends to the three substrates, which was expected due to the analytical behavior only being explained through the geometry of the system and the only effects caused by the $\epsilon_r$ being on the $f_r$ and subsequently on the total length of the resonator rather than the shape of the standing wave.
 
@@ -593,8 +593,8 @@ The process of the first run was carried out with the following steps:
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{figures/4H/4H_mask.png}
-    \caption{Positive layout used for the wet etching process.}
+    \includegraphics[width=0.8\textwidth]{figures/4H/4H_mask.png}
+    \caption{4H-SiC Positive layout used for the wet etching process.}
     \label{fig:PositiveResist}
 \end{figure}
 
@@ -612,8 +612,8 @@ Furthermore, the process of the second run went as follows:
 
 \begin{figure}
     \centering
-    \includegraphics{figures/4H/4H_mask_neg.png}
-    \caption{Negative layout used for the lift-off process.}
+    \includegraphics[width=0.8\textwidth]{figures/4H/4H_mask_neg.png}
+    \caption{4H-SiC Negative layout used for the lift-off process.}
     \label{fig:NegativeResist}
 \end{figure}
 
@@ -659,7 +659,7 @@ In order to study the behaviors discussed in \cref{SimuResultsSection}, the meas
 
 \textcolor{blue}{This process was then planned to be carried out at different temperatures. Starting out at the lowest temperature achieved by the cryogenic setup, a series of measurements were to be taken at incrementally higher temperature set points, allowing the system to thermalize at each step before recording the resonator response. This sweep was to be performed at low, near single-photon power, so that the observed evolution of $Q_i$ and $f_r$ could be attributed to thermal saturation of the TLS population. This way the value of $F \delta^0_{TLS}$ could be extracted following \cref{Qi(T)}.}
 
-\textcolor{red}{Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step, with increasingly less attenuation. This would then allow us to perform a sweep in power. Moreover, this is of interest in order to later on be able to tell whether the energy losses where due to dielectric TLS.}
+Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step, with increasingly less attenuation. This would then allow us to perform a sweep in power, which is of interest in order to gain further insight into the TLS behavior.
 
 This way, the resulting spectrum obtained from the measurements should look similar to those described in \cref{Qfactor,SimuResultsSection}; which means properly fitting the complex $S_{21}$ spectrum to the expression presented by \cite{Lopez-Nunez2025}.
 
@@ -689,10 +689,14 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
 
 \newpage
 
-\begin{figure}[h]
+\appendix
+
+\section{Current density distributions}
+
+\begin{figure}[ht]
     \centering
     \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=0.9\linewidth]{figures/Diamond/diamond_resonance.png}
+        \includegraphics[width=0.85\linewidth]{figures/Diamond/diamond_resonance.png}
         \caption{Diamond, in resonance}
         \label{fig:diamond_in}
     \end{subfigure}
@@ -701,14 +705,11 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
         \caption{Diamond, out of resonance}
         \label{fig:diamond_out}
     \end{subfigure}
-
-    \caption{Diamond current density distribution.}
-    \label{fig:DiamondCurrent}
-\end{figure}
-
-\begin{figure}
+    
+    \vspace{0.5em}
+    
     \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=0.9\linewidth]{figures/6H/6H_resonance.png}
+        \includegraphics[width=0.85\linewidth]{figures/6H/6H_resonance.png}
         \caption{6H-SiC, in resonance}
         \label{fig:6HSiC_in}
     \end{subfigure}
@@ -717,8 +718,69 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
         \caption{6H-SiC, out of resonance}
         \label{fig:6HSiC_out}
     \end{subfigure}
-    \caption{6H-SiC current density distribution.}
-    \label{fig:current_dist_all}
+    
+    \caption{Current density distribution for Diamond and 6H-SiC substrates.}
+    \label{fig:CurrentDist_all}
+\end{figure}
+
+\newpage
+
+\section{Resonator chip masks}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.9\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/6H/6H_mask.png}
+        \caption{6H-SiC positive layout}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    \begin{subfigure}{0.9\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/Diamond/Diamond_mask.png}
+        \caption{Diamond positive layout}
+    \end{subfigure}
+    \caption{Positive layouts used for the wet etching process.}
+    \label{fig:positive_layouts}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.9\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/6H/6H_mask_neg.png}
+        \caption{6H-SiC negative layout}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    \begin{subfigure}{0.9\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/Diamond/Diamond_mask_neg.png}
+        \caption{Diamond negative layout}
+    \end{subfigure}
+    \caption{Negative layouts used for the lift-off process.}
+    \label{fig:negative_layouts}
+\end{figure}
+
+\section{Simulation layouts}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/6H/6H_sim.png}
+        \caption{6H-SiC simulation layout}
+    \end{subfigure}
+    \begin{subfigure}{0.45\linewidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{figures/Diamond/diamond_sim.png}
+        \caption{Diamond simulation layout}
+    \end{subfigure}
+    \caption{Simulation layouts used for the wet etching process.}
+    \label{fig:sim_layouts}
 \end{figure}
 
 \end{document}
