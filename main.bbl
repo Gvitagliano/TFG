@@ -555,6 +555,19 @@
     \field{year}{2012}
   \endentry
 
+  \entry{zotero-item-350}{misc}{}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{https://chemandy.com/calculators/coplanar-waveguide-with-ground-calculator.htm}
+    \field{title}{Coplanar {{Waveguide With Ground Calculator}}}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\558KGMMM\coplanar-waveguide-with-ground
+    \verb -calculator.html
+    \endverb
+    \field{urlday}{15}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
   \entry{Biznarova2024}{article}{}{}
     \name{author}{12}{}{%
       {{hash=BJ}{%

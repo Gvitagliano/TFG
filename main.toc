@@ -8,13 +8,13 @@
 \contentsline {subsection}{\numberline {2.2}Quarter-wave coplanar waveguide resonators}{9}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}General CPW physics}{10}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Quality factor and energy loss}{13}{subsubsection.2.2.2}%
-\contentsline {section}{\numberline {3}Resonator design and simulations}{17}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Layout design}{17}{subsection.3.1}%
+\contentsline {section}{\numberline {3}Resonator design and simulations}{18}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Layout design}{18}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Simulation iterations}{19}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Simulation results}{20}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Fabrication of the resonators}{22}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Fabrication runs}{22}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Fabrication results}{23}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2}Fabrication results}{24}{subsubsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.5}Measurements planning and setup}{24}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Conclusions and outlook}{26}{section.4}%
-\contentsline {section}{References}{28}{section*.14}%
+\contentsline {section}{References}{28}{section*.13}%

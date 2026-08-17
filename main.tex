@@ -350,29 +350,26 @@ More importantly to the subject of this study is the contribution of two-level-s
 
 \begin{equation}
     \label{Q_TLS}
-    Q_{TLS} = \sum_{i} p_i \tan(\delta_i).
+    Q_{TLS} = \sum_{i} p_i \delta_i.
 \end{equation}
 
-Where $p_i$ represents the participation ratio of the respective interface; and $\tan(\delta_i)$ corresponds to the loss tangent, or the weight of the energy loss, corresponding to that same interface. It is relevant that the value of $\tan(\delta_i)$ is not a fixed characteristic of the materials. When working in the low-photon-number regime this quantity stays at its power-independent value $\tan^0 (\delta_i)$. On the other hand, at high drive powers, the two level systems become saturated at a much faster rate than their respective relaxation times; effectively decreasing the losses caused by this channel. This effect can be seen described by \cite{Gao2008}
-
-\begin{equation}
-\label{tls_saturation}
-\tan\delta_i(\langle n \rangle) = \frac{\tan\delta_i^0}{\sqrt{1 + (\langle n \rangle/n_c)}}.
-\end{equation}
-
-Where $\langle n \rangle$ represents the number of photons inside the resonator and $n_c$ represents the critical photon number needed to saturate the TLS.
-
-Furthermore, the value of $\delta^0_{TLS}$ is also sensitive to temperature as follows \cite{Gao2008}
+Where $p_i$ represents the participation ratio of the respective interface; and $\delta_i$ corresponds to the loss tangent, or the weight of the energy loss, corresponding to that same interface. It is relevant that the value of $\delta_i$ is not a fixed characteristic of the materials. Especially, the value of $\delta^0_{TLS}$ is also sensitive to temperature as follows \cite{Gao2008}
 
 \begin{equation}
     \label{delta(T)}
-    \delta_{TLS} = \delta^0_{TLS} \tanh\left(\frac{\hbar \omega}{2 k_B T}\right)
+    \delta_{TLS} = \delta^0_{TLS} \tanh\left(\frac{\hbar \omega}{2 k_B T}\right).
 \end{equation}
 
+This relationship represents how the absorption of the energy of the resonators is directly linked to the occupation statistics of the TLS states, which follow the Boltzman occupation numbers for a TLS.  
+
+Furthermore, when working in the low-photon-number regime this quantity stays at the intrinsic TLS loss tangent value $\delta^0_i$. On the other hand, at high drive powers, the two level systems become saturated at a much faster rate than their respective relaxation times; effectively decreasing the losses caused by this channel. This effect can be seen described by \cite{Gao2008}
+
 \begin{equation}
-    \label{Qi(T)}
-    \frac{1}{Q_i(T)} = F \delta^0_{TLS} \tanh\left(\frac{\hbar \omega}{2 k_B T}\right)
+\label{tls_saturation}
+\delta_i(\langle n \rangle) = \frac{\delta_i^0}{\sqrt{1 + (\langle n \rangle/n_c)}}.
 \end{equation}
+
+Where $\langle n \rangle$ represents the number of photons inside the resonator and $n_c$ represents the critical photon number needed to saturate the TLS.
 
 All of these contributors to the loss of energy in the system are part of what is called the internal quality factor. These are losses that are intrinsic to the circuit materials, environment and geometric configuration. 
 
@@ -434,6 +431,15 @@ From this it is evident that the value of $Q_L$ has a significant effect on the 
 
 As we have seen, increases in $g$ lead to a deeper dip in $S_{21}$ which makes the signal easier to measure. Additionally, increases in $Q_L$ lead to a narrower signal, which makes the analysis of the signal easier and more exact. This is especially important as $g$ is inversely related to $Q_c$; the opposite of $Q_L$ which increases with $Q_c$ as seen in \cref{Q_L}. Hence, different coupling regimes are more desirable for different uses. In the case of sensing, the dip depth is more relevant than its width, and therefore an overcoupled resonator is desirable. On the other hand, for characterization or device control the dip width and data analysis more relevant than the sensitivity for the resonator; as a result critically coupled resonators are the most desirable, since undercoupled resonators usually can not be measured with standard equipment, and critical coupling maximizes the depth of the dip in the $S_{21}$ magnitude response while leaving its shape easy to analyze.
 
+Finally, using these results which facilitate the calculation of $Q_i$, one can use the loss tangent's dependency on temperature ($\delta_{TLS}(T)$) as a way to extract a material's $\delta^0_{TLS}$. In order to do so, one can use the following relationship \cite{Gao2008}: 
+
+\begin{equation}
+    \label{Qi(T)}
+    \frac{1}{Q_i(T)} = F \delta^0_{TLS} \tanh\left(\frac{h f_r}{2 k_B T}\right).
+\end{equation}
+
+In this case, $F$ is the filling factor, which represents the ratio of electromagnetic field stored in the TLS-host material to the total electric energy stored by the resonator. This way, carrying out a temperature sweep of the value of $Q_i$ one can then fit the expression to find $F \delta^0_{TLS}$. According to \cite{Gao2008}, the value of $\delta^0_{TLS}$ may be extracted by calculating $F$ through EM simulations or contour, or volume integrals of the electric field over the host material region.
+
 \section{Resonator design and simulations}
 
 The following chapter will focus on the explanation of the design and simulation process followed to arrive to the final chip design desired for the execution of the proposed experiment. The first section will be dedicated to the explanation of the general layout as well as the role of each parameter taken into account; then, a second section will focus on the final parameters chosen based on the simulations carried out in order to have a better estimation of the resonator's characteristics.
@@ -449,7 +455,7 @@ Once all of these factors were properly taken into account, it was decided that 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/cpwg_drawing.pdf}
-    \caption{Reproduced from \cite{ChemandyCalc}}
+    \caption{Reproduced from \cite{zotero-item-350}}
     \label{fig:CPWcross}
 \end{figure}
 
@@ -457,7 +463,7 @@ Physically speaking, the main parameters taken into account were the center cond
 
 A first estimation of the parameters was done using the expressions \cref{impedance,permittivity} for the $\epsilon_{eff}$ which is directly related to the $f_r$ and the $Z_0$. At the same time, an initial set of reference parameters was taken from a study carried out by \cite{Biznarova2024}, which proved to be the layout with the highest $Q_i$ in the aforementioned review by \cite{Ghione1987}, in the particular case of 2D aluminum circuits. This initial set of parameters was of 20$\mu m$ and 10$\mu m$ for the center conductor width ($w$) and the gap to ground ($g$) respectively, and an aluminum thickness of 300nm. Due to the reference setup being of aluminum over silicon, the values for $w$ and $g$ were adapted for each of the substrates to be studied.
 
-As it is shown \textcolor{red}{in the Theory chapter}, both the $\epsilon_{eff}$ and the $Z_0$ come mainly given by the geometry of the CPW and the $\epsilon_r$ of the substrate. Therefore, the parameters mentioned in the previous paragraph were adapted for the values of $\epsilon_r$ for diamond, 4H-SiC and 6H-SiC that were retrieved from references \cite{Griesmayer, Li2024, Patrick1970} respectively, which was 5.7 for diamond; and in the case of the two kinds of SiC, due to being anisotropic materials, 9.77 for the ordinary axis and 10.2 for the extraordinary axis for 4H-SiC; and for 6H-SiC 9.66 for the ordinary axis and 10.3 for the extraordinary axis; in the cases of SiC, the xy-plane of the substrate was taken as parallel to the ordinary axis for the purpose of calculations. The adjusted values of both $w$ and $g$ were finally 20$\mu m$ and 10$\mu m$ respectively for both SiC orientations, and 20$\mu m$ and 4$\mu m$ respectively for diamond.
+As it is shown \cref{permittivity,impedance}, both the $\epsilon_{eff}$ and the $Z_0$ come mainly given by the geometry of the CPW and the $\epsilon_r$ of the substrate. Therefore, the parameters mentioned in the previous paragraph were adapted for the values of $\epsilon_r$ for diamond, 4H-SiC and 6H-SiC that were retrieved from references \cite{Griesmayer, Li2024, Patrick1970} respectively, which was 5.7 for diamond; and in the case of the two kinds of SiC, due to being anisotropic materials, 9.77 for the ordinary axis and 10.2 for the extraordinary axis for 4H-SiC; and for 6H-SiC 9.66 for the ordinary axis and 10.3 for the extraordinary axis; in the cases of SiC, the xy-plane of the substrate was taken as parallel to the ordinary axis for the purpose of calculations. The adjusted values of both $w$ and $g$ were finally 20$\mu m$ and 10$\mu m$ respectively for both SiC orientations, and 20$\mu m$ and 4$\mu m$ respectively for diamond.
 
 \subsection{Simulation iterations} \label{SimIterations}
 
@@ -575,7 +581,7 @@ Finally, this agreement extends to the three substrates, which was expected due 
 
 \subsubsection{Fabrication runs}
 
-Once the final parameters were agreed to fit the general interests of this thesis they were sent out to the Max Planck Institute for Physics (MPP), which supplied the substrates to be studied. These substrates had the following specifications:
+Once the final parameters were agreed to fit the general interests of this thesis they were sent out to the Max Planck Institute for Physics (MPP), in Munich, Germany, which supplied the substrates to be studied. These substrates had the following specifications:
 
 \begin{itemize}
     \item \textbf{Diamond substrate:} 
@@ -604,14 +610,14 @@ Once the final parameters were agreed to fit the general interests of this thesi
 
 \end{itemize}
 
-The fabrication process carried out at MPP was divided in two runs. Firstly, an attempt using wet etching over a positive resist was made. This attempt turned out to be inconsistent due to the viscosity of the etchant being too high for the 10 $\upmu$m and 4 $\upmu$m crevices and therefore unreliable. The results were therefore discarded. 
+The fabrication process carried out at MPP was divided in two runs. Firstly, an attempt using wet etching over a positive resist was made. This attempt turned out to be inconsistent due to the viscosity of the etchant being too high for the 10 $\upmu$m and 4 $\upmu$m crevices and therefore unreliable. The substrates then a cleaning process in order to undergo a second fabrication run. 
 
-Secondly, a lift-off run was tried. This second run resulted in a successful fabrication attempt for the SiC substrates, where the shape of the resonators was properly resolved, and the resist could be properly developed out of the sample's surface. For the diamond substrates both runs resulted in faulty circuits.
+Secondly, a lift-off run was tried. This second run resulted in a successful fabrication attempt for the SiC substrates, where the shape of the resonators was properly resolved, and the resist could be properly developed out of the sample's surface. For the diamond substrates both runs presented complications caused by the smaller dimensions of the gaps ($g = 4 \upmu \text{m}$).
 
 The process of the first run was carried out with the following steps:
 
 \begin{enumerate}
-    \item The substrates were cleaned using an HF bath, which is crucial to ensure a clean interface with the Al that will not tamper with the $Q_i$ results.
+    \item The substrates were cleaned using an HF bath, which is generally crucial to ensure a clean fabrication surface.
     \item An even 300 nm thick Al film was deposited on the samples using electron-beam evaporation under high vacuum conditions (UHV e-beam evaporation).
     \item Spin-coating using micro resist technology's positive resist ma-P 1215 was done on each substrate.
     \item The resist was exposed using a Heidelberg Instruments' $\upmu$MLA laser writer following the layout shown in \cref{fig:PositiveResist}. This way the area where the Al coating was desired was protected by the resist.
@@ -633,11 +639,13 @@ Furthermore, the process of the second run went as follows:
 
 \subsubsection{Fabrication results}
 
-Once the second fabrication run was finished, the four SiC chips which were checked with a microscope at MPP, and looked to be ready for measurements, were sent to IFAE's QCT workshop by mail. The chips were sent in standard \textcolor{red}{gel box}, wrapped in bubble wrap. Once they arrived they were revised using a microscope with \textcolor{red}{magnification} in order to have an idea of the chip's viability for measurement. In particular, the chips were checked for any short-circuit or discontinuities caused by a broken CPW line or by faulty fabrication; as well as debris or pieces of resist remaining due to an incomplete strip.
+Once the second fabrication run was finished, the four SiC chips were checked with a microscope at MPP, where they looked to be ready for measurements, and were sent to IFAE's QCT workshop. Once they arrived they were revised using an optical microscope in order to have an idea of the chip's viability for measurement. In particular, the chips were checked for any short-circuit or discontinuities caused by a broken CPW line or by faulty fabrication; as well as debris or pieces of resist remaining due to an incomplete strip.
 
 \textcolor{blue}{Afterward, a more in-depth visual study was carried out on a microscope with \textcolor{red}{magnification}. This was done in order to check for more precise information on the fabrication quality. This way aspects such as resolution, Al quality and presence of debris or remaining resist could be conclusively assessed.}
 
-While looking at the chips with the first microscope, several defects were noticed. Especially, the feedline of the two 4H-SiC chips as well as one of the 6H-SiC chips, looked to be either completely broken at least at one point, or severely compromised by remaining resist. The remaining 6H-SiC chip was considered to be in proper conditions for measurement.
+\textcolor{red}{While inspecting the chips under the microscope, defects were identified in three of the four devices, rendering them unsuitable for measurement. Of the four chips, only one 6H-SiC chip was found to be in proper condition, and was therefore selected for the measurement campaign.}
+
+Visual inspection under the microscope revealed defects in three of the four chips. Only one 6H-SiC chip was found to be in proper condition and was selected for measurement.
 
 \textcolor{blue}{Moreover, the images taken of the chips can be seen in \cref{fig:Microscope}. In these images the overall resolution of the lift-off process can be assessed. Also, several images of the defects seen in the first assessment can be observed clearly.}
 
@@ -647,36 +655,30 @@ All in all, as it was expected from a first prototype, only one of the four chip
 
 Once the chips were obtained and available for measurement, it was of great importance to adjust the measurement setup to the experiment at hand. For this, the key aspects of the experiment had to be taken into account. These included the fact that the experiment was thought for superconducting Al, which meant its critical temperature ($T_c$) had to be taken into account; and the kind of measurements to be carried out, which were frequency and power sweeps seeking an in-depth study of the $S_{21}$ spectrum of the resonators in order to then extract the internal quality factor.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.4\textwidth]{figures/Fridge_cryo.png}
-    \includegraphics[width=0.4\textwidth]{figures/Fridge_circuit.png}
-    \caption{Reproduced from \cite{LopezNunez2024}. Cryogenics schematics of Bluefors fridge, analogous to Leiden fridge setup. Circuitry schematics of Bluefors fridge, analogous to Leiden fridge setup.}
-    \label{fig:Fridge}
-\end{figure}
+This experiment was planned to be carried out in a Leiden Cryogenics fridge using a setup like the one shown in \cite{LopezNunez2024}. It is of interest that the stage where the chip is set to be measured will be at $\sim 10$ mK.
 
-This experiment was planned to be carried out in a Leiden Cryogenics fridge using a setup like the one shown in \ref{fig:Fridge}. It is of interest that the stage where the chip is set to be measured will be at $\sim 20$ mK. Furthermore, the use of a Pb magnetic shield was thought to avoid losses due to external magnetic fields or external radiation.
+Moreover, in order to have proper control over the input signal and be able to measure the output properly a setup such as the one shown in \cite{LopezNunez2024} was employed. In these schematics several attenuators can be observed between the input signal generator and the device; this is motivated by the fact that the power interval desired to work in is in the single photon regime. Also, both infrared and band pass filters can be seen right before and after the connection to the device; infrared filters serve as a way to remove infrared radiation from having an effect on the circuit, and band pass filters limit the working range to 4-8 GHz, as well as preventing noise affecting the measurements.
 
-Furthermore, in order to have proper control over the input signal and be able to measure the output properly a setup such as the one shown in \cref{fig:Fridge} was employed. In these schematics several attenuators can be observed between the input signal generator and the device; this is motivated by the fact that the power interval desired to work in is in the single photon regime. Also, low band pass filters can be seen right before and after the connection to the device; these filters serve as a way to prevent noise affecting the measurements.
+Additionally, two amplifiers can be seen in the signal chain: one at the 4 K stage, and one at room temperature, right before output acquisition. These amplifiers are crucial to the measurement of the device's response, as the signal reaching the output is inherently low in power and must be amplified to be resolved above the noise floor of the readout electronics. This is particularly true when operating at the single-photon level.
 
-Additionally, two \textcolor{red}{amplifiers} can be seen in the second stage of the fridge and right before the output acquisition. These amplifiers are crucial to the measurement of the device's response, as the power output has been diminished almost to zero by the attenuators on the input side of the circuit.
-
-In order to study the same behaviors discussed in \cref{SimuResultsSection}, the measurement was planned to be as follows:
+In order to study the behaviors discussed in \cref{SimuResultsSection}, the measurement was planned to be as follows:
 
 \begin{enumerate}
     \item A coarse frequency sweep around the respective $f_r$ of each resonator in order to find where the real dip was located.
     \item Once the dip was located, a finer sweep, closing in on the $f_r$ and with a higher intermediate frequency (IF) in order to better resolve the spectrum.
-    \item Once a properly resolved $S_{21}$ spectrum is achieved, exporting the $\Re S_{21}$ and $\Im S_{21}$ spectrum.
+    \item Once a properly resolved $S_{21}$ spectrum is achieved, exporting the $\Re (S_{21})$ and $\Im (S_{21})$ spectrum.
     \item Using the $S_{21}$ method described in \cite{Lopez-Nunez2025}, extracting the desired data related to $Q_i$ as it is the interest of this thesis; as well as data related to $\epsilon_{eff}, Z_0$ and $Q_c$ in order to compare the results from the fabricated chips with those gotten from the Sonnet simulations.
 \end{enumerate}
 
-Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step, with increasingly less attenuation. This would then allow us to perform a sweep in power. Moreover, this is of interest in order to later on be able to tell whether the energy losses where due to dielectric TLS.
+\textcolor{blue}{This process was then planned to be carried out at different temperatures. Starting out at the lowest temperature achieved by the cryogenic setup, a series of measurements were to be taken at incrementally higher temperature set points, allowing the system to thermalize at each step before recording the resonator response. This sweep was to be performed at low, near single-photon power, so that the observed evolution of $Q_i$ and $f_r$ could be attributed to thermal saturation of the TLS population. This way the value of $F \delta^0_{TLS}$ could be extracted following \cref{Qi(T)}.}
+
+\textcolor{red}{Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step, with increasingly less attenuation. This would then allow us to perform a sweep in power. Moreover, this is of interest in order to later on be able to tell whether the energy losses where due to dielectric TLS.}
 
 This way, the resulting spectrum obtained from the measurements should look similar to those described in \cref{Qfactor,SimuResultsSection}; which means properly fitting the complex $S_{21}$ spectrum to the expression presented by \cite{Lopez-Nunez2025}.
 
 The real $f_r$ are expected to fall slightly under the predicted values. Also, the experimental values of $Q_c$ are expected to vary significantly, especially at higher values, due to its high sensitivity to any variation in coupling distance.
 
-Due to fabrication and cryostat scheduling constraints, the measurements explained were not carried out within the scope of this thesis. Further work to measure the chips discussed in this text is necessary; as well as future fabrication runs to make up for the unviable chips, including the diamond substrates and the 4H-SiC substrates. Discussions surrounding the development of a mask for each kind of substrate with intentions of fabricating larger wafers were taking place at the time of this work's end.
+Due to fabrication and cryostat scheduling constraints, the measurements described in this work were not carried out within the scope of this thesis, although they are expected to be completed before the end of the calendar year. Further work to measure the chips discussed in this text is therefore necessary, as well as future fabrication runs to make up for the unviable chips, including the diamond and 4H-SiC substrates. Discussions surrounding the development of a mask for each kind of substrate, with the intention of fabricating larger wafers, were taking place at the time of this work's completion.
 
 \section{Conclusions and outlook}
 
@@ -688,7 +690,7 @@ These resonators were simulated using the method of moments software Sonnet Soft
 
 Once these chips were fabricated, they were assessed for measurement; searching for discontinuities in transmission lines that could cause shorts or open ends which would compromise the measurements. All in all, one 6H-SiC was found to be clearly ready for measurements.
 
-To fulfill the thesis' objectives, the considerations on the setup covered the usage of a cryogenic fridge, capable of arriving at temperatures of $\sim 20$ mK; and a circuit setup including infrared and LBP filters, as well as TWPA style amplifiers, in order to enable working in the low-photon number regime, as well as increasing the SNR. 
+To fulfill the thesis' objectives, the considerations on the setup covered the usage of a cryogenic fridge, capable of arriving at temperatures of $\sim 10$ mK; and a circuit setup including infrared and LBP filters, as well as TWPA style amplifiers, in order to enable working in the low-photon number regime, as well as increasing the SNR. 
 
 Additionally, the considerations on the procedure covered the execution of a temperature sweep as well as a power sweep of $Q_i$. In this case, the temperature sweep ($Q_i(T)$) serves for the extraction of $\delta^0_{TLS}$; and the power sweep ($Q_i(P)$) served as verification of the saturation of TLS.
 
