@@ -29,6 +29,7 @@
 \usepackage{graphicx}
 \usepackage{subcaption}          % for subfigures
 \usepackage{caption}
+\usepackage{float}
 \captionsetup{font=small, labelfont=bf}
 
 % ===== Tables =====
@@ -96,7 +97,7 @@ In this chapter, key theoretical concepts needed to understand the general workf
 
 \subsection{Superconductivity} \label{Superconductivity}
 
-This section will be dedicated to the explanation of specific concepts related to superconductivity relevant to this thesis. First, explaining basic phenomenology; then, touching on the subject of BCS theory and Cooper pairs; and finally, arriving at the concept of type I and type II superconductors.
+This section will be dedicated to the explanation of specific concepts related to superconductivity relevant to this thesis. First, explaining basic phenomenology; then, touching on the subject of BCS theory and Cooper pairs; and finally, arriving at the concept of type-I and type-II superconductors.
 
 \subsubsection{Basic phenomenology}
 
@@ -104,10 +105,10 @@ This section will follow the analysis shown by \cite{Annett2003}.
 
 When talking about superconductivity, the first thought that comes to mind is conduction with a resistance exactly equal to zero; or rather, conduction with an infinite value of conductivity. And, even though this is, in reality, the most desirable key characteristic of superconducting materials due to the lack of resistive energy losses, the truth is that a completely pure metal with no impurities would also show this characteristic, as its temperature approached absolute zero, without being catalogued as a superconductor. The key differences between the two are as follows.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/SuperConducting_Transition.png}
-    \caption{Sudden drop in resistivity to zero at the critical temperature. Reproduced from \cite{Annett2003}}
+    \caption{Phase transition diagram of a superconducting material. The resistivity is shown to drop violently at $T_c$ (solid line), unlike a regular conductor (dashed line). Reproduced from \cite{Annett2003}.}
     \label{fig:SupercondPhaseTrans}
 \end{figure}
 
@@ -116,7 +117,7 @@ Firstly, a true superconductor experimentally shows a sudden drop in resistivity
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/Meissner_Oschenffeld.png}
-    \caption{Meissner Ochsenfeld effect representation. Reproduced from \cite{Annett2003}}
+    \caption{Representation of the Meissner Ochsenfeld effect. Independently of its initial state, the material will end up having an internal flux of exactly zero. Reproduced from \cite{Annett2003}.}
     \label{fig:MeissnerOchsenfeld}
 \end{figure}
 
@@ -131,7 +132,7 @@ Of interest to this thesis is the classification of superconductors into two typ
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/TypeI_TypeII.png}
-    \caption{Reproduced from \cite{Annett2003}}
+    \caption{Visual representation of the abrupt transition of the internal flux, presented by a Type-I superconductor, in comparison with the smooth transition presented by a Type-II superconductor. Reproduced from \cite{Annett2003}.}
     \label{fig:SupcondTypes}
 \end{figure}
 
@@ -140,7 +141,7 @@ In a Type-I superconductor, the same way there exists a critical temperature $T_
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/Vortices.png}
-    \caption{Reproduced from \cite{Annett2003}}
+    \caption{Schematics of the penetration of magnetic flux lines through a Type-II superconductor. Reproduced from \cite{Annett2003}.}
     \label{fig:Vortices}
 \end{figure}
 
@@ -173,7 +174,7 @@ which is overcome, within a narrow energy window near the Fermi surface, by the 
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{figures/EnergyBandGap.png}
-    \caption{Reproduced from \cite{Annett2003}}
+    \caption{BCS density of states as a function of energy $\epsilon$. This schematic shows the characteristic gap of $2 \Delta$ centered at the fermi level $\epsilon_F$, where no quasiparticle states exist. Reproduced from \cite{Annett2003}.}
     \label{fig:EnergyBandGap}
 \end{figure}
 
@@ -223,7 +224,7 @@ For distributed-element structures with simple field symmetry, such as coaxial l
     \includegraphics[width=0.4\textwidth]{figures/Conformal_a.png}
     \includegraphics[width=0.4\textwidth]{figures/Conformal_b.png}
     \includegraphics[width=0.4\textwidth]{figures/Conformal_c.png}
-    \caption{Reproduced from \cite{RaineeN2001}}
+    \caption{Schematics of the three different partial capacitances calculated using conformal mapping techniques for a coplanar waveguide sandwiched between two dielectric volumes. Reproduced from \cite{RaineeN2001}.}
     \label{fig:ConfMapping}
 \end{figure}
 
@@ -334,7 +335,7 @@ In this case, $Q_{qp}$ stands for the energy losses derived from non-equilibrium
 
 Furthermore, $Q_{rad}$ refers to the energy losses caused by the radiation of the electromagnetic field into free space or into the chip package.
 
-Likewise, $Q_{vortex}$ is derived from the contribution of the movement of vortices formed in a type II superconductor.
+Likewise, $Q_{vortex}$ is derived from the contribution of the movement of vortices formed in a type-II superconductor.
 
 More importantly to the subject of this study is the contribution of two-level-systems (TLS). $Q_{TLS}$ represents the energy loss contributions of the different TLS that appear along the interfaces between materials. Such interfaces are the air-substrate interface, the air-metal interface and the substrate-metal interface. The latter is usually the one with the highest contribution. This quantity can be described by
 
@@ -445,7 +446,7 @@ Once all of these factors were properly taken into account, it was decided that 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/cpwg_drawing.pdf}
-    \caption{Reproduced from \cite{zotero-item-350}}
+    \caption{Physical parameters required for calculations using conformal mapping in \cref{impedance,permittivity}. Reproduced from \cite{zotero-item-350}.}
     \label{fig:CPWcross}
 \end{figure}
 
@@ -460,11 +461,13 @@ As it is shown \cref{permittivity,impedance}, both the $\epsilon_{eff}$ and the 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/4H/4H_sim_2.png}
-    \caption{Layout used for simulations}
+    \caption{Reduced layout used for Sonnet simulations. The reduced ground surface serves to reduce simulation time without loss of physical accuracy.}
     \label{fig:SimLayout}
 \end{figure}
 
-After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software Sonnet Software. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 mm $\times$ 2907.5 mm was used, as seen in \ref{fig:SimLayout}. This layout was divided using a rectangular mesh with a cell size of $2 \, \upmu \text{m} \times 2 \, \upmu \text{m}$; taking into account that the smallest distance in the SiC designs was 10 $\upmu$m; and in the case of the diamond design 4 $\upmu$m. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$.
+After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software Sonnet Software. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 mm $\times$ 2907.5 mm was used, as seen in \ref{fig:SimLayout}. This layout was divided using a rectangular mesh with a cell size of $2.5 \, \upmu \text{m} \times 2.5 \, \upmu \text{m}$; taking into account that the smallest distance in the SiC designs was 10 $\upmu$m; and in the case of the diamond design 4 $\upmu$m. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$.
+
+After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software Sonnet Software. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 mm $\times$ 2907.5 mm was used, as seen in Figure~\ref{fig:SimLayout}. This layout was divided using a rectangular mesh with a cell size of $2.5 \, \upmu \text{m} \times 2.5 \, \upmu \text{m}$; taking into account that the smallest distance in the SiC designs was 10 $\upmu$m; and in the case of the diamond design 4 $\upmu$m. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$. Further information on the layout generation and simulation parameters can be found in \cref{App:Res_chips}
 
 This process was done in an iterative manner; where, for each resonator of each substrate, firstly a coarse frequency sweep of 300 points was done in order to adjust the length of the resonator taking into account the $\epsilon_{eff}$ calculated by Sonnet and get closer to the desired $f_r$. Then, with the updated layout, a new coarse simulation was done in a 200MHz interval around an educated estimation of the $f_r$ in order to get a first indication of the power dip in the signal. Then, finer simulations of 600 and 800 points were done in progressively smaller intervals around the $f_r$ until the dip stopped growing vertically, which meant that the signal had been finely resolved closely around the $f_r$. Finally, the resolved signal was analyzed using the method developed by \cite{Lopez-Nunez2025}, which was useful to have a proper estimation of $Q_e$.
 
@@ -474,7 +477,7 @@ Through this process, the final parameters for the resonators were achieved. The
 
 \begin{table}[ht]
     \centering
-    \caption{Results from simulations and $S_{21}$ analysis for resonators with 4H-SiC, 6H-SiC, and Diamond substrates}
+    \caption{Final parameters achieved for resonators with 4H-SiC, 6H-SiC, and Diamond substrates. All parameters were iteratively simulated in order to arrive to the desired conditions.}
     \label{tab:FinalParameters}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}lSScc@{}}
@@ -493,14 +496,14 @@ After the simulations were carried out, the overall behavior of the resonator de
 
 \begin{table}[ht]
     \centering
-    \caption{Results from simulations and $S_{21}$ analysis for resonators with 4H-SiC, 6H-SiC, and Diamond substrates}
+    \caption{Values of $Z_0$ and $\epsilon_{eff}$ for resonators with 4H-SiC, 6H-SiC, and Diamond substrates. All values where extracted from Sonnet simulations.}
     \label{tab:dielectric_all}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}lSSSSSS@{}}
         \toprule\toprule
         {}               & {4H-SiC Th} & {4H-SiC Sim} & {6H-SiC Th} & {6H-SiC Sim} & {Diamond Th} & {Diamond Sim} \\
         \midrule
-        $Z_0\Omega$      & 52.18         & 55.23             & 51.91         & 55.25             & 51.01          & 55.51               \\
+        $Z_0 (\Omega)$      & 52.18         & 55.23             & 51.91         & 55.25             & 51.01          & 55.51               \\
         $\epsilon_{eff}$ & 5.33          & 5.63              & 5.388         & 5.63              & 3.35           & 3.52                \\
         \bottomrule\bottomrule
     \end{tabular}%
@@ -509,7 +512,7 @@ After the simulations were carried out, the overall behavior of the resonator de
 
 \begin{table}[ht]
     \centering
-    \caption{Table with results from simulations and $S_{21}$ analysis for resonators with 4H-SiC substrate}
+    \caption{Data extracted from fitting the simulated $S_{21}$ \cite{Lopez-Nunez2025} spectrum for resonators with 4H-SiC substrate. The results are compared to those gotten from analytical expressions.}
     \label{tab:SimResults4H}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}ccccccc@{}}
@@ -527,7 +530,7 @@ After the simulations were carried out, the overall behavior of the resonator de
 
 \begin{table}[ht]
     \centering
-    \caption{Table with results from simulations and $S_{21}$ analysis for resonators with 6H-SiC substrate}
+    \caption{Data extracted from fitting the simulated $S_{21}$ \cite{Lopez-Nunez2025} spectrum for resonators with 6H-SiC substrate. The results are compared to those gotten from analytical expressions.}
     \label{tab:SimResults6H}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}ccccccc@{}}
@@ -545,7 +548,7 @@ After the simulations were carried out, the overall behavior of the resonator de
 
 \begin{table}[ht]
     \centering
-    \caption{Table with results from simulations and $S_{21}$ analysis for resonators with diamond substrate}
+    \caption{Data extracted from fitting the simulated $S_{21}$ \cite{Lopez-Nunez2025} spectrum for resonators with diamond substrate. The results are compared to those gotten from analytical expressions.}
     \label{tab:SimResultsDiamond}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}ccccccc@{}}
@@ -633,7 +636,7 @@ The process of the first run was carried out with the following steps:
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/4H/4H_mask.png}
-    \caption{4H-SiC Positive layout used for the wet etching process.}
+    \caption{4H-SiC Positive layout used for the wet etching process. The layout includes four $\lambda/4$ CPW resonators, inductively coupled to the central feedline. Launchers are added at each end of the feedline to facilitate wire-bonding. Each resonator can be seen to have distinct total lengths and distancing from the feedline. The colored areas protect the Al film, while the white gaps let the etchant through to generate the pattern.}
     \label{fig:PositiveResist}
 \end{figure}
 
@@ -652,7 +655,7 @@ Furthermore, the process of the second run went as follows:
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{figures/4H/4H_mask_neg.png}
-    \caption{4H-SiC Negative layout used for the lift-off process.}
+    \caption{4H-SiC Negative layout used for the lift-off process. This layout is the complementary (inverted) pattern to the positive mask. The colored regions of the resist become insoluble as they are exposed to the laser, protecting those areas from Al evaporation. Then the resist is removed leaving the pattern behind.}
     \label{fig:NegativeResist}
 \end{figure}
 
@@ -679,9 +682,9 @@ Once the chips were obtained and available for measurement, it was of great impo
 
 This experiment was planned to be carried out in a Leiden Cryogenics fridge using a setup like the one shown in \cite{LopezNunez2024}. It is of interest that the stage where the chip is set to be measured will be at $\sim 10$ mK.
 
-Moreover, in order to have proper control over the input signal and be able to measure the output properly a setup such as the one shown in \cite{LopezNunez2024} was employed. In these schematics several attenuators can be observed between the input signal generator and the device; this is motivated by the fact that the power interval desired to work in is in the single photon regime. Also, both infrared and band pass filters can be seen right before and after the connection to the device; infrared filters serve as a way to remove infrared radiation from having an effect on the circuit, and band pass filters limit the working range to 4-8 GHz, as well as preventing noise affecting the measurements.
+Moreover, in order to have proper control over the input signal and be able to measure the output properly a setup such as the one shown in \cite{LopezNunez2024} was employed. In these schematics several attenuators amounting to 56 dB are installed between the input signal generator and the device; this is motivated by the fact that the power interval desired to work in is as low as the single-photon level; which, in the 4-8 GHz interval, corresponds to -140 dBm to -150 dBm. Furthermore, both infrared and band pass filters are placed right before and after the connection to the device; infrared filters serve as a way to remove infrared radiation from having an effect on the circuit, and band pass filters limit the working range to 4-8 GHz, as well as preventing noise from affecting the measurements.
 
-Additionally, two amplifiers can be seen in the signal chain: one at the 4 K stage, and one at room temperature, right before output acquisition. These amplifiers are crucial to the measurement of the device's response, as the signal reaching the output is inherently low in power and must be amplified to be resolved above the noise floor of the readout electronics. This is particularly true when operating at the single-photon level.
+Additionally, two amplifiers can be seen in the signal chain: one at the 4 K stage, and one at room temperature, right before output acquisition. These amplifiers are crucial to the measurement of the device's response, as the signal reaching the output is inherently low in power and must be amplified in order to carry out the acquisition. This is particularly true when operating at the single-photon level.
 
 In order to study the behaviors discussed in \cref{SimuResultsSection}, the measurement was planned to be as follows:
 
@@ -692,15 +695,15 @@ In order to study the behaviors discussed in \cref{SimuResultsSection}, the meas
     \item Using the $S_{21}$ method described in \cite{Lopez-Nunez2025}, extracting the desired data related to $Q_i$ as it is the interest of this thesis; as well as data related to $\epsilon_{eff}, Z_0$ and $Q_c$ in order to compare the results from the fabricated chips with those gotten from the Sonnet simulations.
 \end{enumerate}
 
-\textcolor{blue}{This process was then planned to be carried out at different temperatures. Starting out at the lowest temperature achieved by the cryogenic setup, a series of measurements were to be taken at incrementally higher temperature set points, allowing the system to thermalize at each step before recording the resonator response. This sweep was to be performed at low, near single-photon power, so that the observed evolution of $Q_i$ and $f_r$ could be attributed to thermal saturation of the TLS population. This way the value of $F \delta^0_{TLS}$ could be extracted following \cref{Qi(T)}.}
+This process was then planned to be carried out at different temperatures. Starting out at base temperature ($\sim 10$ mK), a series of measurements were to be taken at incrementally higher temperature set points until temperatures of the order of $\sim 200$ mK, allowing the system to thermalize at each step before recording the resonator response. Around this temperature the frequency shift caused by changes in temperature stop being caused by TLS and quasiparticles become the main contributor\footnote{A more rigorous explanation of the procedure can be found in \cite{Scigliuzzo2020}}. This sweep was to be performed at low, near single-photon power, so that the observed evolution of $Q_i$ and $f_r$ could be attributed to thermal saturation of the TLS population. This way the value of $F \delta^0_{TLS}$ could be extracted following \cref{Qi(T)} \cite{Scigliuzzo2020}.
 
-Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step, with increasingly less attenuation. This would then allow us to perform a sweep in power, which is of interest in order to gain further insight into the TLS behavior.
+Additionally, in every step of this measurement plan, several iterations were planned to be carried out on each step at base temperature ($\sim 10$ mK), with increasingly less attenuation. This would then allow us to perform a sweep in power, which is of interest in order to gain further insight into the TLS behavior.
 
 This way, the resulting spectrum obtained from the measurements should look similar to those described in \cref{Qfactor,SimuResultsSection}; which means properly fitting the complex $S_{21}$ spectrum to the expression presented by \cite{Lopez-Nunez2025}.
 
 The real $f_r$ are expected to fall slightly under the predicted values. Also, the experimental values of $Q_c$ are expected to vary significantly, especially at higher values, due to its high sensitivity to any variation in coupling distance.
 
-Due to fabrication and cryostat scheduling constraints, the measurements described in this work were not carried out within the scope of this thesis, although they are expected to be completed before the end of the calendar year. Further work to measure the chips discussed in this text is therefore necessary, as well as future fabrication runs to make up for the unviable chips, including the diamond and 4H-SiC substrates. Discussions surrounding the development of a mask for each kind of substrate, with the intention of fabricating larger wafers, were taking place at the time of this work's completion.
+Due to fabrication and cryostat scheduling constraints, the measurements described in this work were not carried out within the scope of this thesis, although they are expected to be completed before the end of the calendar year. Further work to measure the chips discussed in this text is therefore necessary, as well as future fabrication runs to make up for the unviable chips, including the diamond and 4H-SiC substrates. Discussions were taking place at the time of this work's completion, surrounding the development of a mask for each kind of substrate, in order to carry out runs using photolithography techniques which would facilitate further work.
 
 \section{Conclusions and outlook}
 
@@ -716,7 +719,7 @@ To fulfill the thesis' objectives, the considerations on the setup covered the u
 
 Additionally, the considerations on the procedure covered the execution of a temperature sweep as well as a power sweep of $Q_i$. In this case, the temperature sweep ($Q_i(T)$) serves for the extraction of $\delta^0_{TLS}$; and the power sweep ($Q_i(P)$) served as verification of the saturation of TLS.
 
-Due to fabrication and cryostat scheduling constraints, cryogenic measurements of the measurement-ready 6H-SiC chip could not be carried out in the scope of this thesis. Consequently, the immediate continuation of this work involves executing the outlined frequency, temperature and power sweeps on the 6H-SiC sample to extract its internal quality factor, as well as making a first measurement of 6H-SiC's $\delta^0_TLS$. Future iterations will focus on the optimization of the fabrication process, as well as the expansion of the design towards full-wafer fabrication masks. 
+Due to fabrication and cryostat scheduling constraints, cryogenic measurements of the measurement-ready 6H-SiC chip could not be carried out in the scope of this thesis. Consequently, the immediate continuation of this work involves executing the outlined frequency, temperature and power sweeps on the 6H-SiC sample to extract its internal quality factor, as well as making a first measurement of 6H-SiC's $\delta^0_TLS$. Future iterations will focus on the optimization of the fabrication process, as well as the development of photolitography masks to facilitate future fabrication runs. 
 
 \newpage
 
@@ -726,47 +729,13 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
 
 \appendix
 
-\section{Current density distributions}
+\section{Resonator chip layouts} \label{App:Res_chips}
 
-\begin{figure}[ht]
-    \centering
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=0.85\linewidth]{figures/Diamond/diamond_resonance.png}
-        \caption{Diamond, in resonance}
-        \label{fig:diamond_in}
-    \end{subfigure}
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=0.9\linewidth]{figures/Diamond/diamond_nonres.png}
-        \caption{Diamond, out of resonance}
-        \label{fig:diamond_out}
-    \end{subfigure}
-    
-    \vspace{0.5em}
-    
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=0.85\linewidth]{figures/6H/6H_resonance.png}
-        \caption{6H-SiC, in resonance}
-        \label{fig:6HSiC_in}
-    \end{subfigure}
-    \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=0.9\linewidth]{figures/6H/6H_nonres.png}
-        \caption{6H-SiC, out of resonance}
-        \label{fig:6HSiC_out}
-    \end{subfigure}
-    
-    \caption{Current density distribution for Diamond and 6H-SiC substrates.}
-    \label{fig:CurrentDist_all}
-\end{figure}
-
-\newpage
-
-\section{Resonator chip masks}
-
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.9\linewidth}
         \centering
-        \includegraphics[width=0.8\linewidth]{figures/6H/6H_mask.png}
+        \includegraphics[width=0.7\linewidth]{figures/6H/6H_mask.png}
         \caption{6H-SiC positive layout}
     \end{subfigure}
 
@@ -774,14 +743,16 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
 
     \begin{subfigure}{0.9\linewidth}
         \centering
-        \includegraphics[width=0.8\linewidth]{figures/Diamond/Diamond_mask.png}
+        \includegraphics[width=0.7\linewidth]{figures/Diamond/Diamond_mask.png}
         \caption{Diamond positive layout}
     \end{subfigure}
     \caption{Positive layouts used for the wet etching process.}
     \label{fig:positive_layouts}
 \end{figure}
 
-\begin{figure}[h]
+\clearpage
+
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.9\linewidth}
         \centering
@@ -800,9 +771,7 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
     \label{fig:negative_layouts}
 \end{figure}
 
-\section{Simulation layouts}
-
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.45\linewidth}
         \centering
@@ -818,9 +787,20 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
     \label{fig:sim_layouts}
 \end{figure}
 
+The design of the resonator geometries was carried out via a custom Python script built on the \texttt{gdstk} library. The script parametrically generates the geometry of each individual $\lambda/4$ CPW resonator (center-conductor width, gap, total length, and coupling geometry to the feedline) from a small set of physical input parameters, allowing the four resonators on each chip to be produced consistently and rapidly regenerated whenever target frequencies or coupling strengths were revised. The same script assembles the individual resonator geometries into two distinct layout variants: a simulation layout, consisting of a single resonator together with its feedline segment and a surrounding ground plane extending $\sim$ 500 $\upmu$m from the resonator edge on each side, matching the geometry entered into Sonnet; and a fabrication layout, consisting of the complete four-resonator chip with launchers, feedline, and full ground plane, exported as the exposure pattern for the laser writer. Generating both layouts from a single parametric script, rather than drawing them independently, ensures that the simulated and fabricated geometries are identical up to the ground-plane truncation applied in the simulation layout.
+
+The material parameters entered into Sonnet were tailored to the three substrates and to the aluminum film actually used, rather than left at their generic library values.
+\begin{itemize}
+    \item \textbf{Substrate:} Diamond, being cubic and therefore dielectrically isotropic, was modeled with a single relative permittivity $\varepsilon_{\mathrm{rel}} = 5.7$. For 4H-SiC and 6H-SiC, whose hexagonal polytype structure gives rise to distinct ordinary and extraordinary dielectric axes, anisotropic permittivity values were used instead of a single isotropic figure, with in-plane and out-of-plane components $\varepsilon_{\mathrm{rel},\parallel} = 9.66$ and $9.77$, and $\varepsilon_{\mathrm{rel},\perp} = 10.2$ and $10.3$ taken from \cite{Li2024,Patrick1970}, respectively. Substrate thickness was set to 350 $\upmu$m for both SiC variants and 500 $\upmu$m for diamond.
+    \item \textbf{Metal (Al):} The Surface Impedance loss model was used, appropriate for a superconducting film treated as a 2D boundary condition. The surface resistance was set to $R_s = 0$ to emulate superconductivity, with a film thickness of 300~nm, matching the first-run fabricated samples. No additional sheet inductance value was specified; that is, no manually imposed kinetic inductance correction was applied beyond Sonnet's default surface impedance treatment.
+    \item \textbf{Top and box boundaries:} The top layer, representing air above the chip, was assigned $\varepsilon_{\mathrm{rel}} = \mu_{\mathrm{rel}} = 1$ and zero conductivity and loss tangent, with a thickness of 50\,000~µm to place the upper boundary far enough from the metal layer to approximate open space. On the contrary, the box bottom was set as a grounded boundary rather than free space, correctly modeling the grounded geometry of the physical chip on a printed circuit board (PCB).
+\end{itemize}
+
+\clearpage
+
 \section{Resonator fittings}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{figures/4H/4H_63_80_MagF.png}
     \includegraphics[width=0.4\textwidth]{figures/4H/4H_63_80_ArgF.png}
@@ -829,7 +809,7 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
     \label{app:4HFit}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{figures/6H/6H_63G_80um_MagF.png}
     \includegraphics[width=0.4\textwidth]{figures/6H/6H_63G_80um_ArgF.png}
@@ -838,13 +818,45 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
     \label{app:6HFit}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{figures/Diamond/diamond_66G_50u_MagF.png}
     \includegraphics[width=0.4\textwidth]{figures/Diamond/diamond_66G_50u_ArgF.png}
     \includegraphics[width=0.4\textwidth]{figures/Diamond/diamond_66G_50u_ImRe.png}
     \caption{Reproduced from \cite{RaineeN2001}}
     \label{app:DiamondFit}
+\end{figure}
+
+\section{Current density distributions}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.85\linewidth]{figures/Diamond/diamond_resonance.png}
+        \caption{Diamond, in resonance}
+        \label{fig:diamond_in}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.9\linewidth]{figures/Diamond/diamond_nonres.png}
+        \caption{Diamond, out of resonance}
+        \label{fig:diamond_out}
+    \end{subfigure}
+
+    \vspace{0.5em}
+
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.85\linewidth]{figures/6H/6H_resonance.png}
+        \caption{6H-SiC, in resonance}
+        \label{fig:6HSiC_in}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[width=0.9\linewidth]{figures/6H/6H_nonres.png}
+        \caption{6H-SiC, out of resonance}
+        \label{fig:6HSiC_out}
+    \end{subfigure}
+
+    \caption{Current density distribution for Diamond and 6H-SiC substrates.}
+    \label{fig:CurrentDist_all}
 \end{figure}
 
 \end{document}

@@ -1181,5 +1181,84 @@
     \field{urlmonth}{08}
     \field{urlyear}{2026}
   \endentry
+
+  \entry{Scigliuzzo2020}{article}{}{}
+    \name{author}{6}{}{%
+      {{hash=SM}{%
+         family={Scigliuzzo},
+         familyi={S\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BLE}{%
+         family={Bruhat},
+         familyi={B\bibinitperiod},
+         given={Laure\bibnamedelima E},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bengtsson},
+         familyi={B\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BJJ}{%
+         family={Burnett},
+         familyi={B\bibinitperiod},
+         given={Jonathan\bibnamedelima J},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RAF}{%
+         family={Roudsari},
+         familyi={R\bibinitperiod},
+         given={Anita\bibnamedelima Fadavi},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Delsing},
+         familyi={D\bibinitperiod},
+         given={Per},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SM+1}
+    \strng{fullhash}{SMBLEBABJJRAFDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Abstract We numerically and experimentally investigate the phononic loss
+  for superconducting resonators fabricated on a piezoelectric substrate. With
+  the help of finite element method simulations, we calculate the energy loss
+  due to electromechanical conversion into bulk and surface acoustic waves.
+  This sets an upper limit for the resonator internal quality factor Q i . To
+  validate the simulation, we fabricate quarter wavelength coplanar waveguide
+  resonators on GaAs and measure Q i as function of frequency, power and
+  temperature. We observe a linear increase of Q i with frequency, as predicted
+  by the simulations for a constant electromechanical coupling. Additionally, Q
+  i shows a weak power dependence and a negligible temperature dependence
+  around 10 mK, excluding two level systems and non-equilibrium quasiparticles
+  as the main source of losses at that temperature.%
+    }
+    \verb{doi}
+    \verb 10.1088/1367-2630/ab8044
+    \endverb
+    \field{issn}{1367-2630}
+    \field{number}{5}
+    \field{pages}{053027}
+    \field{title}{Phononic Loss in Superconducting Resonators on Piezoelectric
+  Substrates}
+    \field{volume}{22}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\HEY4RZ9Y\Scigliuzzo et al. - 2020 - Pho
+    \verb nonic loss in superconducting resonators on piezoelectric substrates.
+    \verb pdf
+    \endverb
+    \field{journaltitle}{New Journal of Physics}
+    \field{month}{05}
+    \field{year}{2020}
+    \field{urlday}{17}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
 \enddatalist
 \endinput
