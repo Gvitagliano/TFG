@@ -21,3 +21,4 @@
 \contentsline {section}{\numberline {A}Current density distributions}{32}{appendix.A}%
 \contentsline {section}{\numberline {B}Resonator chip masks}{33}{appendix.B}%
 \contentsline {section}{\numberline {C}Simulation layouts}{33}{appendix.C}%
+\contentsline {section}{\numberline {D}Resonator fittings}{33}{appendix.D}%
