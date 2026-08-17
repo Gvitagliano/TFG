@@ -12,12 +12,12 @@
 \contentsline {subsection}{\numberline {3.1}Layout design}{17}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Simulation iterations}{18}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Simulation results}{20}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Fabrication of the resonators}{22}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Fabrication runs}{22}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4}Fabrication of the resonators}{23}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Fabrication runs}{23}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Fabrication results}{25}{subsubsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.5}Measurements planning and setup}{26}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Conclusions and outlook}{27}{section.4}%
-\contentsline {section}{References}{29}{section*.16}%
-\contentsline {section}{\numberline {A}Current density distributions}{31}{appendix.A}%
-\contentsline {section}{\numberline {B}Resonator chip masks}{32}{appendix.B}%
-\contentsline {section}{\numberline {C}Simulation layouts}{32}{appendix.C}%
+\contentsline {section}{\numberline {4}Conclusions and outlook}{28}{section.4}%
+\contentsline {section}{References}{30}{section*.17}%
+\contentsline {section}{\numberline {A}Current density distributions}{32}{appendix.A}%
+\contentsline {section}{\numberline {B}Resonator chip masks}{33}{appendix.B}%
+\contentsline {section}{\numberline {C}Simulation layouts}{33}{appendix.C}%

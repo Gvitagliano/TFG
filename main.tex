@@ -472,54 +472,76 @@ Through this process, the final parameters for the resonators were achieved. The
 
 \subsection{Simulation results} \label{SimuResultsSection}
 
-After the simulations were carried out, the overall behavior of the resonator described in \cref{GeneralCPW} was studied. This comprehensive study included the general electromagnetic behavior of the layout, such as voltage and current density along the CPW, and the resulting values of $\epsilon_{eff}$, and $Z_0$, which were consequently compared to those calculated from \cite{Wadell1991} used for the initial estimations mentioned in \cref{LayoutDesign}. Furthermore, it included an in-depth analysis of the $S_{21}$ spectrum following Lopez-Nuñez et al.'s method \cite{Lopez-Nunez2025} from which an estimation of $f_r$ and $Q_c$ was gotten. The numerical results of the simulations can be seen in \cref{tab:SimResults4H,tab:SimResults6H,tab:SimResultsdiamond}.
+After the simulations were carried out, the overall behavior of the resonator described in \cref{GeneralCPW} was studied. This comprehensive study included the general electromagnetic behavior of the layout, such as voltage and current density along the CPW, and the resulting values of $\epsilon_{eff}$, and $Z_0$, which were consequently compared to those calculated from \cite{Wadell1991} used for the initial estimations mentioned in \cref{LayoutDesign}. Furthermore, it included an in-depth analysis of the $S_{21}$ spectrum following Lopez-Nuñez et al.'s method \cite{Lopez-Nunez2025} from which an estimation of $f_r$ and $Q_c$ was gotten. The numerical results of the simulations can be seen in \cref{tab:SimResults4H,tab:SimResults6H,tab:SimResultsDiamond}.
+
+\begin{table}[ht]
+    \centering
+    \caption{Results from simulations and $S_{21}$ analysis for resonators with 4H-SiC, 6H-SiC, and Diamond substrates}
+    \label{tab:dielectric_all}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lSSSSSS@{}}
+        \toprule\toprule
+        {}               & {4H-SiC Th} & {4H-SiC Sim} & {6H-SiC Th} & {6H-SiC Sim} & {Diamond Th} & {Diamond Sim} \\
+        \midrule
+        $Z_0\Omega$      & 52.18         & 55.23             & 51.91         & 55.25             & 51.01          & 55.51               \\
+        $\epsilon_{eff}$ & 5.33          & 5.63              & 5.388         & 5.63              & 3.35           & 3.52                \\
+        \bottomrule\bottomrule
+    \end{tabular}%
+    }
+\end{table}
 
 \begin{table}[ht]
     \centering
     \caption{Table with results from simulations and $S_{21}$ analysis for resonators with 4H-SiC substrate}
     \label{tab:SimResults4H}
+    \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}ccccccc@{}}
     \toprule\toprule
-    Resonator & $f_{r, theory}$ & $f_{r, simulation}$ & $\epsilon_{theory}$ & $\epsilon_{simulation}$ & $Q_{c, theory}$ & $Q_{c, simulation}$ \\
+    Resonator length ($\upmu$m) & $f_{r, theory}$ (GHz) & $f_{r, simulation}$ & Coupling distance ($\upmu$m) & $Q_{c, simulation}$ \\
     \midrule
-    1         &                 &                     &                     &                         &                 &                     \\
-    2         &                 &                     &                     &                         &                 &                     \\
-    3         &                 &                     &                     &                         &                 &                     \\
-    4         &                 &                     &                     &                         &                 &                     \\
+    5005                        & 6.49                  & 6.22                & 80                           & $1.5\times10^6$     \\
+    4755                        & 6.83                  & 6.54                & 70                           & $4.64\times10^5$    \\
+    4529                        & 7.17                  & 6.86                & 70                           & $4.2\times10^5$     \\
+    4323                        & 7.51                  & 7.19                & 25                           & $4.7\times10^3$     \\
     \bottomrule\bottomrule
     \end{tabular}
+    }
 \end{table}
 
 \begin{table}[ht]
     \centering
     \caption{Table with results from simulations and $S_{21}$ analysis for resonators with 6H-SiC substrate}
     \label{tab:SimResults6H}
+    \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}ccccccc@{}}
     \toprule\toprule
-    Resonator & $f_{r, theory}$ & $f_{r, simulation}$ & $\epsilon_{theory}$ & $\epsilon_{simulation}$ & $Q_{c, theory}$ & $Q_{c, simulation}$ \\
+    Resonator length ($\upmu$m) & $f_{r, theory}$ (GHz) & $f_{r, simulation}$ & Coupling distance ($\upmu$m) & $Q_{c, simulation}$ \\
     \midrule
-    1         &                 &                     &                     &                         &                 &                     \\
-    2         &                 &                     &                     &                         &                 &                     \\
-    3         &                 &                     &                     &                         &                 &                     \\
-    4         &                 &                     &                     &                         &                 &                     \\
+    4973                        & 6.50                  & 6.27                & 80                           & $1.5\times10^6$     \\
+    4725                        & 6.83                  & 6.58                & 70                           & $4.56\times10^5$    \\
+    4500                        & 7.18                  & 6.86                & 70                           & $4.2\times10^5$     \\
+    4295                        & 7.52                  & 7.23                & 25                           & $11.6\times10^3$    \\ 
     \bottomrule\bottomrule
     \end{tabular}
+    }
 \end{table}
 
 \begin{table}[ht]
     \centering
     \caption{Table with results from simulations and $S_{21}$ analysis for resonators with diamond substrate}
-    \label{tab:SimResultsdiamond}
+    \label{tab:SimResultsDiamond}
+    \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}ccccccc@{}}
     \toprule\toprule
-    Resonator & $f_{r, theory}$ & $f_{r, simulation}$ & $\epsilon_{theory}$ & $\epsilon_{simulation}$ & $Q_{c, theory}$ & $Q_{c, simulation}$ \\
+    Resonator length ($\upmu$m) & $f_{r, theory}$ (GHz) & $f_{r, simulation}$ & Coupling distance ($\upmu$m) & $Q_{c, simulation}$ \\
     \midrule
-    1         &                 &                     &                     &                         &                 &                     \\
-    2         &                 &                     &                     &                         &                 &                     \\
-    3         &                 &                     &                     &                         &                 &                     \\
-    4         &                 &                     &                     &                         &                 &                     \\
+    5988                        & 6.84                  & 6.59                & 50                           & $9.18\times10^5$    \\
+    5682                        & 7.21                  & 6.94                & 40                           & $2.41\times10^5$    \\
+    5411                        & 7.57                  & 7.30                & 20                           & $24.7\times10^3$    \\
+    5165                        & 7.93                  & 7.64                & 40                           & $2.01\times10^5$    \\ 
     \bottomrule\bottomrule
     \end{tabular}
+    }
 \end{table}
 
 It is interesting to point out how the simulated values of $\epsilon_{eff}$ and $Z_0$ systematically land higher than the ones calculated through the expressions derived from \cite{RaineeN2001}. This can be explained by the fact that in Wadell's equations\cite{Wadell1991}, there are several approximations that take place. Firstly, the ground surface around the resonator is approximated to be infinite; and, secondly, the metal is approximated to have a null thickness. 

@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1786972397.18098 "main.aux" "main.bbl" "main" 1786972404.449 0
+["bibtex main"] 1786977058.76089 "main.aux" "main.bbl" "main" 1786977192.35135 0
   "./TFG.bib" 1786949068 34946 ac318974cafda65e0662ec9279a358ea ""
-  "./main-blx.bib" 1786972402 343 bf1f0c75b5bafd473925320ac9611e26 ""
+  "./main-blx.bib" 1786977190 343 bf1f0c75b5bafd473925320ac9611e26 ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/bibtex/bst/biblatex/biblatex.bst" 1752408733 65510 9a2a51799b543ff279b8ea2dd91ec499 ""
-  "main.aux" 1786972402 24895 24119db8b3c67544d287591248e63474 "pdflatex"
+  "main.aux" 1786977190 25356 e71243fdf21590996668d7954573cfa1 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1786972397.70377 "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" "main.pdf" "main" 1786972404.4508 0
+["pdflatex"] 1786977184.83212 "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" "main.pdf" "main" 1786977192.35271 0
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1786812421 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1786317096 25420 e0985262d4363763290891cb355f725b ""
   "C:/Users/gabri/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1786330785 28976 0ad1119bdc765ff671155a7aac8cdd70 ""
@@ -195,7 +195,7 @@
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/was/upgreek.sty" 1665850770 5794 9054e31be15d93f1e6bd28cca2b6643f ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/gabri/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" 1786972387 66943 6305815cdf73b70eb72405c177f6ce0a ""
+  "c:/Users/gabri/Documents/UAB/Nano/4to_N/TFG_Nano/TFG_Nano_2026/main.tex" 1786977183 67651 a1e4a87275f5a98c2821b3092216e959 ""
   "figures/4H/4H_mask.png" 1786963197 22714 89797149edd7fb160b9b8ef32dbf2f35 ""
   "figures/4H/4H_mask_neg.png" 1786966064 15418 27a53b651fd963d1f49b64bd4504d35b ""
   "figures/4H/4H_nonres.png" 1786964740 84211 6a41e2544a41686e0ff4d5cfcc5a8e0a ""
@@ -220,12 +220,12 @@
   "figures/TypeI_TypeII.png" 1786327481 26872 c82560c7fad8d8ca684c0d7ca5ac0578 ""
   "figures/Vortices.png" 1786327519 18431 11a677eb6becd066627f447f3633bb0d ""
   "figures/cpwg_drawing.pdf" 1786832629 19984 7161bc741477fa68be109e04d8942997 ""
-  "main.aux" 1786972402 24895 24119db8b3c67544d287591248e63474 "pdflatex"
-  "main.bbl" 1786972397 45284 43a4281f5f1976a42f44de45be5aa518 "bibtex main"
-  "main.out" 1786972402 3930 645d488f53fb835f352d0c9aad4c71f2 "pdflatex"
-  "main.run.xml" 1786972402 2515 308d5c5e103e46777463e0426d3b2022 "pdflatex"
-  "main.tex" 1786972387 66943 6305815cdf73b70eb72405c177f6ce0a ""
-  "main.toc" 1786972402 1992 c09c6aabbb48f5f174869abad61d1368 "pdflatex"
+  "main.aux" 1786977190 25356 e71243fdf21590996668d7954573cfa1 "pdflatex"
+  "main.bbl" 1786977059 45284 43a4281f5f1976a42f44de45be5aa518 "bibtex main"
+  "main.out" 1786977190 3930 e56ee9b8dc6bc57ec766e9ecb6c17cfb "pdflatex"
+  "main.run.xml" 1786977190 2515 308d5c5e103e46777463e0426d3b2022 "pdflatex"
+  "main.tex" 1786977183 67651 a1e4a87275f5a98c2821b3092216e959 ""
+  "main.toc" 1786977190 1992 7dff5e207d6a91614f4fb9c24b9c9444 "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"
