@@ -468,9 +468,26 @@ After estimating these initial parameters, a series of numerical simulations wer
 
 This process was done in an iterative manner; where, for each resonator of each substrate, firstly a coarse frequency sweep of 300 points was done in order to adjust the length of the resonator taking into account the $\epsilon_{eff}$ calculated by Sonnet and get closer to the desired $f_r$. Then, with the updated layout, a new coarse simulation was done in a 200MHz interval around an educated estimation of the $f_r$ in order to get a first indication of the power dip in the signal. Then, finer simulations of 600 and 800 points were done in progressively smaller intervals around the $f_r$ until the dip stopped growing vertically, which meant that the signal had been finely resolved closely around the $f_r$. Finally, the resolved signal was analyzed using the method developed by \cite{Lopez-Nunez2025}, which was useful to have a proper estimation of $Q_e$.
 
-Through this process, the final parameters for the resonators were achieved. They can be found in \cref{tab:FinalParameters}
+Through this process, the final parameters for the resonators were achieved. They can be found in \cref{tab:FinalParameters}.
 
 \subsection{Simulation results} \label{SimuResultsSection}
+
+\begin{table}[ht]
+    \centering
+    \caption{Results from simulations and $S_{21}$ analysis for resonators with 4H-SiC, 6H-SiC, and Diamond substrates}
+    \label{tab:FinalParameters}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lSScc@{}}
+        \toprule\toprule
+        {}      & {$w$ ($\upmu$m)} & {$g$ ($\upmu$m)} & $l_{total}$ ($\upmu$m)       & $d_c$ ($\upmu$m)     \\
+        \midrule
+        4H-SiC  & 20                & 10                & \{5005, 4755, 4529, 4323\}   & \{80, 70, 70, 25\}   \\
+        6H-SiC  & 20                & 10                & \{4973, 4725, 4500, 4295\}   & \{80, 70, 70, 25\}   \\
+        Diamond & 20                & 4                 & \{5988, 5682, 5411, 5165\}   & \{50, 40, 40, 20\}   \\
+        \bottomrule\bottomrule
+    \end{tabular}%
+    }
+\end{table}
 
 After the simulations were carried out, the overall behavior of the resonator described in \cref{GeneralCPW} was studied. This comprehensive study included the general electromagnetic behavior of the layout, such as voltage and current density along the CPW, and the resulting values of $\epsilon_{eff}$, and $Z_0$, which were consequently compared to those calculated from \cite{Wadell1991} used for the initial estimations mentioned in \cref{LayoutDesign}. Furthermore, it included an in-depth analysis of the $S_{21}$ spectrum following the method exposed in \cite{Lopez-Nunez2025}, from which an estimation of $f_r$ and $Q_c$ was gotten; the corresponding fits are provided in \cref{app:4HFit,app:6HFit,app:DiamondFit}. The numerical results of the simulations can be seen in \cref{tab:SimResults4H,tab:SimResults6H,tab:SimResultsDiamond}.
 
@@ -652,13 +669,9 @@ Furthermore, the process of the second run went as follows:
 
 Once the second fabrication run was finished, the four SiC chips were checked with a microscope at MPP, where they looked to be ready for measurements, and were sent to IFAE's QCT workshop. Once they arrived they were revised using an optical microscope in order to have an idea of the chip's viability for measurement. In particular, the chips were checked for any short-circuit or discontinuities caused by a broken CPW line or by faulty fabrication; as well as debris or pieces of resist remaining due to an incomplete strip.
 
-\textcolor{blue}{Afterward, a more in-depth visual study was carried out on a microscope with \textcolor{red}{magnification}. This was done in order to check for more precise information on the fabrication quality. This way aspects such as resolution, Al quality and presence of debris or remaining resist could be conclusively assessed.}
-
 Visual inspection under the microscope revealed defects in three of the four chips. Only one 6H-SiC chip was found to be in optimal conditions and was selected for measurement.
 
-\textcolor{blue}{Moreover, the images taken of the chips can be seen in \cref{fig:Microscope}. In these images the overall resolution of the lift-off process can be assessed. Also, several images of the defects seen in the first assessment can be observed clearly.}
-
-All in all, as it was expected from a first prototype, only one of the four chips that were received were expected to be functional.
+Due to fabrication and clean room schedule constraints, images of the chips are not available for discussion in this work.
 
 \subsection{Measurements planning and setup}
 
