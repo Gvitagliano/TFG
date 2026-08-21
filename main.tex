@@ -2,6 +2,8 @@
 
 \usepackage{textcomp}
 \usepackage{parskip}
+\setlength{\parindent}{15pt}      % first-line indent
+\setlength{\parskip}{0.5em} 
 
 % ===== Language and Encoding =====
 \usepackage[utf8]{inputenc}
@@ -63,13 +65,79 @@
 \usepackage{appendix}
 \usepackage{xurl}
 
-\title{SUPERCONDUCTING ALUMINUM CPW $\lambda/4$ RESONATORS ON DIAMOND, 4H-SiC AND 6H-SiC SUBSTRATES FOR DIELECTRIC LOSS CHARACTERIZATION}
-\author{Gabriel Vicente Vitagliano Castan}
-\date{August 2026}
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+    \centering
+
+    {\scshape Universitat Autònoma de Barcelona \par}
+    {\scshape Facultat de Ciències \par}
+
+    \vspace{0.8em}
+
+    {\scshape Institut de Física d'Altes Energies \par}
+    {\scshape \small Quantum Computing Technology Group \par}
+
+    \vspace{2.5em}
+
+    \noindent\rule{\linewidth}{0.4pt}
+
+    \vspace{1.5em}
+
+    {\Large \scshape SUPERCONDUCTING ALUMINUM CPW $\lambda/4$ RESONATORS ON DIAMOND, 4H-SiC AND 6H-SiC SUBSTRATES FOR DIELECTRIC LOSS CHARACTERIZATION}
+
+    \vspace{1.5em}
+
+    \noindent\rule{\linewidth}{0.4pt}
+
+    \vspace{3em}
+
+    {\scshape Gabriel Vicente Vitagliano Castan \par}
+
+    \vspace{2.5em}
+
+    {\scshape Supervisor: \par}
+    {\scshape Dr. Elia Bertoldo \par}
+
+    \vspace{4em}
+
+    \begin{minipage}[c]{0.4\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{figures/UAB_logo.png}
+    \end{minipage}%
+    \begin{minipage}[c]{0.4\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{figures/IFAE_logo.png}
+    \end{minipage}
+
+    \vfill
+
+    \noindent\rule{\linewidth}{0.4pt}
+
+    \vspace{0.8em}
+
+    {\small \scshape Bachelor's Degree in Nanoscience and Nanotechnology \textbf{-} Academic Year 2025/2026 \par}
+
+\end{titlepage}
+
+\newpage
+
+\section*{Abstract}
+
+Superconducting coplanar waveguide (CPW) resonators are a central building block of circuit quantum electrodynamics. Where their performance is fundamentally limited not by the superconductor itself, but by dielectric loss arising from two-level systems (TLS) hosted at the substrate, its interfaces, and native oxides. Identifying substrates that minimize this loss channel is therefore essential for advancing coherence in superconducting quantum circuits. Diamond, 4H-SiC and 6H-SiC are promising candidates due to their low intrinsic dielectric loss and compatibility with hybrid quantum architectures, yet a direct, controlled comparison of their TLS-limited performance in aluminum CPW resonators remains scarce in the literature. In this project, aluminum $\lambda/4$ CPW resonators have been designed and analyzed on these three substrates, with fabrication carried out at the Max Planck Institute for Physics, in Munich, Germany. Analytical modeling and electromagnetic simulations were used to determine resonator geometries and predict their microwave response prior to fabrication; and a complete cryogenic measurement protocol has been established to extract internal quality factors as a function of applied power and temperature. This work thus provides a fully specified design, simulation, and measurement methodology for benchmarking TLS-limited dielectric loss across Diamond, 4H-SiC and 6H-SiC, laying the groundwork for the experimental characterization to be completed in the corresponding cryogenic measurement campaign.
+
+\textit{Keywords:} Superconducting resonators, coplanar waveguide, two-level systems, dielectric loss, silicon carbide, diamond substrates, circuit quantum electrodynamics.
+
+\newpage
+
+\subsection*{Acknowledgements}
+
+I would like to thank my supervisor, Elia Bertoldo, who always trusted me and treated me as an equal when discussing the research. Even though he did not always have the deepest understanding of the underlying theory, he made sure I never had a question left unanswered, either by him or by the rest of the staff he enlisted to help. I would also like to thank Pol Forn-Diaz, for giving me the opportunity to work at IFAE and for his continued support throughout my research.
+
+On a less serious note, I want to thank Ariadna Gómez, Guillermo del Riego and Luca Cozzolino, for lightening the mood at the workshop and for always being willing to help.
+
+Finally, I would like to thank my family for their unwavering support, especially my father, my mother and my brother, all of whom contributed greatly to helping me get this far. I also want to thank my friends, who were always interested in hearing about my thesis and who offered great emotional support along the way.
 
 \newpage
 
@@ -89,7 +157,7 @@ Building upon the challenges outlined by \cite{Charpentier2025}, this thesis pre
 
 Due to the scarcity of literature on the cryogenic microwave properties of diamond, 4H-SiC, and 6H-SiC, predicting the resulting $Q_i$ prior to characterization presents a significant challenge. To ensure that at least one resonator per substrate operates within or near the critically coupled regime ($g \approx 1$), each chip layout incorporates a set of four $\lambda/4$ coplanar waveguide (CPW) resonators inductively coupled to a central CPW feedline, terminated by launchers on both ends. This configuration allows for the systematic exploration of external quality factors ($Q_e$) spanning distinct orders of magnitude.
 
-The proposed circuit designs were modeled using the method-of-moments simulation software Sonnet Software. Simulations were leveraged to extract key electromagnetic parameters—specifically the effective permittivity ($\epsilon_{\text{eff}}$), characteristic impedance ($Z_0$), and resonant frequency ($f_r$)—and to estimate $Q_e$ directly from the simulated $S_{21}$ scattering parameters. Following numerical optimization, the designed chips were fabricated via a lift-off process, optically inspected for physical defects, and evaluated within a dedicated cryogenic measurement framework designed to characterize dielectric TLS losses in the single-photon regime.
+The proposed circuit designs were modeled using the method-of-moments simulation software \texttt{Sonnet Software} \cite{zotero-item-361}. Simulations were leveraged to extract key electromagnetic parameters—specifically the effective permittivity ($\epsilon_{\text{eff}}$), characteristic impedance ($Z_0$), and resonant frequency ($f_r$)—and to estimate $Q_e$ directly from the simulated $S_{21}$ scattering parameters. Following numerical optimization, the designed chips were fabricated via a lift-off process, optically inspected for physical defects, and evaluated within a dedicated cryogenic measurement framework designed to characterize dielectric TLS losses in the single-photon regime.
 
 \section{Theory background}
 
@@ -437,7 +505,7 @@ The following chapter will focus on the explanation of the design and simulation
 
 \subsection{Layout design} \label{LayoutDesign}
 
-The first step for the study of the substrates at hand was the design of a fabrication mask dedicated to each substrate. For the design process, many parameters and constraints were considered. Firstly, constraints given by the laboratory equipment were taken into account. These constraints came down to the characteristic impedance of the coaxial cables that would later on feed and measure the signal going through the chips, which was a standard value of 50$\Omega$; the frequency range that could be measured by the setup, which goes between 4 GHz and 8 GHz, \textcolor{red}{because of the presence of filters and circulators in the dilution fridge}; and the xy-plane precision estimated for the fabrication process, which was of 1 $\upmu$m. 
+The first step for the study of the substrates at hand was the design of a fabrication mask dedicated to each substrate. For the design process, many parameters and constraints were considered. Firstly, constraints given by the laboratory equipment were taken into account. These constraints came down to the characteristic impedance of the coaxial cables that would later on feed and measure the signal going through the chips, which was a standard value of 50$\Omega$; the frequency range that could be measured by the setup, which goes between 4 GHz and 8 GHz, because of the presence of band pass filters; and the xy-plane precision estimated for the fabrication process, which was of 1 $\upmu$m. 
 
 The chip designs were thought for the respective sizes of each of the substrates available for this research. In the case of both SiC substrates, each chip has dimensions of 10.00 $\times$ 10.00 mm and 0.35 mm of thickness; and, in the case of the diamond substrate, the chip had dimensions of 4.5 $\times$ 4.5 mm and 0.5 mm of thickness.
 
@@ -461,15 +529,15 @@ As it is shown \cref{permittivity,impedance}, both the $\epsilon_{eff}$ and the 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{figures/4H/4H_sim_2.png}
-    \caption{Reduced layout used for Sonnet simulations. The reduced ground surface serves to reduce simulation time without loss of physical accuracy.}
+    \caption{Reduced layout used for \texttt{Sonnet} simulations. The reduced ground surface serves to reduce simulation time without loss of physical accuracy.}
     \label{fig:SimLayout}
 \end{figure}
 
-After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software Sonnet Software. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 mm $\times$ 2907.5 mm was used, as seen in \ref{fig:SimLayout}. This layout was divided using a rectangular mesh with a cell size of $2.5 \, \upmu \text{m} \times 2.5 \, \upmu \text{m}$; taking into account that the smallest distance in the SiC designs was 10 $\upmu$m; and in the case of the diamond design 4 $\upmu$m. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$.
+After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software \texttt{Sonnet Software}. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 mm $\times$ 2907.5 mm was used, as seen in \ref{fig:SimLayout}. This layout was divided using a rectangular mesh with a cell size of $2.5 \, \upmu \text{m} \times 2.5 \, \upmu \text{m}$; taking into account that the smallest distance in the SiC designs was 10 $\upmu$m; and in the case of the diamond design 4 $\upmu$m. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$.
 
-After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software Sonnet Software. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 mm $\times$ 2907.5 mm was used, as seen in Figure~\ref{fig:SimLayout}. This layout was divided using a rectangular mesh with a cell size of $2.5 \, \upmu \text{m} \times 2.5 \, \upmu \text{m}$; taking into account that the smallest distance in the SiC designs was 10 $\upmu$m; and in the case of the diamond design 4 $\upmu$m. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$. Further information on the layout generation and simulation parameters can be found in \cref{App:Res_chips}
+After estimating these initial parameters, a series of numerical simulations were carried out using the method of moments software \texttt{Sonnet Software}. These simulations served as a way to tweak the estimation of the $f_r$ of each resonator; as well as a way to study the behavior of the relationship between $Q_e$ and the coupling distance ($d_c$). In order to carry out these simulations a reduced layout containing a single resonator and the feedline measuring 1920 mm $\times$ 2907.5 mm was used, as seen in Figure~\ref{fig:SimLayout}. This layout was divided using a rectangular mesh with a cell size of $2.5 \, \upmu \text{m} \times 2.5 \, \upmu \text{m}$; taking into account that the smallest distance in the SiC designs was 10 $\upmu$m; and in the case of the diamond design 4 $\upmu$m. It is of interest that even though a conformal mesh would have provided more accurate results, a rectangular mesh was used due to great increases of simulation time with the former. In order to carry out the desired assessment of the chips including a general study of the S21 response, the $Z_0$ and the $\epsilon_{eff}$, adaptive frequency sweeps were implemented in an interval close to the predicted $f_r$. Further information on the layout generation and simulation parameters can be found in \cref{App:Res_chips}
 
-This process was done in an iterative manner; where, for each resonator of each substrate, firstly a coarse frequency sweep of 300 points was done in order to adjust the length of the resonator taking into account the $\epsilon_{eff}$ calculated by Sonnet and get closer to the desired $f_r$. Then, with the updated layout, a new coarse simulation was done in a 200MHz interval around an educated estimation of the $f_r$ in order to get a first indication of the power dip in the signal. Then, finer simulations of 600 and 800 points were done in progressively smaller intervals around the $f_r$ until the dip stopped growing vertically, which meant that the signal had been finely resolved closely around the $f_r$. Finally, the resolved signal was analyzed using the method developed by \cite{Lopez-Nunez2025}, which was useful to have a proper estimation of $Q_e$.
+This process was done in an iterative manner; where, for each resonator of each substrate, firstly a coarse frequency sweep of 300 points was done in order to adjust the length of the resonator taking into account the $\epsilon_{eff}$ calculated by \texttt{Sonnet} and get closer to the desired $f_r$. Then, with the updated layout, a new coarse simulation was done in a 200MHz interval around an educated estimation of the $f_r$ in order to get a first indication of the power dip in the signal. Then, finer simulations of 600 and 800 points were done in progressively smaller intervals around the $f_r$ until the dip stopped growing vertically, which meant that the signal had been finely resolved closely around the $f_r$. Finally, the resolved signal was analyzed using the method developed by \cite{Lopez-Nunez2025}, which was useful to have a proper estimation of $Q_e$.
 
 Through this process, the final parameters for the resonators were achieved. They can be found in \cref{tab:FinalParameters}.
 
@@ -492,11 +560,11 @@ Through this process, the final parameters for the resonators were achieved. The
     }
 \end{table}
 
-After the simulations were carried out, the overall behavior of the resonator described in \cref{GeneralCPW} was studied. This comprehensive study included the general electromagnetic behavior of the layout, such as voltage and current density along the CPW, and the resulting values of $\epsilon_{eff}$, and $Z_0$, which were consequently compared to those calculated from \cite{Wadell1991} used for the initial estimations mentioned in \cref{LayoutDesign}. Furthermore, it included an in-depth analysis of the $S_{21}$ spectrum following the method exposed in \cite{Lopez-Nunez2025}, from which an estimation of $f_r$ and $Q_c$ was gotten; the corresponding fits are provided in \cref{app:4HFit,app:6HFit,app:DiamondFit}. The numerical results of the simulations can be seen in \cref{tab:SimResults4H,tab:SimResults6H,tab:SimResultsDiamond}.
+After the simulations were carried out, the overall behavior of the resonator described in \cref{GeneralCPW} was studied. This comprehensive study included the general electromagnetic behavior of the layout, such as voltage and current density along the CPW, and the resulting values of $\epsilon_{eff}$, and $Z_0$, which were consequently compared to those calculated from \cite{Wadell1991} used for the initial estimations mentioned in \cref{LayoutDesign}. Furthermore, it included an in-depth analysis of the $S_{21}$ spectrum following the method exposed in \cite{Lopez-Nunez2025}, from which an estimation of $f_r$ and $Q_c$ was gotten; the corresponding fits are provided in \cref{app:4HFit,app:6HFit,app:DiamondFit}. The numerical results of the simulations can be seen in \cref{tab:SimResults4H,tab:SimResults6H,tab:SimResultsDiamond}. Examples of the numerical fitting of $S_{21}$ can be found in \cref{App:ResFit}.
 
 \begin{table}[ht]
     \centering
-    \caption{Values of $Z_0$ and $\epsilon_{eff}$ for resonators with 4H-SiC, 6H-SiC, and Diamond substrates. All values where extracted from Sonnet simulations.}
+    \caption{Values of $Z_0$ and $\epsilon_{eff}$ for resonators with 4H-SiC, 6H-SiC, and Diamond substrates. All values where extracted from \texttt{Sonnet} simulations.}
     \label{tab:dielectric_all}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{@{}lSSSSSS@{}}
@@ -641,12 +709,12 @@ The process of the first run was carried out with the following steps:
 \end{figure}
 
 \begin{enumerate}
-    \item The substrates were cleaned using an HF bath, which is generally crucial to ensure a clean fabrication surface.
+    \item The substrates were cleaned with acetone, isopropanol and clean water (larger than 15 M$\Omega$cm), which is generally crucial to ensure a clean fabrication surface.
     \item An even 300 nm thick Al film was deposited on the samples using electron-beam evaporation under high vacuum conditions (UHV e-beam evaporation).
     \item Spin-coating using micro resist technology's positive resist ma-P 1215 was done on each substrate.
     \item The resist was exposed using a Heidelberg Instruments' $\upmu$MLA laser writer following the layout shown in \cref{fig:PositiveResist}. This way the area where the Al coating was desired was protected by the resist.
     \item The resist was developed using micro resist technology's ma-D 532/S.
-    \item Wet etching was carried out using phosphoric-acetic-nitric acid mixture (PAN etching).
+    \item Wet etching was carried out using etch mixture PES 77-19-04.
     \item The resist was stripped
 \end{enumerate}
 
@@ -660,7 +728,7 @@ Furthermore, the process of the second run went as follows:
 \end{figure}
 
 \begin{enumerate}
-    \item The substrates were cleaned using an HF bath.
+    \item The substrates were cleaned with acetone, isopropanol and clean water (larger than 15 M$\Omega$cm).
     \item Spin-coating using micro resist technology's negative resist ma-N 1440 was done on each substrate.
     \item The resist was exposed using the aforementioned $\upmu$MLA laser writer following the layout shown in \cref{fig:NegativeResist}. This way, the area of the substrate where the aluminum film was desired was left exposed, and the metal would not stick to the areas where the resist remained.
     \item The resist was developed using micro resist technology's ma-D 333/S.
@@ -692,7 +760,7 @@ In order to study the behaviors discussed in \cref{SimuResultsSection}, the meas
     \item A coarse frequency sweep around the respective $f_r$ of each resonator in order to find where the real dip was located.
     \item Once the dip was located, a finer sweep, closing in on the $f_r$ and with a higher intermediate frequency (IF) in order to better resolve the spectrum.
     \item Once a properly resolved $S_{21}$ spectrum is achieved, exporting the $\Re (S_{21})$ and $\Im (S_{21})$ spectrum.
-    \item Using the $S_{21}$ method described in \cite{Lopez-Nunez2025}, extracting the desired data related to $Q_i$ as it is the interest of this thesis; as well as data related to $\epsilon_{eff}, Z_0$ and $Q_c$ in order to compare the results from the fabricated chips with those gotten from the Sonnet simulations.
+    \item Using the $S_{21}$ method described in \cite{Lopez-Nunez2025}, extracting the desired data related to $Q_i$ as it is the interest of this thesis; as well as data related to $\epsilon_{eff}, Z_0$ and $Q_c$ in order to compare the results from the fabricated chips with those gotten from the \texttt{Sonnet} simulations.
 \end{enumerate}
 
 This process was then planned to be carried out at different temperatures. Starting out at base temperature ($\sim 10$ mK), a series of measurements were to be taken at incrementally higher temperature set points until temperatures of the order of $\sim 200$ mK, allowing the system to thermalize at each step before recording the resonator response. Around this temperature the frequency shift caused by changes in temperature stop being caused by TLS and quasiparticles become the main contributor\footnote{A more rigorous explanation of the procedure can be found in \cite{Scigliuzzo2020}}. This sweep was to be performed at low, near single-photon power, so that the observed evolution of $Q_i$ and $f_r$ could be attributed to thermal saturation of the TLS population. This way the value of $F \delta^0_{TLS}$ could be extracted following \cref{Qi(T)} \cite{Scigliuzzo2020}.
@@ -711,7 +779,7 @@ In this thesis, an in-depth analysis of $\lambda/4$ CPW resonator theory was car
 
 The predictions made possible from the theoretical study were used for the design of a series of chips tailored for the substrates under study. Additionally, experimental design considerations such as the lack of knowledge of the value of $Q_i$ was also taken into account in order to achieve critical coupling. Finally, each chip in the ended up consisting in four CPW resonators each with varying $f_r$ and $Q_c$ values.
 
-These resonators were simulated using the method of moments software Sonnet Software. The results of these simulations served as verification of the overall electromagnetic behavior of the circuit, including the current density distribution which proved the resonant state and mode; as well as better estimations for the values of $\epsilon{eff}$, $Z_0$ and $Q_c$. The results gotten from these simulations was used to adjust the final parameters of the resonators, which were used for the layouts sent to MPP in Munich, Germany for fabrication.
+These resonators were simulated using the method of moments software \texttt{Sonnet Software}. The results of these simulations served as verification of the overall electromagnetic behavior of the circuit, including the current density distribution which proved the resonant state and mode; as well as better estimations for the values of $\epsilon{eff}$, $Z_0$ and $Q_c$. The results gotten from these simulations was used to adjust the final parameters of the resonators, which were used for the layouts sent to MPP in Munich, Germany for fabrication.
 
 Once these chips were fabricated, they were assessed for measurement; searching for discontinuities in transmission lines that could cause shorts or open ends which would compromise the measurements. All in all, one 6H-SiC was found to be clearly ready for measurements.
 
@@ -783,29 +851,29 @@ Due to fabrication and cryostat scheduling constraints, cryogenic measurements o
         \includegraphics[width=0.8\linewidth]{figures/Diamond/diamond_sim.png}
         \caption{Diamond simulation layout}
     \end{subfigure}
-    \caption{Simulation layouts used for the wet etching process.}
+    \caption{Simulation layouts used for \texttt{sonnet} simulations.}
     \label{fig:sim_layouts}
 \end{figure}
 
-The design of the resonator geometries was carried out via a custom Python script built on the \texttt{gdstk} library. The script parametrically generates the geometry of each individual $\lambda/4$ CPW resonator (center-conductor width, gap, total length, and coupling geometry to the feedline) from a small set of physical input parameters, allowing the four resonators on each chip to be produced consistently and rapidly regenerated whenever target frequencies or coupling strengths were revised. The same script assembles the individual resonator geometries into two distinct layout variants: a simulation layout, consisting of a single resonator together with its feedline segment and a surrounding ground plane extending $\sim$ 500 $\upmu$m from the resonator edge on each side, matching the geometry entered into Sonnet; and a fabrication layout, consisting of the complete four-resonator chip with launchers, feedline, and full ground plane, exported as the exposure pattern for the laser writer. Generating both layouts from a single parametric script, rather than drawing them independently, ensures that the simulated and fabricated geometries are identical up to the ground-plane truncation applied in the simulation layout.
+The design of the resonator geometries was carried out via a custom Python script built on the \texttt{gdstk} library. The script parametrically generates the geometry of each individual $\lambda/4$ CPW resonator (center-conductor width, gap, total length, and coupling geometry to the feedline) from a small set of physical input parameters, allowing the four resonators on each chip to be produced consistently and rapidly regenerated whenever target frequencies or coupling strengths were revised. The same script assembles the individual resonator geometries into two distinct layout variants: a simulation layout, consisting of a single resonator together with its feedline segment and a surrounding ground plane extending $\sim$ 500 $\upmu$m from the resonator edge on each side, matching the geometry entered into \texttt{Sonnet}; and a fabrication layout, consisting of the complete four-resonator chip with launchers, feedline, and full ground plane, exported as the exposure pattern for the laser writer. Generating both layouts from a single parametric script, rather than drawing them independently, ensures that the simulated and fabricated geometries are identical up to the ground-plane truncation applied in the simulation layout.
 
-The material parameters entered into Sonnet were tailored to the three substrates and to the aluminum film actually used, rather than left at their generic library values.
+The material parameters entered into \texttt{Sonnet} were tailored to the three substrates and to the aluminum film actually used, rather than left at their generic library values.
 \begin{itemize}
-    \item \textbf{Substrate:} Diamond, being cubic and therefore dielectrically isotropic, was modeled with a single relative permittivity $\varepsilon_{\mathrm{rel}} = 5.7$. For 4H-SiC and 6H-SiC, whose hexagonal polytype structure gives rise to distinct ordinary and extraordinary dielectric axes, anisotropic permittivity values were used instead of a single isotropic figure, with in-plane and out-of-plane components $\varepsilon_{\mathrm{rel},\parallel} = 9.66$ and $9.77$, and $\varepsilon_{\mathrm{rel},\perp} = 10.2$ and $10.3$ taken from \cite{Li2024,Patrick1970}, respectively. Substrate thickness was set to 350 $\upmu$m for both SiC variants and 500 $\upmu$m for diamond.
+    \item \textbf{Substrate:} Diamond, being cubic and therefore dielectrically isotropic, was modeled with a single relative permittivity $\varepsilon_{\mathrm{rel}} = 5.7$. For 4H-SiC and 6H-SiC, whose hexagonal polytype structure gives rise to distinct ordinary and extraordinary dielectric axes, anisotropic permittivity values were used instead of a single isotropic figure, with in-plane and out-of-plane components $\epsilon_{\mathrm{rel},\parallel} = 9.66$ and $9.77$, and $\epsilon_{\mathrm{rel},\perp} = 10.2$ and $10.3$ taken from \cite{Li2024,Patrick1970}, respectively. Substrate thickness was set to 350 $\upmu$m for both SiC variants and 500 $\upmu$m for diamond.
     \item \textbf{Metal (Al):} The Surface Impedance loss model was used, appropriate for a superconducting film treated as a 2D boundary condition. The surface resistance was set to $R_s = 0$ to emulate superconductivity, with a film thickness of 300~nm, matching the first-run fabricated samples. No additional sheet inductance value was specified; that is, no manually imposed kinetic inductance correction was applied beyond Sonnet's default surface impedance treatment.
     \item \textbf{Top and box boundaries:} The top layer, representing air above the chip, was assigned $\varepsilon_{\mathrm{rel}} = \mu_{\mathrm{rel}} = 1$ and zero conductivity and loss tangent, with a thickness of 50\,000~µm to place the upper boundary far enough from the metal layer to approximate open space. On the contrary, the box bottom was set as a grounded boundary rather than free space, correctly modeling the grounded geometry of the physical chip on a printed circuit board (PCB).
 \end{itemize}
 
 \clearpage
 
-\section{Resonator fittings}
+\section{Resonator fittings} \label{App:ResFit}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{figures/4H/4H_63_80_MagF.png}
     \includegraphics[width=0.4\textwidth]{figures/4H/4H_63_80_ArgF.png}
     \includegraphics[width=0.4\textwidth]{figures/4H/4H_63_80_ImRe.png}
-    \caption{Reproduced from \cite{RaineeN2001}}
+    \caption{Fittings following \cite{Lopez-Nunez2025} used to extract the quality factor from the simulated $S_{21}$ spectrum of the 4H-SiC resonator with $f_r = 6.22$ GHz}
     \label{app:4HFit}
 \end{figure}
 
@@ -814,7 +882,7 @@ The material parameters entered into Sonnet were tailored to the three substrate
     \includegraphics[width=0.4\textwidth]{figures/6H/6H_63G_80um_MagF.png}
     \includegraphics[width=0.4\textwidth]{figures/6H/6H_63G_80um_ArgF.png}
     \includegraphics[width=0.4\textwidth]{figures/6H/6H_63G_80um_ImRe.png}
-    \caption{Reproduced from \cite{RaineeN2001}}
+    \caption{Fittings following \cite{Lopez-Nunez2025} used to extract the quality factor from the simulated $S_{21}$ spectrum of the 6H-SiC resonator with $f_r = 6.27$ GHz}
     \label{app:6HFit}
 \end{figure}
 
@@ -823,7 +891,7 @@ The material parameters entered into Sonnet were tailored to the three substrate
     \includegraphics[width=0.4\textwidth]{figures/Diamond/diamond_66G_50u_MagF.png}
     \includegraphics[width=0.4\textwidth]{figures/Diamond/diamond_66G_50u_ArgF.png}
     \includegraphics[width=0.4\textwidth]{figures/Diamond/diamond_66G_50u_ImRe.png}
-    \caption{Reproduced from \cite{RaineeN2001}}
+    \caption{Fittings following \cite{Lopez-Nunez2025} used to extract the quality factor from the simulated $S_{21}$ spectrum of the diamond resonator with $f_r = 6.59$ GHz}
     \label{app:DiamondFit}
 \end{figure}
 
@@ -832,7 +900,7 @@ The material parameters entered into Sonnet were tailored to the three substrate
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=0.85\linewidth]{figures/Diamond/diamond_resonance.png}
+        \includegraphics[width=0.9\linewidth]{figures/Diamond/diamond_resonance.png}
         \caption{Diamond, in resonance}
         \label{fig:diamond_in}
     \end{subfigure}
@@ -845,7 +913,7 @@ The material parameters entered into Sonnet were tailored to the three substrate
     \vspace{0.5em}
 
     \begin{subfigure}{0.4\textwidth}
-        \includegraphics[width=0.85\linewidth]{figures/6H/6H_resonance.png}
+        \includegraphics[width=0.9\linewidth]{figures/6H/6H_resonance.png}
         \caption{6H-SiC, in resonance}
         \label{fig:6HSiC_in}
     \end{subfigure}

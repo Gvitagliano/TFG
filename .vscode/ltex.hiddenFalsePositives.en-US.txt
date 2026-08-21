@@ -1,0 +1,1 @@
+{"rule":"TH_THORIUM","sentence":"^\\Q4H-SiC Th 4H-SiC Sim 6H-SiC Th 6H-SiC Sim Diamond Th Diamond Sim \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q 52.18 55.23 51.91 55.25 51.01 55.51 \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q 5.33 5.63 5.388 5.63 3.35 3.52\\E$"}

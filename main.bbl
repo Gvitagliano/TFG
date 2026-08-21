@@ -220,6 +220,18 @@
     \field{urlyear}{2026}
   \endentry
 
+  \entry{zotero-item-361}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{https://www.sonnetsoftware.com/}
+    \field{title}{Sonnet {{Software}}}
+    \verb{file}
+    \verb C:\Users\gabri\Zotero\storage\SHKS86HS\www.sonnetsoftware.com.html
+    \endverb
+    \field{urlday}{17}
+    \field{urlmonth}{08}
+    \field{urlyear}{2026}
+  \endentry
+
   \entry{Annett2003}{book}{}{}
     \name{author}{1}{}{%
       {{hash=AJF}{%
